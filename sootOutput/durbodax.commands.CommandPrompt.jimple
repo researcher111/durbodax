@@ -1,0 +1,1133 @@
+public final class durbodax.commands.CommandPrompt extends java.lang.Object
+{
+    private static final int[] $SwitchMap$durbodax$commands$CommandPrompt$Test;
+    private int currentIndex;
+    private final java.lang.String[] userPrompts;
+    private final java.io.BufferedReader bufferedReader;
+    durbodax.commands.PromptTest number;
+    durbodax.commands.PromptTest lastyear;
+    durbodax.commands.PromptTest hoursworked;
+    durbodax.commands.PromptTest number_0_1_2_9;
+    durbodax.commands.PromptTest linktofather;
+    durbodax.commands.PromptTest number1_or_2;
+    durbodax.commands.PromptTest number1_6;
+    durbodax.commands.PromptTest number1_7;
+    durbodax.commands.PromptTest number1_13;
+    durbodax.commands.PromptTest number0_2;
+    durbodax.commands.PromptTest number0_3;
+    durbodax.commands.PromptTest number0_4;
+    durbodax.commands.PromptTest number0_6;
+    durbodax.commands.PromptTest number0_7;
+    durbodax.commands.PromptTest number0_8;
+    durbodax.commands.PromptTest number0_9;
+    durbodax.commands.PromptTest string;
+    durbodax.commands.PromptTest compare;
+    durbodax.commands.PromptTest ageCompare;
+    durbodax.commands.PromptTest incomeCompare;
+    durbodax.commands.PromptTest marital_status;
+    public static java.lang.Class class$durbodax$commands$CommandPrompt$Test;
+
+    private static final int[] $SwitchMap$durbodax$commands$CommandPrompt$Test()
+    {
+        int[] temp$0, temp$3, temp$4, temp$9, temp$14, temp$19, temp$24, temp$29, temp$34, temp$39, temp$44, temp$49, temp$54, temp$59, temp$64, temp$69, temp$74, temp$79, temp$84, temp$89, temp$94, temp$99, temp$104;
+        durbodax.commands.CommandPrompt$Test[] temp$1;
+        int temp$2, temp$6, temp$7, temp$8, temp$11, temp$12, temp$13, temp$16, temp$17, temp$18, temp$21, temp$22, temp$23, temp$26, temp$27, temp$28, temp$31, temp$32, temp$33, temp$36, temp$37, temp$38, temp$41, temp$42, temp$43, temp$46, temp$47, temp$48, temp$51, temp$52, temp$53, temp$56, temp$57, temp$58, temp$61, temp$62, temp$63, temp$66, temp$67, temp$68, temp$71, temp$72, temp$73, temp$76, temp$77, temp$78, temp$81, temp$82, temp$83, temp$86, temp$87, temp$88, temp$91, temp$92, temp$93, temp$96, temp$97, temp$98, temp$101, temp$102, temp$103;
+        durbodax.commands.CommandPrompt$Test temp$5, temp$10, temp$15, temp$20, temp$25, temp$30, temp$35, temp$40, temp$45, temp$50, temp$55, temp$60, temp$65, temp$70, temp$75, temp$80, temp$85, temp$90, temp$95, temp$100;
+        java.lang.NoSuchFieldError e, e, e, e, e, e, e, e, e, e, e, e, e, e, e, e, e, e, e, e;
+
+        temp$0 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        if temp$0 == null goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$1 = staticinvoke <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test[] values()>();
+        temp$2 = lengthof temp$1;
+        temp$3 = newarray (int)[temp$2];
+        <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test> = temp$3;
+
+     label1:
+        nop;
+
+     label2:
+        nop;
+        temp$4 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$5 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number>;
+        temp$6 = virtualinvoke temp$5.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$7 = temp$6;
+        temp$8 = 1;
+        temp$4[temp$7] = temp$8;
+        goto label4;
+
+     label3:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label4;
+
+     label4:
+        nop;
+
+     label5:
+        nop;
+        temp$9 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$10 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test String>;
+        temp$11 = virtualinvoke temp$10.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$12 = temp$11;
+        temp$13 = 2;
+        temp$9[temp$12] = temp$13;
+        goto label7;
+
+     label6:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label7;
+
+     label7:
+        nop;
+
+     label8:
+        nop;
+        temp$14 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$15 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_or_2>;
+        temp$16 = virtualinvoke temp$15.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$17 = temp$16;
+        temp$18 = 3;
+        temp$14[temp$17] = temp$18;
+        goto label10;
+
+     label9:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label10;
+
+     label10:
+        nop;
+
+     label11:
+        nop;
+        temp$19 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$20 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_2>;
+        temp$21 = virtualinvoke temp$20.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$22 = temp$21;
+        temp$23 = 4;
+        temp$19[temp$22] = temp$23;
+        goto label13;
+
+     label12:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label13;
+
+     label13:
+        nop;
+
+     label14:
+        nop;
+        temp$24 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$25 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_3>;
+        temp$26 = virtualinvoke temp$25.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$27 = temp$26;
+        temp$28 = 5;
+        temp$24[temp$27] = temp$28;
+        goto label16;
+
+     label15:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label16;
+
+     label16:
+        nop;
+
+     label17:
+        nop;
+        temp$29 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$30 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_4>;
+        temp$31 = virtualinvoke temp$30.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$32 = temp$31;
+        temp$33 = 6;
+        temp$29[temp$32] = temp$33;
+        goto label19;
+
+     label18:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label19;
+
+     label19:
+        nop;
+
+     label20:
+        nop;
+        temp$34 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$35 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_6>;
+        temp$36 = virtualinvoke temp$35.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$37 = temp$36;
+        temp$38 = 7;
+        temp$34[temp$37] = temp$38;
+        goto label22;
+
+     label21:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label22;
+
+     label22:
+        nop;
+
+     label23:
+        nop;
+        temp$39 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$40 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_7>;
+        temp$41 = virtualinvoke temp$40.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$42 = temp$41;
+        temp$43 = 8;
+        temp$39[temp$42] = temp$43;
+        goto label25;
+
+     label24:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label25;
+
+     label25:
+        nop;
+
+     label26:
+        nop;
+        temp$44 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$45 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_8>;
+        temp$46 = virtualinvoke temp$45.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$47 = temp$46;
+        temp$48 = 9;
+        temp$44[temp$47] = temp$48;
+        goto label28;
+
+     label27:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label28;
+
+     label28:
+        nop;
+
+     label29:
+        nop;
+        temp$49 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$50 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_9>;
+        temp$51 = virtualinvoke temp$50.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$52 = temp$51;
+        temp$53 = 10;
+        temp$49[temp$52] = temp$53;
+        goto label31;
+
+     label30:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label31;
+
+     label31:
+        nop;
+
+     label32:
+        nop;
+        temp$54 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$55 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_6>;
+        temp$56 = virtualinvoke temp$55.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$57 = temp$56;
+        temp$58 = 11;
+        temp$54[temp$57] = temp$58;
+        goto label34;
+
+     label33:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label34;
+
+     label34:
+        nop;
+
+     label35:
+        nop;
+        temp$59 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$60 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_7>;
+        temp$61 = virtualinvoke temp$60.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$62 = temp$61;
+        temp$63 = 12;
+        temp$59[temp$62] = temp$63;
+        goto label37;
+
+     label36:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label37;
+
+     label37:
+        nop;
+
+     label38:
+        nop;
+        temp$64 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$65 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_13>;
+        temp$66 = virtualinvoke temp$65.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$67 = temp$66;
+        temp$68 = 13;
+        temp$64[temp$67] = temp$68;
+        goto label40;
+
+     label39:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label40;
+
+     label40:
+        nop;
+
+     label41:
+        nop;
+        temp$69 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$70 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Last_Year>;
+        temp$71 = virtualinvoke temp$70.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$72 = temp$71;
+        temp$73 = 14;
+        temp$69[temp$72] = temp$73;
+        goto label43;
+
+     label42:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label43;
+
+     label43:
+        nop;
+
+     label44:
+        nop;
+        temp$74 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$75 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Link_to_Father>;
+        temp$76 = virtualinvoke temp$75.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$77 = temp$76;
+        temp$78 = 15;
+        temp$74[temp$77] = temp$78;
+        goto label46;
+
+     label45:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label46;
+
+     label46:
+        nop;
+
+     label47:
+        nop;
+        temp$79 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$80 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number_0_1_2_9>;
+        temp$81 = virtualinvoke temp$80.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$82 = temp$81;
+        temp$83 = 16;
+        temp$79[temp$82] = temp$83;
+        goto label49;
+
+     label48:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label49;
+
+     label49:
+        nop;
+
+     label50:
+        nop;
+        temp$84 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$85 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Hours_Worked>;
+        temp$86 = virtualinvoke temp$85.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$87 = temp$86;
+        temp$88 = 17;
+        temp$84[temp$87] = temp$88;
+        goto label52;
+
+     label51:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label52;
+
+     label52:
+        nop;
+
+     label53:
+        nop;
+        temp$89 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$90 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Age_Compare>;
+        temp$91 = virtualinvoke temp$90.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$92 = temp$91;
+        temp$93 = 18;
+        temp$89[temp$92] = temp$93;
+        goto label55;
+
+     label54:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label55;
+
+     label55:
+        nop;
+
+     label56:
+        nop;
+        temp$94 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$95 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Income_Compare>;
+        temp$96 = virtualinvoke temp$95.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$97 = temp$96;
+        temp$98 = 19;
+        temp$94[temp$97] = temp$98;
+        goto label58;
+
+     label57:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label58;
+
+     label58:
+        nop;
+
+     label59:
+        nop;
+        temp$99 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        temp$100 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test MaritalStatus_Compare>;
+        temp$101 = virtualinvoke temp$100.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$102 = temp$101;
+        temp$103 = 20;
+        temp$99[temp$102] = temp$103;
+        goto label61;
+
+     label60:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label61;
+
+     label61:
+        nop;
+        temp$104 = <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test>;
+        return temp$104;
+
+        catch java.lang.NoSuchFieldError from label2 to label3 with label3;
+        catch java.lang.NoSuchFieldError from label5 to label6 with label6;
+        catch java.lang.NoSuchFieldError from label8 to label9 with label9;
+        catch java.lang.NoSuchFieldError from label11 to label12 with label12;
+        catch java.lang.NoSuchFieldError from label14 to label15 with label15;
+        catch java.lang.NoSuchFieldError from label17 to label18 with label18;
+        catch java.lang.NoSuchFieldError from label20 to label21 with label21;
+        catch java.lang.NoSuchFieldError from label23 to label24 with label24;
+        catch java.lang.NoSuchFieldError from label26 to label27 with label27;
+        catch java.lang.NoSuchFieldError from label29 to label30 with label30;
+        catch java.lang.NoSuchFieldError from label32 to label33 with label33;
+        catch java.lang.NoSuchFieldError from label35 to label36 with label36;
+        catch java.lang.NoSuchFieldError from label38 to label39 with label39;
+        catch java.lang.NoSuchFieldError from label41 to label42 with label42;
+        catch java.lang.NoSuchFieldError from label44 to label45 with label45;
+        catch java.lang.NoSuchFieldError from label47 to label48 with label48;
+        catch java.lang.NoSuchFieldError from label50 to label51 with label51;
+        catch java.lang.NoSuchFieldError from label53 to label54 with label54;
+        catch java.lang.NoSuchFieldError from label56 to label57 with label57;
+        catch java.lang.NoSuchFieldError from label59 to label60 with label60;
+    }
+
+    public void <init>(java.lang.String[])
+    {
+        durbodax.commands.CommandPrompt this;
+        java.lang.String[] prompts;
+        durbodax.commands.CommandPrompt$1Anonymous0 temp$0;
+        durbodax.commands.CommandPrompt$5Anonymous1 temp$1;
+        durbodax.commands.CommandPrompt$12Anonymous2 temp$2;
+        durbodax.commands.CommandPrompt$2Anonymous3 temp$3;
+        durbodax.commands.CommandPrompt$11Anonymous4 temp$4;
+        durbodax.commands.CommandPrompt$17Anonymous5 temp$5;
+        durbodax.commands.CommandPrompt$3Anonymous6 temp$6;
+        durbodax.commands.CommandPrompt$18Anonymous7 temp$7;
+        durbodax.commands.CommandPrompt$13Anonymous8 temp$8;
+        durbodax.commands.CommandPrompt$16Anonymous9 temp$9;
+        durbodax.commands.CommandPrompt$14Anonymous10 temp$10;
+        durbodax.commands.CommandPrompt$7Anonymous11 temp$11;
+        durbodax.commands.CommandPrompt$9Anonymous12 temp$12;
+        durbodax.commands.CommandPrompt$6Anonymous13 temp$13;
+        durbodax.commands.CommandPrompt$10Anonymous14 temp$14;
+        durbodax.commands.CommandPrompt$4Anonymous15 temp$15;
+        durbodax.commands.CommandPrompt$8Anonymous16 temp$16;
+        durbodax.commands.CommandPrompt$15Anonymous17 temp$17;
+        durbodax.commands.PromptTest temp$18, temp$19, temp$20;
+        java.io.PrintStream temp$21;
+        int temp$22;
+        java.io.BufferedReader temp$23;
+        java.io.InputStreamReader temp$24;
+        java.io.InputStream temp$25;
+
+        this := @this: durbodax.commands.CommandPrompt;
+        prompts := @parameter0: java.lang.String[];
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = new durbodax.commands.CommandPrompt$1Anonymous0;
+        specialinvoke temp$0.<durbodax.commands.CommandPrompt$1Anonymous0: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number> = temp$0;
+        temp$1 = new durbodax.commands.CommandPrompt$5Anonymous1;
+        specialinvoke temp$1.<durbodax.commands.CommandPrompt$5Anonymous1: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest lastyear> = temp$1;
+        temp$2 = new durbodax.commands.CommandPrompt$12Anonymous2;
+        specialinvoke temp$2.<durbodax.commands.CommandPrompt$12Anonymous2: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest hoursworked> = temp$2;
+        temp$3 = new durbodax.commands.CommandPrompt$2Anonymous3;
+        specialinvoke temp$3.<durbodax.commands.CommandPrompt$2Anonymous3: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number_0_1_2_9> = temp$3;
+        temp$4 = new durbodax.commands.CommandPrompt$11Anonymous4;
+        specialinvoke temp$4.<durbodax.commands.CommandPrompt$11Anonymous4: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest linktofather> = temp$4;
+        temp$5 = new durbodax.commands.CommandPrompt$17Anonymous5;
+        specialinvoke temp$5.<durbodax.commands.CommandPrompt$17Anonymous5: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number1_or_2> = temp$5;
+        temp$6 = new durbodax.commands.CommandPrompt$3Anonymous6;
+        specialinvoke temp$6.<durbodax.commands.CommandPrompt$3Anonymous6: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number1_6> = temp$6;
+        temp$7 = new durbodax.commands.CommandPrompt$18Anonymous7;
+        specialinvoke temp$7.<durbodax.commands.CommandPrompt$18Anonymous7: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number1_7> = temp$7;
+        temp$8 = new durbodax.commands.CommandPrompt$13Anonymous8;
+        specialinvoke temp$8.<durbodax.commands.CommandPrompt$13Anonymous8: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number1_13> = temp$8;
+        temp$9 = new durbodax.commands.CommandPrompt$16Anonymous9;
+        specialinvoke temp$9.<durbodax.commands.CommandPrompt$16Anonymous9: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_2> = temp$9;
+        temp$10 = new durbodax.commands.CommandPrompt$14Anonymous10;
+        specialinvoke temp$10.<durbodax.commands.CommandPrompt$14Anonymous10: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_3> = temp$10;
+        temp$11 = new durbodax.commands.CommandPrompt$7Anonymous11;
+        specialinvoke temp$11.<durbodax.commands.CommandPrompt$7Anonymous11: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_4> = temp$11;
+        temp$12 = new durbodax.commands.CommandPrompt$9Anonymous12;
+        specialinvoke temp$12.<durbodax.commands.CommandPrompt$9Anonymous12: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_6> = temp$12;
+        temp$13 = new durbodax.commands.CommandPrompt$6Anonymous13;
+        specialinvoke temp$13.<durbodax.commands.CommandPrompt$6Anonymous13: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_7> = temp$13;
+        temp$14 = new durbodax.commands.CommandPrompt$10Anonymous14;
+        specialinvoke temp$14.<durbodax.commands.CommandPrompt$10Anonymous14: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_8> = temp$14;
+        temp$15 = new durbodax.commands.CommandPrompt$4Anonymous15;
+        specialinvoke temp$15.<durbodax.commands.CommandPrompt$4Anonymous15: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_9> = temp$15;
+        temp$16 = new durbodax.commands.CommandPrompt$8Anonymous16;
+        specialinvoke temp$16.<durbodax.commands.CommandPrompt$8Anonymous16: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest string> = temp$16;
+        temp$17 = new durbodax.commands.CommandPrompt$15Anonymous17;
+        specialinvoke temp$17.<durbodax.commands.CommandPrompt$15Anonymous17: void <init>(durbodax.commands.CommandPrompt)>(this);
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest compare> = temp$17;
+        temp$18 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest compare>;
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest ageCompare> = temp$18;
+        temp$19 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest compare>;
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest incomeCompare> = temp$19;
+        temp$20 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number1_6>;
+        this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest marital_status> = temp$20;
+        temp$21 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$21.<java.io.PrintStream: void println(java.lang.String)>("flow:14");
+        this.<durbodax.commands.CommandPrompt: java.lang.String[] userPrompts> = prompts;
+        temp$22 = 0;
+        this.<durbodax.commands.CommandPrompt: int currentIndex> = temp$22;
+        temp$23 = new java.io.BufferedReader;
+        temp$24 = new java.io.InputStreamReader;
+        temp$25 = <java.lang.System: java.io.InputStream in>;
+        specialinvoke temp$24.<java.io.InputStreamReader: void <init>(java.io.InputStream)>(temp$25);
+        specialinvoke temp$23.<java.io.BufferedReader: void <init>(java.io.Reader)>(temp$24);
+        this.<durbodax.commands.CommandPrompt: java.io.BufferedReader bufferedReader> = temp$23;
+        return;
+    }
+
+    public final int size()
+    {
+        durbodax.commands.CommandPrompt this;
+        java.io.PrintStream temp$0;
+        java.lang.String[] temp$1;
+        int temp$2;
+
+        this := @this: durbodax.commands.CommandPrompt;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:15");
+        temp$1 = this.<durbodax.commands.CommandPrompt: java.lang.String[] userPrompts>;
+        temp$2 = lengthof temp$1;
+        return temp$2;
+    }
+
+    public final java.lang.String getPrompt(int)
+    {
+        durbodax.commands.CommandPrompt this;
+        int i, temp$2;
+        java.io.PrintStream temp$0;
+        java.lang.String[] temp$1;
+        java.lang.String temp$3;
+
+        this := @this: durbodax.commands.CommandPrompt;
+        i := @parameter0: int;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:16");
+        temp$1 = this.<durbodax.commands.CommandPrompt: java.lang.String[] userPrompts>;
+        temp$2 = i;
+        temp$3 = temp$1[temp$2];
+        return temp$3;
+    }
+
+    public final void reset()
+    {
+        durbodax.commands.CommandPrompt this;
+        java.io.PrintStream temp$0;
+        int temp$1;
+
+        this := @this: durbodax.commands.CommandPrompt;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:17");
+        temp$1 = 0;
+        this.<durbodax.commands.CommandPrompt: int currentIndex> = temp$1;
+        return;
+    }
+
+    public final java.lang.String displayNextPrompt()
+    {
+        durbodax.commands.CommandPrompt this;
+        java.io.PrintStream temp$0, temp$1, temp$2, temp$3, temp$18, temp$21, temp$24, temp$27, temp$30, temp$33, temp$36, temp$39, temp$42, temp$45, temp$48, temp$51, temp$54, temp$57, temp$60, temp$63, temp$66, temp$67, temp$70, temp$74, temp$77, temp$80, temp$84, temp$87, temp$90, temp$94, temp$106, temp$107, temp$109;
+        java.lang.String userInput, temp$7, temp$8, temp$10, temp$14, temp$71, temp$72, temp$76, temp$81, temp$82, temp$86, temp$91, temp$92, temp$96, temp$105, temp$110, temp$113;
+        boolean isValid, firstTry, temp$17, temp$20, temp$23, temp$26, temp$29, temp$32, temp$35, temp$38, temp$41, temp$44, temp$47, temp$50, temp$53, temp$56, temp$59, temp$62, temp$65, temp$69, temp$73, temp$79, temp$83, temp$89, temp$93, temp$102;
+        java.lang.StringBuffer temp$4, temp$75, temp$85, temp$95;
+        java.lang.String[] temp$5, temp$11;
+        int temp$6, temp$12, temp$13, temp$99, temp$100, temp$101, temp$103, temp$104, temp$111, temp$112;
+        java.io.BufferedReader temp$9;
+        durbodax.commands.CommandPrompt$Test test, temp$15;
+        durbodax.commands.PromptTest temp$16, temp$19, temp$22, temp$25, temp$28, temp$31, temp$34, temp$37, temp$40, temp$43, temp$46, temp$49, temp$52, temp$55, temp$58, temp$61, temp$64, temp$68, temp$78, temp$88;
+        int[] temp$97, temp$98;
+        java.io.IOException e;
+        java.lang.StackTraceElement[] temp$108;
+
+        this := @this: durbodax.commands.CommandPrompt;
+
+     label0:
+        nop;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:18");
+        userInput = "";
+        isValid = 0;
+        firstTry = 1;
+
+     label1:
+        nop;
+        if firstTry == 0 goto label2;
+
+        goto label3;
+
+     label2:
+        nop;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("flow:19");
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>("Invalid input, please try again.");
+
+     label3:
+        nop;
+        temp$3 = <java.lang.System: java.io.PrintStream out>;
+        temp$4 = new java.lang.StringBuffer;
+        specialinvoke temp$4.<java.lang.StringBuffer: void <init>()>();
+        temp$5 = this.<durbodax.commands.CommandPrompt: java.lang.String[] userPrompts>;
+        temp$6 = this.<durbodax.commands.CommandPrompt: int currentIndex>;
+        temp$7 = temp$5[temp$6];
+        virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$7);
+        virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(": ");
+        temp$8 = virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$3.<java.io.PrintStream: void print(java.lang.String)>(temp$8);
+        temp$9 = this.<durbodax.commands.CommandPrompt: java.io.BufferedReader bufferedReader>;
+        temp$10 = virtualinvoke temp$9.<java.io.BufferedReader: java.lang.String readLine()>();
+        userInput = temp$10;
+        temp$11 = this.<durbodax.commands.CommandPrompt: java.lang.String[] userPrompts>;
+        temp$12 = this.<durbodax.commands.CommandPrompt: int currentIndex>;
+        temp$13 = temp$12 + 1;
+        temp$14 = temp$11[temp$13];
+        temp$15 = staticinvoke <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test getTest(java.lang.String)>(temp$14);
+        test = temp$15;
+        goto label57;
+
+     label4:
+        nop;
+        temp$16 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number>;
+        temp$17 = interfaceinvoke temp$16.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$17;
+        temp$18 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$18.<java.io.PrintStream: void println(java.lang.String)>("flow:20");
+
+     label5:
+        nop;
+        goto label58;
+
+     label6:
+        nop;
+        temp$19 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest string>;
+        temp$20 = interfaceinvoke temp$19.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$20;
+        temp$21 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$21.<java.io.PrintStream: void println(java.lang.String)>("flow:21");
+
+     label7:
+        nop;
+        goto label58;
+
+     label8:
+        nop;
+        temp$22 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number1_or_2>;
+        temp$23 = interfaceinvoke temp$22.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$23;
+        temp$24 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$24.<java.io.PrintStream: void println(java.lang.String)>("flow:22");
+
+     label9:
+        nop;
+        goto label58;
+
+     label10:
+        nop;
+        temp$25 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_2>;
+        temp$26 = interfaceinvoke temp$25.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$26;
+        temp$27 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$27.<java.io.PrintStream: void println(java.lang.String)>("flow:23");
+
+     label11:
+        nop;
+        goto label58;
+
+     label12:
+        nop;
+        temp$28 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_3>;
+        temp$29 = interfaceinvoke temp$28.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$29;
+        temp$30 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$30.<java.io.PrintStream: void println(java.lang.String)>("flow:24");
+
+     label13:
+        nop;
+        goto label58;
+
+     label14:
+        nop;
+        temp$31 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_4>;
+        temp$32 = interfaceinvoke temp$31.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$32;
+        temp$33 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$33.<java.io.PrintStream: void println(java.lang.String)>("flow:25");
+
+     label15:
+        nop;
+        goto label58;
+
+     label16:
+        nop;
+        temp$34 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_6>;
+        temp$35 = interfaceinvoke temp$34.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$35;
+        temp$36 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$36.<java.io.PrintStream: void println(java.lang.String)>("flow:26");
+
+     label17:
+        nop;
+        goto label58;
+
+     label18:
+        nop;
+        temp$37 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_7>;
+        temp$38 = interfaceinvoke temp$37.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$38;
+        temp$39 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$39.<java.io.PrintStream: void println(java.lang.String)>("flow:27");
+
+     label19:
+        nop;
+        goto label58;
+
+     label20:
+        nop;
+        temp$40 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_8>;
+        temp$41 = interfaceinvoke temp$40.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$41;
+        temp$42 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$42.<java.io.PrintStream: void println(java.lang.String)>("flow:28");
+
+     label21:
+        nop;
+        goto label58;
+
+     label22:
+        nop;
+        temp$43 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number0_9>;
+        temp$44 = interfaceinvoke temp$43.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$44;
+        temp$45 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$45.<java.io.PrintStream: void println(java.lang.String)>("flow:29");
+
+     label23:
+        nop;
+        goto label58;
+
+     label24:
+        nop;
+        temp$46 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number1_6>;
+        temp$47 = interfaceinvoke temp$46.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$47;
+        temp$48 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$48.<java.io.PrintStream: void println(java.lang.String)>("flow:30");
+
+     label25:
+        nop;
+        goto label58;
+
+     label26:
+        nop;
+        temp$49 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number1_7>;
+        temp$50 = interfaceinvoke temp$49.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$50;
+        temp$51 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$51.<java.io.PrintStream: void println(java.lang.String)>("flow:31");
+
+     label27:
+        nop;
+        goto label58;
+
+     label28:
+        nop;
+        temp$52 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number1_13>;
+        temp$53 = interfaceinvoke temp$52.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$53;
+        temp$54 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$54.<java.io.PrintStream: void println(java.lang.String)>("flow:32");
+
+     label29:
+        nop;
+        goto label58;
+
+     label30:
+        nop;
+        temp$55 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest lastyear>;
+        temp$56 = interfaceinvoke temp$55.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$56;
+        temp$57 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$57.<java.io.PrintStream: void println(java.lang.String)>("flow:33");
+
+     label31:
+        nop;
+        goto label58;
+
+     label32:
+        nop;
+        temp$58 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest linktofather>;
+        temp$59 = interfaceinvoke temp$58.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$59;
+        temp$60 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$60.<java.io.PrintStream: void println(java.lang.String)>("flow:34");
+
+     label33:
+        nop;
+        goto label58;
+
+     label34:
+        nop;
+        temp$61 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest number_0_1_2_9>;
+        temp$62 = interfaceinvoke temp$61.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$62;
+        temp$63 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$63.<java.io.PrintStream: void println(java.lang.String)>("flow:35");
+
+     label35:
+        nop;
+        goto label58;
+
+     label36:
+        nop;
+        temp$64 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest hoursworked>;
+        temp$65 = interfaceinvoke temp$64.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$65;
+        temp$66 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$66.<java.io.PrintStream: void println(java.lang.String)>("flow:36");
+
+     label37:
+        nop;
+        goto label58;
+
+     label38:
+        nop;
+        temp$67 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$67.<java.io.PrintStream: void println(java.lang.String)>("flow:37");
+        temp$68 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest ageCompare>;
+        temp$69 = interfaceinvoke temp$68.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$69;
+        if isValid == 0 goto label42;
+
+        goto label39;
+
+     label39:
+        nop;
+        temp$70 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$70.<java.io.PrintStream: void println(java.lang.String)>("flow:38");
+        temp$71 = "";
+        temp$72 = virtualinvoke userInput.<java.lang.String: java.lang.String trim()>();
+        temp$73 = virtualinvoke temp$71.<java.lang.String: boolean equals(java.lang.Object)>(temp$72);
+        if temp$73 == 0 goto label40;
+
+        goto label41;
+
+     label40:
+        nop;
+        temp$74 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$74.<java.io.PrintStream: void println(java.lang.String)>("flow:39");
+        temp$75 = new java.lang.StringBuffer;
+        specialinvoke temp$75.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$75.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("-a~");
+        virtualinvoke temp$75.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(userInput);
+        temp$76 = virtualinvoke temp$75.<java.lang.StringBuffer: java.lang.String toString()>();
+        userInput = temp$76;
+
+     label41:
+        nop;
+
+     label42:
+        nop;
+
+     label43:
+        nop;
+        goto label58;
+
+     label44:
+        nop;
+        temp$77 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$77.<java.io.PrintStream: void println(java.lang.String)>("flow:40");
+        temp$78 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest incomeCompare>;
+        temp$79 = interfaceinvoke temp$78.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$79;
+        if isValid == 0 goto label48;
+
+        goto label45;
+
+     label45:
+        nop;
+        temp$80 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$80.<java.io.PrintStream: void println(java.lang.String)>("flow:41");
+        temp$81 = "";
+        temp$82 = virtualinvoke userInput.<java.lang.String: java.lang.String trim()>();
+        temp$83 = virtualinvoke temp$81.<java.lang.String: boolean equals(java.lang.Object)>(temp$82);
+        if temp$83 == 0 goto label46;
+
+        goto label47;
+
+     label46:
+        nop;
+        temp$84 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$84.<java.io.PrintStream: void println(java.lang.String)>("flow:42");
+        temp$85 = new java.lang.StringBuffer;
+        specialinvoke temp$85.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$85.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("-i~");
+        virtualinvoke temp$85.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(userInput);
+        temp$86 = virtualinvoke temp$85.<java.lang.StringBuffer: java.lang.String toString()>();
+        userInput = temp$86;
+
+     label47:
+        nop;
+
+     label48:
+        nop;
+
+     label49:
+        nop;
+        goto label58;
+
+     label50:
+        nop;
+        temp$87 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$87.<java.io.PrintStream: void println(java.lang.String)>("flow:43");
+        temp$88 = this.<durbodax.commands.CommandPrompt: durbodax.commands.PromptTest marital_status>;
+        temp$89 = interfaceinvoke temp$88.<durbodax.commands.PromptTest: boolean validate(java.lang.String)>(userInput);
+        isValid = temp$89;
+        if isValid == 0 goto label54;
+
+        goto label51;
+
+     label51:
+        nop;
+        temp$90 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$90.<java.io.PrintStream: void println(java.lang.String)>("flow:44");
+        temp$91 = "";
+        temp$92 = virtualinvoke userInput.<java.lang.String: java.lang.String trim()>();
+        temp$93 = virtualinvoke temp$91.<java.lang.String: boolean equals(java.lang.Object)>(temp$92);
+        if temp$93 == 0 goto label52;
+
+        goto label53;
+
+     label52:
+        nop;
+        temp$94 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$94.<java.io.PrintStream: void println(java.lang.String)>("flow:45");
+        temp$95 = new java.lang.StringBuffer;
+        specialinvoke temp$95.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$95.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("-m~");
+        virtualinvoke temp$95.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(userInput);
+        temp$96 = virtualinvoke temp$95.<java.lang.StringBuffer: java.lang.String toString()>();
+        userInput = temp$96;
+
+     label53:
+        nop;
+
+     label54:
+        nop;
+
+     label55:
+        nop;
+        goto label58;
+
+     label56:
+        goto label58;
+
+     label57:
+        nop;
+        temp$97 = staticinvoke <durbodax.commands.CommandPrompt: int[] $SwitchMap$durbodax$commands$CommandPrompt$Test()>();
+        temp$98 = temp$97;
+        temp$99 = virtualinvoke test.<durbodax.commands.CommandPrompt$Test: int ordinal()>();
+        temp$100 = temp$99;
+        temp$101 = temp$98[temp$100];
+        nop;
+        tableswitch(temp$101)
+        {
+            case 1: goto label4;
+            case 2: goto label6;
+            case 3: goto label8;
+            case 4: goto label10;
+            case 5: goto label12;
+            case 6: goto label14;
+            case 7: goto label16;
+            case 8: goto label18;
+            case 9: goto label20;
+            case 10: goto label22;
+            case 11: goto label24;
+            case 12: goto label26;
+            case 13: goto label28;
+            case 14: goto label30;
+            case 15: goto label32;
+            case 16: goto label34;
+            case 17: goto label36;
+            case 18: goto label38;
+            case 19: goto label44;
+            case 20: goto label50;
+            default: goto label58;
+        };
+
+     label58:
+        nop;
+        temp$102 = 0;
+        firstTry = temp$102;
+        nop;
+        if isValid == 0 goto label1;
+
+        goto label59;
+
+     label59:
+        nop;
+        temp$103 = this.<durbodax.commands.CommandPrompt: int currentIndex>;
+        temp$104 = temp$103 + 2;
+        this.<durbodax.commands.CommandPrompt: int currentIndex> = temp$104;
+        temp$105 = virtualinvoke userInput.<java.lang.String: java.lang.String trim()>();
+
+     label60:
+        nop;
+        return temp$105;
+
+     label61:
+        nop;
+        e := @caughtexception;
+        temp$106 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$106.<java.io.PrintStream: void println(java.lang.String)>("flow:46");
+        temp$107 = <java.lang.System: java.io.PrintStream out>;
+        temp$108 = virtualinvoke e.<java.io.IOException: java.lang.StackTraceElement[] getStackTrace()>();
+        virtualinvoke temp$107.<java.io.PrintStream: void println(java.lang.Object)>(temp$108);
+        temp$109 = <java.lang.System: java.io.PrintStream out>;
+        temp$110 = virtualinvoke e.<java.io.IOException: java.lang.String getMessage()>();
+        virtualinvoke temp$109.<java.io.PrintStream: void println(java.lang.String)>(temp$110);
+        nop;
+        goto label62;
+
+     label62:
+        nop;
+        temp$111 = this.<durbodax.commands.CommandPrompt: int currentIndex>;
+        temp$112 = temp$111 + 2;
+        this.<durbodax.commands.CommandPrompt: int currentIndex> = temp$112;
+        temp$113 = " ";
+        return temp$113;
+
+        catch java.io.IOException from label0 to label5 with label61;
+        catch java.io.IOException from label6 to label7 with label61;
+        catch java.io.IOException from label8 to label9 with label61;
+        catch java.io.IOException from label10 to label11 with label61;
+        catch java.io.IOException from label12 to label13 with label61;
+        catch java.io.IOException from label14 to label15 with label61;
+        catch java.io.IOException from label16 to label17 with label61;
+        catch java.io.IOException from label18 to label19 with label61;
+        catch java.io.IOException from label20 to label21 with label61;
+        catch java.io.IOException from label22 to label23 with label61;
+        catch java.io.IOException from label24 to label25 with label61;
+        catch java.io.IOException from label26 to label27 with label61;
+        catch java.io.IOException from label28 to label29 with label61;
+        catch java.io.IOException from label30 to label31 with label61;
+        catch java.io.IOException from label32 to label33 with label61;
+        catch java.io.IOException from label34 to label35 with label61;
+        catch java.io.IOException from label36 to label37 with label61;
+        catch java.io.IOException from label38 to label43 with label61;
+        catch java.io.IOException from label44 to label49 with label61;
+        catch java.io.IOException from label50 to label55 with label61;
+        catch java.io.IOException from label56 to label60 with label61;
+    }
+
+    public static final java.lang.Class class$(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.lang.Class temp$0;
+        java.lang.ClassNotFoundException e;
+        java.lang.NoClassDefFoundError temp$1;
+
+        name := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(name);
+
+     label1:
+        nop;
+        return temp$0;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$1 = new java.lang.NoClassDefFoundError;
+        temp$2 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String getMessage()>();
+        specialinvoke temp$1.<java.lang.NoClassDefFoundError: void <init>(java.lang.String)>(temp$2);
+        throw temp$1;
+
+        catch java.lang.ClassNotFoundException from label0 to label1 with label2;
+    }
+}

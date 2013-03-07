@@ -1,0 +1,7 @@
+public interface  durbodax.daos.CustomerCompareDAO extends java.lang.Object
+{
+
+    public abstract void addCondition(java.lang.String);
+
+    public abstract java.util.Map runQuery();
+}

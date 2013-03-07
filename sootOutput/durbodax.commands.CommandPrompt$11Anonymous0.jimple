@@ -1,0 +1,46 @@
+public final class durbodax.commands.CommandPrompt$11Anonymous0 extends java.lang.Object implements durbodax.commands.PromptTest
+{
+    durbodax.commands.CommandPrompt this$0;
+
+    public final boolean validate(java.lang.String)
+    {
+        durbodax.commands.CommandPrompt$11Anonymous0 this;
+        java.lang.String input;
+        int temp$0;
+        boolean temp$1, temp$2;
+        java.lang.NumberFormatException e;
+
+        this := @this: durbodax.commands.CommandPrompt$11Anonymous0;
+        input := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(input);
+        temp$1 = 1;
+
+     label1:
+        nop;
+        return temp$1;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$2 = 0;
+        nop;
+        return temp$2;
+
+        catch java.lang.NumberFormatException from label0 to label1 with label2;
+    }
+
+    public void <init>(durbodax.commands.CommandPrompt)
+    {
+        durbodax.commands.CommandPrompt$11Anonymous0 this;
+        durbodax.commands.CommandPrompt temp$0;
+
+        this := @this: durbodax.commands.CommandPrompt$11Anonymous0;
+        temp$0 := @parameter0: durbodax.commands.CommandPrompt;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        this.<durbodax.commands.CommandPrompt$11Anonymous0: durbodax.commands.CommandPrompt this$0> = temp$0;
+        return;
+    }
+}

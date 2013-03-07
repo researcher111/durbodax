@@ -1,0 +1,39 @@
+public class durbodax.commands.customer.UpdateNumberFamilyMembers extends java.lang.Object implements durbodax.commands.Command
+{
+
+    public java.lang.Object execute(java.lang.String[])
+    {
+        durbodax.commands.customer.UpdateNumberFamilyMembers this;
+        java.lang.String[] input, temp$3;
+        java.io.PrintStream temp$0;
+        durbodax.customers.CustomerData temp$1;
+        durbodax.customers.Customer temp$2;
+        int temp$4, temp$6, temp$7;
+        java.lang.String temp$5;
+        java.lang.Object temp$8;
+
+        this := @this: durbodax.commands.customer.UpdateNumberFamilyMembers;
+        input := @parameter0: java.lang.String[];
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:246");
+        temp$1 = <durbodax.customers.CustomerData: durbodax.customers.CustomerData CUSTOMER>;
+        temp$2 = virtualinvoke temp$1.<durbodax.customers.CustomerData: durbodax.customers.Customer getCustomer()>();
+        temp$3 = input;
+        temp$4 = 1;
+        temp$5 = temp$3[temp$4];
+        temp$6 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$5);
+        virtualinvoke temp$2.<durbodax.customers.Customer: void setNumFamilyMembersInHouse(int)>(temp$6);
+        temp$7 = 0;
+        temp$8 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$7);
+        return temp$8;
+    }
+
+    public void <init>()
+    {
+        durbodax.commands.customer.UpdateNumberFamilyMembers this;
+
+        this := @this: durbodax.commands.customer.UpdateNumberFamilyMembers;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

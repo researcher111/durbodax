@@ -1,0 +1,7 @@
+public interface  durbodax.daos.CustomerIncomeDAO extends java.lang.Object
+{
+
+    public abstract int getTotalDistinctIncomes();
+
+    public abstract int getTotalIncomesBelowGivenIncome(int);
+}

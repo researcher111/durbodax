@@ -1,0 +1,79 @@
+public final class durbodax.commands.CommandPrompt$16Anonymous11 extends java.lang.Object implements durbodax.commands.PromptTest
+{
+    durbodax.commands.CommandPrompt this$0;
+
+    public final boolean validate(java.lang.String)
+    {
+        durbodax.commands.CommandPrompt$16Anonymous11 this;
+        java.lang.String input;
+        java.io.PrintStream temp$0, temp$2, temp$4, temp$6;
+        int value, temp$1;
+        boolean temp$3, temp$5, temp$7;
+        java.lang.NumberFormatException e;
+
+        this := @this: durbodax.commands.CommandPrompt$16Anonymous11;
+        input := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:88");
+        temp$1 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(input);
+        value = temp$1;
+        if 0 <= value goto label1;
+
+        goto label4;
+
+     label1:
+        nop;
+        if value <= 4 goto label2;
+
+        goto label4;
+
+        goto label2;
+
+     label2:
+        nop;
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>("flow:89");
+        temp$3 = 1;
+
+     label3:
+        nop;
+        return temp$3;
+
+     label4:
+        nop;
+        temp$4 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$4.<java.io.PrintStream: void println(java.lang.String)>("flow:90");
+        temp$5 = 0;
+
+     label5:
+        nop;
+        return temp$5;
+
+     label6:
+        nop;
+        e := @caughtexception;
+        temp$6 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$6.<java.io.PrintStream: void println(java.lang.String)>("flow:91");
+        temp$7 = 0;
+        nop;
+        return temp$7;
+
+        catch java.lang.NumberFormatException from label0 to label3 with label6;
+        catch java.lang.NumberFormatException from label4 to label5 with label6;
+    }
+
+    public void <init>(durbodax.commands.CommandPrompt)
+    {
+        durbodax.commands.CommandPrompt$16Anonymous11 this;
+        durbodax.commands.CommandPrompt temp$0;
+
+        this := @this: durbodax.commands.CommandPrompt$16Anonymous11;
+        temp$0 := @parameter0: durbodax.commands.CommandPrompt;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        this.<durbodax.commands.CommandPrompt$16Anonymous11: durbodax.commands.CommandPrompt this$0> = temp$0;
+        return;
+    }
+}

@@ -1,0 +1,126 @@
+DurboDax IPUMS
+
+DurboDax is the flagship product of DDD Inc. (Dim, Dimmest, and Dimmer).
+DDD has some 90,000 customers that have used DurboDax in the past.
+DDD maintains its customer data in a SQL database, which is called "ipums".
+The "main" table of ipums contains the bulk of the customer data.
+Each row represents one customer. Hence the main table contains some
+90,000 rows.
+
+Over the years, DurboDax has become harder and harder to maintain.
+DDD has now decided to re-implement DurboDax in Java. Your team is charged
+with implementing the following functions. In addition to implementing
+the functions, you are also expected to produce at least five JUnit
+test cases for each function you implement. Three of five test cases
+should each take one or more particular rows of the original database as 
+input and check that your implementation produces the correct output for 
+that input.
+
+Additional constraints for the implementation are that it must use the
+Apache Derby Sql database. It must be implemented in plain Java. I.e.,
+beyond the Derby distribution and the Jdk, you may not use any external 
+code, native code, stored database procedures, database triggers, etc.
+
+
+Functions to be implemented
+
+ComputeInlawTax returns 500 if the person is a parent in-law who lives
+in the home of one of his or her children. Hint: For this function it is
+sufficient to use the RELATE column of the main table.
+
+ComputeChildCredit returns zero, except the person is female and at least 
+16 years old. For such females, the result is a function of the number
+of her children.
+1-4 --> 400
+5   --> 500
+6   --> 550
+7   --> 700
+>=8 --> 750
+
+ComputeEmployedMomCredit returns zero, except the person is female. For 
+females who are employed it returns (ComputeChildCredit - ComputeInlawTax).
+	
+ComputeBplTravel returns zero, except the person was born outside the 
+continental US. If a person was born in Europe, this function returns 500,
+for Africa 1000, for South-America 300, and for Asia 888.
+
+ComputeIncomeTaxSingle returns the federal tax according to the total income 
+(INCTOT column) and the 2008 tax tables, if filing as single. This function 
+ignores credits, deductions, etc. It only takes the marital status of single 
+or married into account (MARST column). See
+http://taxes.about.com/od/2008taxes/qt/2008_tax_rates.htm
+
+ComputePromo returns the amount DDD should use as promotion on a given person.
+It is USD 100 if the person is in the top 10 percent of total incomes 
+(compared to the other ipums database entries), USD 50 if the person is in 
+the top 15 percent, and USD 10 if in the top 20 percent.
+
+In addition to the functions above, DDD wants you to implement the following 
+use cases.
+
+A customer calls. Our telephone operator asks the customer questions and enters 
+the customer data into the database. If it is an existing customer and the
+customer's birthplace is in Africa, the software may have to create a new country
+code for the customer's country and associate the customer with that new code.
+Otherwise, the software should use existing country codes.
+
+The marketing team needs a function to quickly identify the top X and bottom X
+people of different groups. For example, "give me the top 10 list of people
+according to their income". X is a variable, as well as the criteria used
+for searching. The criteria can be any combination of age, income, birth place,
+and marital status.
+
+The marketing department also needs a way to rank different groups by size.
+The groups are all possible combinations of age, income, birth place,
+and marital status.
+
+We need some functionality to compare groups by age. I.e., we need to compare
+if our male and female customers are distributed similarly over age. An 
+extreme example would be if 90 percent of our male customers are over 80 years 
+old, but only 5 percent of our female customers are of that age. The
+software should allow comparing male/female over age, where the clustering
+can be chosen by the user. Under/over 80 years is only one way to cluster.
+
+Similarly, we need to compare male/female by income and male/female by both
+income and age. Finally, we should also compare male/female by income, age,
+and marital status.
+
+	
+Quick start guide for the ipums database.
+	
+Set the Derby environment variable. For example:
+  set DERBY_HOME=C:\bin\jdk-1.6.0\db
+
+Run the derby ij tool where you want to store the ipums database. For example:
+  cd \java\ipums
+  java -jar %DERBY_HOME%\lib\derbyrun.jar ij
+
+Download the following files and unzip them.
+	http://ranger.uta.edu/~csallner/ipums/ipums-schema-id.zip
+	http://ranger.uta.edu/~csallner/ipums/ipums-data99-id.zip
+	 
+Issue the following commands to create and populate the ipums database.
+  connect 'jdbc:derby:ipums;create=true';
+  run 'ipums-schema-id.sql';
+	run 'ipums-data99-id.sql';
+	
+Issue a few simple commands to start playing around with the database.
+	select * from sex;
+	select * from occ1950 where ID=773;
+	select * from main where OCC1950=773 and SEX=2 and (AGE between 20 and 25);
+
+
+Disclaimer
+	
+DurboDax, DDD, and all of the described functions are fictional.
+Only ipums is real, check the references for details.	
+
+	
+References
+
+ipums home page
+  http://kdd.ics.uci.edu/databases/ipums/ipums.html
+Definitions of the different columns
+  http://usa.ipums.org/usa-action/variableGroups.do
+Example column definition
+  http://usa.ipums.org/usa-action/variableDescription.do?mnemonic=INCTOT

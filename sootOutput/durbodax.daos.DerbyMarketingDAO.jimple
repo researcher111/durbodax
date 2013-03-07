@@ -1,0 +1,442 @@
+public class durbodax.daos.DerbyMarketingDAO extends java.lang.Object implements durbodax.daos.MarketingDAO
+{
+    private java.sql.Connection _conn;
+
+    private final durbodax.dtos.MarketingResponseDTO fillMarketingStats(java.sql.ResultSet)
+    {
+        durbodax.daos.DerbyMarketingDAO this;
+        java.sql.ResultSet rsIn;
+        durbodax.dtos.MarketingResponseDTO m, temp$0;
+        int temp$1, temp$4, temp$5, temp$6, temp$8;
+        java.lang.String temp$2, temp$3, temp$7, temp$11, temp$12;
+        java.sql.SQLException e;
+        java.io.PrintStream temp$9;
+        java.lang.StringBuffer temp$10;
+
+        this := @this: durbodax.daos.DerbyMarketingDAO;
+        rsIn := @parameter0: java.sql.ResultSet;
+        temp$0 = new durbodax.dtos.MarketingResponseDTO;
+        specialinvoke temp$0.<durbodax.dtos.MarketingResponseDTO: void <init>()>();
+        m = temp$0;
+
+     label0:
+        nop;
+        temp$1 = interfaceinvoke rsIn.<java.sql.ResultSet: int getInt(int)>(4);
+        virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: void setAge(int)>(temp$1);
+        temp$2 = interfaceinvoke rsIn.<java.sql.ResultSet: java.lang.String getString(int)>(5);
+        virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: void setAgeDesc(java.lang.String)>(temp$2);
+        temp$3 = interfaceinvoke rsIn.<java.sql.ResultSet: java.lang.String getString(int)>(6);
+        virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: void setBirthPlace(java.lang.String)>(temp$3);
+        temp$4 = interfaceinvoke rsIn.<java.sql.ResultSet: int getInt(int)>(8);
+        virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: void setCount(int)>(temp$4);
+        temp$5 = interfaceinvoke rsIn.<java.sql.ResultSet: int getInt(int)>(1);
+        virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: void setId(int)>(temp$5);
+        temp$6 = interfaceinvoke rsIn.<java.sql.ResultSet: int getInt(int)>(2);
+        virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: void setIncome(int)>(temp$6);
+        temp$7 = interfaceinvoke rsIn.<java.sql.ResultSet: java.lang.String getString(int)>(3);
+        virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: void setIncomeDesc(java.lang.String)>(temp$7);
+        temp$8 = interfaceinvoke rsIn.<java.sql.ResultSet: int getInt(int)>(7);
+        virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: void setMaritalStatus(int)>(temp$8);
+        goto label2;
+
+     label1:
+        nop;
+        e := @caughtexception;
+        temp$9 = <java.lang.System: java.io.PrintStream err>;
+        temp$10 = new java.lang.StringBuffer;
+        specialinvoke temp$10.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$10.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("fillMarketingStats Failed: ");
+        temp$11 = virtualinvoke e.<java.sql.SQLException: java.lang.String toString()>();
+        virtualinvoke temp$10.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$11);
+        temp$12 = virtualinvoke temp$10.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$9.<java.io.PrintStream: void println(java.lang.String)>(temp$12);
+        nop;
+        goto label2;
+
+     label2:
+        nop;
+        return m;
+
+        catch java.sql.SQLException from label0 to label1 with label1;
+    }
+
+    public java.util.ArrayList selectMarketingStatsTopBottom(durbodax.dtos.MarketingRequestDTO)
+    {
+        durbodax.daos.DerbyMarketingDAO this;
+        durbodax.dtos.MarketingRequestDTO mReqIn;
+        java.util.ArrayList mArray, temp$0;
+        java.sql.ResultSet rs, temp$33;
+        java.sql.Statement s, temp$32;
+        java.sql.Connection conn, temp$1;
+        durbodax.dtos.MarketingResponseDTO m, temp$2, temp$35;
+        java.lang.String selectQuery, temp$5, temp$7, temp$9, temp$11, temp$12, temp$16, temp$20, temp$21, temp$22, temp$26, temp$27, temp$30, temp$31, temp$39, temp$40;
+        java.lang.StringBuffer temp$3, temp$14, temp$18, temp$24, temp$28, temp$38;
+        int temp$4, temp$6, temp$8, temp$10, temp$13, temp$15, temp$17, temp$19, temp$25, temp$29;
+        boolean temp$23, temp$34, temp$36;
+        java.sql.SQLException e;
+        java.io.PrintStream temp$37;
+
+        this := @this: durbodax.daos.DerbyMarketingDAO;
+        mReqIn := @parameter0: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = new java.util.ArrayList;
+        specialinvoke temp$0.<java.util.ArrayList: void <init>()>();
+        mArray = temp$0;
+        temp$1 = staticinvoke <durbodax.daos.DerbyDAOFactory: java.sql.Connection getConnection()>();
+        conn = temp$1;
+        temp$2 = new durbodax.dtos.MarketingResponseDTO;
+        specialinvoke temp$2.<durbodax.dtos.MarketingResponseDTO: void <init>()>();
+        m = temp$2;
+        temp$3 = new java.lang.StringBuffer;
+        specialinvoke temp$3.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("SELECT MAIN.ID, FTOTINC, \' \', AGE, \' \', BPL.DESCRIPTION, MARST, 1 FROM MAIN INNER JOIN MARST on MAIN.MARST = MARST.ID INNER JOIN BPL ON MAIN.BPL = BPL.ID WHERE AGE BETWEEN ");
+        temp$4 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getAgeFrom()>();
+        temp$5 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$4);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$5);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND ");
+        temp$6 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getAgeTo()>();
+        temp$7 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$6);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$7);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND ");
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("FTOTINC BETWEEN ");
+        temp$8 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getIncomeFrom()>();
+        temp$9 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$8);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$9);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND ");
+        temp$10 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getIncomeTo()>();
+        temp$11 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$10);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$11);
+        temp$12 = virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$12;
+        temp$13 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getBirthPlace()>();
+        if temp$13 != 0 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$14 = new java.lang.StringBuffer;
+        specialinvoke temp$14.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(selectQuery);
+        virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND MAIN.BPL = ");
+        temp$15 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getBirthPlace()>();
+        virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(temp$15);
+        temp$16 = virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$16;
+
+     label1:
+        nop;
+        temp$17 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getMaritalStatus()>();
+        if temp$17 != 0 goto label2;
+
+        goto label3;
+
+     label2:
+        nop;
+        temp$18 = new java.lang.StringBuffer;
+        specialinvoke temp$18.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(selectQuery);
+        virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND MARST = ");
+        temp$19 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getMaritalStatus()>();
+        temp$20 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$19);
+        virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$20);
+        temp$21 = virtualinvoke temp$18.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$21;
+
+     label3:
+        nop;
+        temp$22 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: java.lang.String getTopOrBottom()>();
+        temp$23 = virtualinvoke temp$22.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("bottom");
+        if temp$23 == 0 goto label5;
+
+        goto label4;
+
+     label4:
+        nop;
+        temp$24 = new java.lang.StringBuffer;
+        specialinvoke temp$24.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(selectQuery);
+        virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" ORDER BY FTOTINC FETCH FIRST ");
+        temp$25 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getGroupSize()>();
+        temp$26 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$25);
+        virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$26);
+        virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" ROWS ONLY");
+        temp$27 = virtualinvoke temp$24.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$27;
+        goto label6;
+
+     label5:
+        nop;
+        temp$28 = new java.lang.StringBuffer;
+        specialinvoke temp$28.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$28.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(selectQuery);
+        virtualinvoke temp$28.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" ORDER BY FTOTINC DESC FETCH FIRST ");
+        temp$29 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getGroupSize()>();
+        temp$30 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$29);
+        virtualinvoke temp$28.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$30);
+        virtualinvoke temp$28.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" ROWS ONLY");
+        temp$31 = virtualinvoke temp$28.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$31;
+
+     label6:
+        nop;
+
+     label7:
+        nop;
+        temp$32 = interfaceinvoke conn.<java.sql.Connection: java.sql.Statement createStatement()>();
+        s = temp$32;
+        temp$33 = interfaceinvoke s.<java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>(selectQuery);
+        rs = temp$33;
+
+     label8:
+        nop;
+        temp$34 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>();
+        if temp$34 == 0 goto label10;
+
+        goto label9;
+
+     label9:
+        nop;
+        temp$35 = virtualinvoke this.<durbodax.daos.DerbyMarketingDAO: durbodax.dtos.MarketingResponseDTO fillMarketingStats(java.sql.ResultSet)>(rs);
+        m = temp$35;
+        temp$36 = virtualinvoke mArray.<java.util.ArrayList: boolean add(java.lang.Object)>(m);
+        goto label8;
+
+     label10:
+        nop;
+        goto label12;
+
+     label11:
+        nop;
+        e := @caughtexception;
+        temp$37 = <java.lang.System: java.io.PrintStream err>;
+        temp$38 = new java.lang.StringBuffer;
+        specialinvoke temp$38.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$38.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Select Failed: ");
+        temp$39 = virtualinvoke e.<java.sql.SQLException: java.lang.String toString()>();
+        virtualinvoke temp$38.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$39);
+        temp$40 = virtualinvoke temp$38.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$37.<java.io.PrintStream: void println(java.lang.String)>(temp$40);
+        nop;
+        goto label12;
+
+     label12:
+        nop;
+        return mArray;
+
+        catch java.sql.SQLException from label7 to label11 with label11;
+    }
+
+    public java.util.ArrayList selectMarketingStatsByGroup(durbodax.dtos.MarketingRequestDTO)
+    {
+        durbodax.daos.DerbyMarketingDAO this;
+        durbodax.dtos.MarketingRequestDTO mReqIn;
+        java.util.ArrayList mArray, temp$0;
+        java.sql.ResultSet rs, temp$47;
+        java.sql.Statement s, temp$46;
+        java.sql.Connection conn, temp$1;
+        durbodax.dtos.MarketingResponseDTO m, temp$2, temp$49;
+        java.lang.String incomeDesc, temp$5, temp$7, temp$8, ageDesc, temp$11, temp$13, temp$14, selectQuery, temp$17, temp$19, temp$21, temp$23, temp$24, temp$28, temp$32, temp$33, temp$35, temp$36, temp$40, temp$41, temp$44, temp$45, temp$53, temp$54;
+        java.lang.StringBuffer temp$3, temp$9, temp$15, temp$26, temp$30, temp$34, temp$38, temp$42, temp$52;
+        int temp$4, temp$6, temp$10, temp$12, temp$16, temp$18, temp$20, temp$22, temp$25, temp$27, temp$29, temp$31, temp$39, temp$43;
+        boolean temp$37, temp$48, temp$50;
+        java.sql.SQLException e;
+        java.io.PrintStream temp$51;
+
+        this := @this: durbodax.daos.DerbyMarketingDAO;
+        mReqIn := @parameter0: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = new java.util.ArrayList;
+        specialinvoke temp$0.<java.util.ArrayList: void <init>()>();
+        mArray = temp$0;
+        temp$1 = staticinvoke <durbodax.daos.DerbyDAOFactory: java.sql.Connection getConnection()>();
+        conn = temp$1;
+        temp$2 = new durbodax.dtos.MarketingResponseDTO;
+        specialinvoke temp$2.<durbodax.dtos.MarketingResponseDTO: void <init>()>();
+        m = temp$2;
+        temp$3 = new java.lang.StringBuffer;
+        specialinvoke temp$3.<java.lang.StringBuffer: void <init>()>();
+        temp$4 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getIncomeFrom()>();
+        temp$5 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$4);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$5);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("-");
+        temp$6 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getIncomeTo()>();
+        temp$7 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$6);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$7);
+        temp$8 = virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.String toString()>();
+        incomeDesc = temp$8;
+        temp$9 = new java.lang.StringBuffer;
+        specialinvoke temp$9.<java.lang.StringBuffer: void <init>()>();
+        temp$10 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getAgeFrom()>();
+        temp$11 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$10);
+        virtualinvoke temp$9.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$11);
+        virtualinvoke temp$9.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("-");
+        temp$12 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getAgeTo()>();
+        temp$13 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$12);
+        virtualinvoke temp$9.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$13);
+        temp$14 = virtualinvoke temp$9.<java.lang.StringBuffer: java.lang.String toString()>();
+        ageDesc = temp$14;
+        temp$15 = new java.lang.StringBuffer;
+        specialinvoke temp$15.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("SELECT 1, 0, \'");
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(incomeDesc);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("\',0,\'");
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(ageDesc);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("\', BPL.DESCRIPTION, MARST, COUNT(*) ");
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("FROM MAIN ");
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("INNER JOIN MARST on MAIN.MARST = MARST.ID ");
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("INNER JOIN BPL ON MAIN.BPL = BPL.ID ");
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("WHERE AGE BETWEEN ");
+        temp$16 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getAgeFrom()>();
+        temp$17 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$16);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$17);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND ");
+        temp$18 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getAgeTo()>();
+        temp$19 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$18);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$19);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND ");
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("FTOTINC BETWEEN ");
+        temp$20 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getIncomeFrom()>();
+        temp$21 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$20);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$21);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND ");
+        temp$22 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getIncomeTo()>();
+        temp$23 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$22);
+        virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$23);
+        temp$24 = virtualinvoke temp$15.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$24;
+        temp$25 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getBirthPlace()>();
+        if temp$25 != 0 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$26 = new java.lang.StringBuffer;
+        specialinvoke temp$26.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$26.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(selectQuery);
+        virtualinvoke temp$26.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND MAIN.BPL = ");
+        temp$27 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getBirthPlace()>();
+        virtualinvoke temp$26.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(temp$27);
+        temp$28 = virtualinvoke temp$26.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$28;
+
+     label1:
+        nop;
+        temp$29 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getMaritalStatus()>();
+        if temp$29 != 0 goto label2;
+
+        goto label3;
+
+     label2:
+        nop;
+        temp$30 = new java.lang.StringBuffer;
+        specialinvoke temp$30.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$30.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(selectQuery);
+        virtualinvoke temp$30.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" AND MARST = ");
+        temp$31 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getMaritalStatus()>();
+        temp$32 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$31);
+        virtualinvoke temp$30.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$32);
+        temp$33 = virtualinvoke temp$30.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$33;
+
+     label3:
+        nop;
+        temp$34 = new java.lang.StringBuffer;
+        specialinvoke temp$34.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$34.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(selectQuery);
+        virtualinvoke temp$34.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" GROUP BY MARST, BPL.DESCRIPTION");
+        temp$35 = virtualinvoke temp$34.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$35;
+        temp$36 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: java.lang.String getTopOrBottom()>();
+        temp$37 = virtualinvoke temp$36.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("bottom");
+        if temp$37 == 0 goto label5;
+
+        goto label4;
+
+     label4:
+        nop;
+        temp$38 = new java.lang.StringBuffer;
+        specialinvoke temp$38.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$38.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(selectQuery);
+        virtualinvoke temp$38.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" ORDER BY COUNT(*) FETCH FIRST ");
+        temp$39 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getGroupSize()>();
+        temp$40 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$39);
+        virtualinvoke temp$38.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$40);
+        virtualinvoke temp$38.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" ROWS ONLY");
+        temp$41 = virtualinvoke temp$38.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$41;
+        goto label6;
+
+     label5:
+        nop;
+        temp$42 = new java.lang.StringBuffer;
+        specialinvoke temp$42.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$42.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(selectQuery);
+        virtualinvoke temp$42.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" ORDER BY COUNT(*) DESC FETCH FIRST ");
+        temp$43 = virtualinvoke mReqIn.<durbodax.dtos.MarketingRequestDTO: int getGroupSize()>();
+        temp$44 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$43);
+        virtualinvoke temp$42.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$44);
+        virtualinvoke temp$42.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" ROWS ONLY");
+        temp$45 = virtualinvoke temp$42.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$45;
+
+     label6:
+        nop;
+
+     label7:
+        nop;
+        temp$46 = interfaceinvoke conn.<java.sql.Connection: java.sql.Statement createStatement()>();
+        s = temp$46;
+        temp$47 = interfaceinvoke s.<java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>(selectQuery);
+        rs = temp$47;
+
+     label8:
+        nop;
+        temp$48 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>();
+        if temp$48 == 0 goto label10;
+
+        goto label9;
+
+     label9:
+        nop;
+        temp$49 = virtualinvoke this.<durbodax.daos.DerbyMarketingDAO: durbodax.dtos.MarketingResponseDTO fillMarketingStats(java.sql.ResultSet)>(rs);
+        m = temp$49;
+        temp$50 = virtualinvoke mArray.<java.util.ArrayList: boolean add(java.lang.Object)>(m);
+        goto label8;
+
+     label10:
+        nop;
+        goto label12;
+
+     label11:
+        nop;
+        e := @caughtexception;
+        temp$51 = <java.lang.System: java.io.PrintStream err>;
+        temp$52 = new java.lang.StringBuffer;
+        specialinvoke temp$52.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$52.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Select Failed: ");
+        temp$53 = virtualinvoke e.<java.sql.SQLException: java.lang.String toString()>();
+        virtualinvoke temp$52.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$53);
+        temp$54 = virtualinvoke temp$52.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$51.<java.io.PrintStream: void println(java.lang.String)>(temp$54);
+        nop;
+        goto label12;
+
+     label12:
+        nop;
+        return mArray;
+
+        catch java.sql.SQLException from label7 to label11 with label11;
+    }
+
+    public void <init>()
+    {
+        durbodax.daos.DerbyMarketingDAO this;
+        java.sql.Connection temp$0;
+
+        this := @this: durbodax.daos.DerbyMarketingDAO;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = null;
+        this.<durbodax.daos.DerbyMarketingDAO: java.sql.Connection _conn> = temp$0;
+        return;
+    }
+}

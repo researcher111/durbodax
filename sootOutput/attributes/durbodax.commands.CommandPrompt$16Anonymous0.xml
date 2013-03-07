@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="5" eline="5" spos="0" epos="0"/>
+<text info="[input]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="125" eline="125" spos="17" epos="40"/>
+<jmpPos sline="18" eline="18" spos="0" epos="0"/>
+<link label="input has reaching def: input := @parameter0: java.lang.String" jmpLink="14" srcLink="123" clssNm="durbodax.commands.CommandPrompt$16Anonymous0" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="126" eline="126" spos="17" epos="28"/>
+<jmpPos sline="23" eline="23" spos="0" epos="0"/>
+<link label="temp$1 has reaching def: temp$1 = 1" jmpLink="19" srcLink="125" clssNm="durbodax.commands.CommandPrompt$16Anonymous0" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="129" eline="129" spos="17" epos="29"/>
+<jmpPos sline="30" eline="30" spos="0" epos="0"/>
+<link label="temp$2 has reaching def: temp$2 = 0" jmpLink="28" srcLink="128" clssNm="durbodax.commands.CommandPrompt$16Anonymous0" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="35" eline="35" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="122" eline="122" spos="0" epos="0"/>
+<jmpPos sline="42" eline="42" spos="0" epos="0"/>
+<link label="this has reaching def: this := @this: durbodax.commands.CommandPrompt$16Anonymous0" jmpLink="40" srcLink="122" clssNm="durbodax.commands.CommandPrompt$16Anonymous0" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="122" eline="122" spos="0" epos="0"/>
+<jmpPos sline="43" eline="43" spos="0" epos="0"/>
+<link label="this has reaching def: this := @this: durbodax.commands.CommandPrompt$16Anonymous0" jmpLink="40" srcLink="122" clssNm="durbodax.commands.CommandPrompt$16Anonymous0" aType="Reaching Defs"/>
+<link label="temp$0 has reaching def: temp$0 := @parameter0: durbodax.commands.CommandPrompt" jmpLink="41" srcLink="122" clssNm="durbodax.commands.CommandPrompt$16Anonymous0" aType="Reaching Defs"/>
+</attribute>
+</attributes>

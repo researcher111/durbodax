@@ -1,0 +1,270 @@
+public static final enum class durbodax.commands.CommandPrompt$Test extends java.lang.Enum
+{
+    public static final enum durbodax.commands.CommandPrompt$Test Number;
+    public static final enum durbodax.commands.CommandPrompt$Test String;
+    public static final enum durbodax.commands.CommandPrompt$Test Number1_or_2;
+    public static final enum durbodax.commands.CommandPrompt$Test Number0_2;
+    public static final enum durbodax.commands.CommandPrompt$Test Number0_3;
+    public static final enum durbodax.commands.CommandPrompt$Test Number0_4;
+    public static final enum durbodax.commands.CommandPrompt$Test Number0_6;
+    public static final enum durbodax.commands.CommandPrompt$Test Number0_7;
+    public static final enum durbodax.commands.CommandPrompt$Test Number0_8;
+    public static final enum durbodax.commands.CommandPrompt$Test Number0_9;
+    public static final enum durbodax.commands.CommandPrompt$Test Number1_6;
+    public static final enum durbodax.commands.CommandPrompt$Test Number1_7;
+    public static final enum durbodax.commands.CommandPrompt$Test Number1_13;
+    public static final enum durbodax.commands.CommandPrompt$Test Link_to_Father;
+    public static final enum durbodax.commands.CommandPrompt$Test Number_0_1_2_9;
+    public static final enum durbodax.commands.CommandPrompt$Test Hours_Worked;
+    public static final enum durbodax.commands.CommandPrompt$Test Last_Year;
+    public static final enum durbodax.commands.CommandPrompt$Test Age_Compare;
+    public static final enum durbodax.commands.CommandPrompt$Test Income_Compare;
+    public static final enum durbodax.commands.CommandPrompt$Test MaritalStatus_Compare;
+    private static final java.util.Map lookup;
+    private java.lang.String testType;
+    private static final durbodax.commands.CommandPrompt$Test[] $VALUES;
+
+    static void <clinit>()
+    {
+        durbodax.commands.CommandPrompt$Test temp$0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, temp$11, temp$12, temp$13, temp$14, temp$15, temp$16, temp$17, temp$18, temp$19, test, temp$33, temp$35, temp$36, temp$37, temp$38, temp$39, temp$40, temp$41, temp$42, temp$43, temp$44, temp$45, temp$46, temp$47, temp$48, temp$49, temp$50, temp$51, temp$52, temp$53, temp$54;
+        java.util.HashMap temp$20;
+        java.lang.Class temp$21, temp$22, temp$23;
+        java.util.EnumSet temp$24, temp$25;
+        java.util.Iterator temp$26;
+        boolean temp$27;
+        java.lang.Object temp$28, temp$32;
+        java.io.PrintStream temp$29;
+        java.util.Map temp$30;
+        java.lang.String temp$31;
+        durbodax.commands.CommandPrompt$Test[] temp$34;
+
+        temp$0 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$0.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number", 0, "number");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number> = temp$0;
+        temp$1 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$1.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("String", 1, "string");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test String> = temp$1;
+        temp$2 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$2.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number1_or_2", 2, "number1_or_2");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_or_2> = temp$2;
+        temp$3 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$3.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number0_2", 3, "number0_2");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_2> = temp$3;
+        temp$4 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$4.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number0_3", 4, "number0_3");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_3> = temp$4;
+        temp$5 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$5.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number0_4", 5, "number0_4");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_4> = temp$5;
+        temp$6 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$6.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number0_6", 6, "number0_6");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_6> = temp$6;
+        temp$7 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$7.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number0_7", 7, "number0_7");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_7> = temp$7;
+        temp$8 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$8.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number0_8", 8, "number0_8");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_8> = temp$8;
+        temp$9 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$9.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number0_9", 9, "number0_9");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_9> = temp$9;
+        temp$10 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$10.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number1_6", 10, "number1_6");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_6> = temp$10;
+        temp$11 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$11.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number1_7", 11, "number1_7");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_7> = temp$11;
+        temp$12 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$12.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number1_13", 12, "number1_13");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_13> = temp$12;
+        temp$13 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$13.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Link_to_Father", 13, "linktofather");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Link_to_Father> = temp$13;
+        temp$14 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$14.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Number_0_1_2_9", 14, "number_0_1_2_9");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number_0_1_2_9> = temp$14;
+        temp$15 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$15.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Hours_Worked", 15, "hoursworked");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Hours_Worked> = temp$15;
+        temp$16 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$16.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Last_Year", 16, "lastyear");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Last_Year> = temp$16;
+        temp$17 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$17.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Age_Compare", 17, "ageCompare");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Age_Compare> = temp$17;
+        temp$18 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$18.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("Income_Compare", 18, "incomeCompare");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Income_Compare> = temp$18;
+        temp$19 = new durbodax.commands.CommandPrompt$Test;
+        specialinvoke temp$19.<durbodax.commands.CommandPrompt$Test: void <init>(java.lang.String,int,java.lang.String)>("MaritalStatus_Compare", 19, "marital_status");
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test MaritalStatus_Compare> = temp$19;
+        temp$20 = new java.util.HashMap;
+        specialinvoke temp$20.<java.util.HashMap: void <init>()>();
+        <durbodax.commands.CommandPrompt$Test: java.util.Map lookup> = temp$20;
+        temp$22 = <durbodax.commands.CommandPrompt: java.lang.Class class$durbodax$commands$CommandPrompt$Test>;
+        if temp$22 != null goto label0;
+
+        temp$23 = staticinvoke <durbodax.commands.CommandPrompt: java.lang.Class class$(java.lang.String)>("durbodax.commands.CommandPrompt$Test");
+        <durbodax.commands.CommandPrompt: java.lang.Class class$durbodax$commands$CommandPrompt$Test> = temp$23;
+        temp$21 = temp$23;
+        goto label1;
+
+     label0:
+        nop;
+        temp$21 = <durbodax.commands.CommandPrompt: java.lang.Class class$durbodax$commands$CommandPrompt$Test>;
+
+     label1:
+        nop;
+        temp$24 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(temp$21);
+        temp$25 = (java.util.EnumSet) temp$24;
+        temp$26 = interfaceinvoke temp$25.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label2:
+        nop;
+        temp$27 = interfaceinvoke temp$26.<java.util.Iterator: boolean hasNext()>();
+        if temp$27 == 0 goto label3;
+
+        temp$28 = interfaceinvoke temp$26.<java.util.Iterator: java.lang.Object next()>();
+        test = (durbodax.commands.CommandPrompt$Test) temp$28;
+        temp$29 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$29.<java.io.PrintStream: void println(java.lang.String)>("flow:112");
+        temp$30 = <durbodax.commands.CommandPrompt$Test: java.util.Map lookup>;
+        temp$31 = virtualinvoke test.<durbodax.commands.CommandPrompt$Test: java.lang.String getTestType()>();
+        temp$32 = interfaceinvoke temp$30.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$31, test);
+        temp$33 = (durbodax.commands.CommandPrompt$Test) temp$32;
+        nop;
+        goto label2;
+
+     label3:
+        nop;
+        temp$34 = newarray (durbodax.commands.CommandPrompt$Test)[20];
+        temp$35 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number>;
+        temp$34[0] = temp$35;
+        temp$36 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test String>;
+        temp$34[1] = temp$36;
+        temp$37 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_or_2>;
+        temp$34[2] = temp$37;
+        temp$38 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_2>;
+        temp$34[3] = temp$38;
+        temp$39 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_3>;
+        temp$34[4] = temp$39;
+        temp$40 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_4>;
+        temp$34[5] = temp$40;
+        temp$41 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_6>;
+        temp$34[6] = temp$41;
+        temp$42 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_7>;
+        temp$34[7] = temp$42;
+        temp$43 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_8>;
+        temp$34[8] = temp$43;
+        temp$44 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number0_9>;
+        temp$34[9] = temp$44;
+        temp$45 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_6>;
+        temp$34[10] = temp$45;
+        temp$46 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_7>;
+        temp$34[11] = temp$46;
+        temp$47 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number1_13>;
+        temp$34[12] = temp$47;
+        temp$48 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Link_to_Father>;
+        temp$34[13] = temp$48;
+        temp$49 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Number_0_1_2_9>;
+        temp$34[14] = temp$49;
+        temp$50 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Hours_Worked>;
+        temp$34[15] = temp$50;
+        temp$51 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Last_Year>;
+        temp$34[16] = temp$51;
+        temp$52 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Age_Compare>;
+        temp$34[17] = temp$52;
+        temp$53 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test Income_Compare>;
+        temp$34[18] = temp$53;
+        temp$54 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test MaritalStatus_Compare>;
+        temp$34[19] = temp$54;
+        <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test[] $VALUES> = temp$34;
+        return;
+    }
+
+    private void <init>(java.lang.String, int, java.lang.String)
+    {
+        durbodax.commands.CommandPrompt$Test this;
+        java.lang.String @p0, testType;
+        int @p1;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.commands.CommandPrompt$Test;
+        @p0 := @parameter0: java.lang.String;
+        @p1 := @parameter1: int;
+        testType := @parameter2: java.lang.String;
+        specialinvoke this.<java.lang.Enum: void <init>(java.lang.String,int)>(@p0, @p1);
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:114");
+        this.<durbodax.commands.CommandPrompt$Test: java.lang.String testType> = testType;
+        return;
+    }
+
+    public final java.lang.String getTestType()
+    {
+        durbodax.commands.CommandPrompt$Test this;
+        java.io.PrintStream temp$0;
+        java.lang.String temp$1;
+
+        this := @this: durbodax.commands.CommandPrompt$Test;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:115");
+        temp$1 = this.<durbodax.commands.CommandPrompt$Test: java.lang.String testType>;
+        return temp$1;
+    }
+
+    public static final durbodax.commands.CommandPrompt$Test getTest(java.lang.String)
+    {
+        java.lang.String testType;
+        java.io.PrintStream temp$0;
+        java.util.Map temp$1;
+        java.lang.Object temp$2;
+        durbodax.commands.CommandPrompt$Test temp$3;
+
+        testType := @parameter0: java.lang.String;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:116");
+        temp$1 = <durbodax.commands.CommandPrompt$Test: java.util.Map lookup>;
+        temp$2 = interfaceinvoke temp$1.<java.util.Map: java.lang.Object get(java.lang.Object)>(testType);
+        temp$3 = (durbodax.commands.CommandPrompt$Test) temp$2;
+        return temp$3;
+    }
+
+    public static final durbodax.commands.CommandPrompt$Test[] values()
+    {
+        durbodax.commands.CommandPrompt$Test[] temp$0, temp$2;
+        java.lang.Object temp$1;
+
+        temp$0 = <durbodax.commands.CommandPrompt$Test: durbodax.commands.CommandPrompt$Test[] $VALUES>;
+        temp$1 = virtualinvoke temp$0.<java.lang.Object: java.lang.Object clone()>();
+        temp$2 = (durbodax.commands.CommandPrompt$Test[]) temp$1;
+        return temp$2;
+    }
+
+    public static final durbodax.commands.CommandPrompt$Test valueOf(java.lang.String)
+    {
+        java.lang.String s;
+        java.lang.Class temp$0, temp$1, temp$2;
+        java.lang.Enum temp$3;
+        durbodax.commands.CommandPrompt$Test temp$4;
+
+        s := @parameter0: java.lang.String;
+        temp$1 = <durbodax.commands.CommandPrompt: java.lang.Class class$durbodax$commands$CommandPrompt$Test>;
+        if temp$1 != null goto label0;
+
+        temp$2 = staticinvoke <durbodax.commands.CommandPrompt: java.lang.Class class$(java.lang.String)>("durbodax.commands.CommandPrompt$Test");
+        <durbodax.commands.CommandPrompt: java.lang.Class class$durbodax$commands$CommandPrompt$Test> = temp$2;
+        temp$0 = temp$2;
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <durbodax.commands.CommandPrompt: java.lang.Class class$durbodax$commands$CommandPrompt$Test>;
+
+     label1:
+        nop;
+        temp$3 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(temp$0, s);
+        temp$4 = (durbodax.commands.CommandPrompt$Test) temp$3;
+        return temp$4;
+    }
+}

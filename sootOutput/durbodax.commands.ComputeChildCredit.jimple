@@ -1,0 +1,296 @@
+public class durbodax.commands.ComputeChildCredit extends java.lang.Object implements durbodax.commands.Command
+{
+    private static final int[] $SwitchMap$durbodax$customers$Enums$Sex;
+    private boolean suppressOutput;
+    durbodax.daos.CustomerDAO customerDAO;
+
+    private static final int[] $SwitchMap$durbodax$customers$Enums$Sex()
+    {
+        int[] temp$0, temp$3, temp$4, temp$9;
+        durbodax.customers.Enums.Sex[] temp$1;
+        int temp$2, temp$6, temp$7, temp$8;
+        durbodax.customers.Enums.Sex temp$5;
+        java.lang.NoSuchFieldError e;
+
+        temp$0 = <durbodax.commands.ComputeChildCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex>;
+        if temp$0 == null goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$1 = staticinvoke <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex[] values()>();
+        temp$2 = lengthof temp$1;
+        temp$3 = newarray (int)[temp$2];
+        <durbodax.commands.ComputeChildCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex> = temp$3;
+
+     label1:
+        nop;
+
+     label2:
+        nop;
+        temp$4 = <durbodax.commands.ComputeChildCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex>;
+        temp$5 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Female>;
+        temp$6 = virtualinvoke temp$5.<durbodax.customers.Enums.Sex: int ordinal()>();
+        temp$7 = temp$6;
+        temp$8 = 1;
+        temp$4[temp$7] = temp$8;
+        goto label4;
+
+     label3:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label4;
+
+     label4:
+        nop;
+        temp$9 = <durbodax.commands.ComputeChildCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex>;
+        return temp$9;
+
+        catch java.lang.NoSuchFieldError from label2 to label3 with label3;
+    }
+
+    public void <init>()
+    {
+        durbodax.commands.ComputeChildCredit this;
+        boolean temp$0;
+        java.io.PrintStream temp$1;
+        durbodax.daos.DAOFactory temp$2;
+        durbodax.daos.DerbyCustomerDAO temp$3;
+
+        this := @this: durbodax.commands.ComputeChildCredit;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = 0;
+        this.<durbodax.commands.ComputeChildCredit: boolean suppressOutput> = temp$0;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("flow:143");
+        temp$2 = staticinvoke <durbodax.daos.DAOFactory: durbodax.daos.DAOFactory getDAOFactory()>();
+        temp$3 = virtualinvoke temp$2.<durbodax.daos.DAOFactory: durbodax.daos.DerbyCustomerDAO getCustomerDAO()>();
+        this.<durbodax.commands.ComputeChildCredit: durbodax.daos.CustomerDAO customerDAO> = temp$3;
+        return;
+    }
+
+    public java.lang.Object execute(java.lang.String[])
+    {
+        durbodax.commands.ComputeChildCredit this;
+        java.lang.String[] params, temp$2;
+        java.io.PrintStream temp$0, temp$7, temp$9, temp$10, temp$14, temp$16, temp$18, temp$23, temp$28, temp$33;
+        durbodax.customers.Customer result, temp$6;
+        durbodax.daos.CustomerDAO temp$1;
+        int temp$3, temp$5, temp$11, temp$15, num, temp$17, val, temp$19, temp$20, temp$24, temp$26, temp$29, temp$31, temp$34, temp$36, temp$38, temp$40, temp$44, temp$45, temp$46;
+        java.lang.String temp$4;
+        boolean temp$8;
+        java.lang.Object temp$12, temp$22, temp$27, temp$32, temp$37, temp$41;
+        durbodax.customers.Enums.Sex gender, temp$13;
+        java.lang.Integer temp$21, temp$25, temp$30, temp$35, temp$39;
+        int[] temp$42, temp$43;
+
+        this := @this: durbodax.commands.ComputeChildCredit;
+        params := @parameter0: java.lang.String[];
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:144");
+        temp$1 = this.<durbodax.commands.ComputeChildCredit: durbodax.daos.CustomerDAO customerDAO>;
+        temp$2 = params;
+        temp$3 = 1;
+        temp$4 = temp$2[temp$3];
+        temp$5 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$4);
+        temp$6 = interfaceinvoke temp$1.<durbodax.daos.CustomerDAO: durbodax.customers.Customer selectCustomer(int)>(temp$5);
+        result = temp$6;
+        if result == null goto label0;
+
+        goto label3;
+
+     label0:
+        nop;
+        temp$7 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$7.<java.io.PrintStream: void println(java.lang.String)>("flow:145");
+        temp$8 = this.<durbodax.commands.ComputeChildCredit: boolean suppressOutput>;
+        if temp$8 == 0 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$9 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$9.<java.io.PrintStream: void println(java.lang.String)>("flow:146");
+        temp$10 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$10.<java.io.PrintStream: void println(java.lang.String)>("Invalid Customer");
+
+     label2:
+        nop;
+        temp$11 = -1;
+        temp$12 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$11);
+        return temp$12;
+
+     label3:
+        nop;
+        temp$13 = virtualinvoke result.<durbodax.customers.Customer: durbodax.customers.Enums.Sex getGenderEnum()>();
+        gender = temp$13;
+        goto label16;
+
+     label4:
+        nop;
+        temp$14 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$14.<java.io.PrintStream: void println(java.lang.String)>("flow:147");
+        temp$15 = virtualinvoke result.<durbodax.customers.Customer: int getAge()>();
+        if temp$15 >= 16 goto label5;
+
+        goto label13;
+
+     label5:
+        nop;
+        temp$16 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$16.<java.io.PrintStream: void println(java.lang.String)>("flow:148");
+        temp$17 = virtualinvoke result.<durbodax.customers.Customer: int getNumChildrenInHouse()>();
+        num = temp$17;
+        if num <= 5 goto label7;
+
+        goto label6;
+
+     label6:
+        nop;
+        if num == 7 goto label7;
+
+        goto label8;
+
+        goto label8;
+
+     label7:
+        nop;
+        temp$18 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$18.<java.io.PrintStream: void println(java.lang.String)>("flow:149");
+        temp$19 = staticinvoke <java.lang.Math: int max(int,int)>(num, 4);
+        temp$20 = temp$19 * 100;
+        val = temp$20;
+        temp$21 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(val);
+        virtualinvoke this.<durbodax.commands.ComputeChildCredit: void displayOutput(java.lang.Integer)>(temp$21);
+        temp$22 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(val);
+        return temp$22;
+
+     label8:
+        nop;
+        if num == 6 goto label9;
+
+        goto label10;
+
+     label9:
+        nop;
+        temp$23 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$23.<java.io.PrintStream: void println(java.lang.String)>("flow:150");
+        temp$24 = 550;
+        temp$25 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$24);
+        virtualinvoke this.<durbodax.commands.ComputeChildCredit: void displayOutput(java.lang.Integer)>(temp$25);
+        temp$26 = 550;
+        temp$27 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$26);
+        return temp$27;
+
+     label10:
+        nop;
+        if num >= 8 goto label11;
+
+        goto label12;
+
+     label11:
+        nop;
+        temp$28 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$28.<java.io.PrintStream: void println(java.lang.String)>("flow:151");
+        temp$29 = 750;
+        temp$30 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$29);
+        virtualinvoke this.<durbodax.commands.ComputeChildCredit: void displayOutput(java.lang.Integer)>(temp$30);
+        temp$31 = 750;
+        temp$32 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$31);
+        return temp$32;
+
+     label12:
+        nop;
+        goto label14;
+
+     label13:
+        nop;
+        temp$33 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$33.<java.io.PrintStream: void println(java.lang.String)>("flow:152");
+        temp$34 = 0;
+        temp$35 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$34);
+        virtualinvoke this.<durbodax.commands.ComputeChildCredit: void displayOutput(java.lang.Integer)>(temp$35);
+        temp$36 = 0;
+        temp$37 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$36);
+        return temp$37;
+
+     label14:
+        nop;
+
+     label15:
+        nop;
+        temp$38 = 0;
+        temp$39 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$38);
+        virtualinvoke this.<durbodax.commands.ComputeChildCredit: void displayOutput(java.lang.Integer)>(temp$39);
+        temp$40 = 0;
+        temp$41 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$40);
+        return temp$41;
+
+     label16:
+        nop;
+        temp$42 = staticinvoke <durbodax.commands.ComputeChildCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex()>();
+        temp$43 = temp$42;
+        temp$44 = virtualinvoke gender.<durbodax.customers.Enums.Sex: int ordinal()>();
+        temp$45 = temp$44;
+        temp$46 = temp$43[temp$45];
+        nop;
+        lookupswitch(temp$46)
+        {
+            case 1: goto label4;
+            default: goto label15;
+        };
+
+        nop;
+    }
+
+    private final void displayOutput(java.lang.Integer)
+    {
+        durbodax.commands.ComputeChildCredit this;
+        java.lang.Integer output;
+        boolean temp$0;
+        java.io.PrintStream temp$1, temp$2;
+        java.lang.StringBuffer temp$3;
+        java.lang.String temp$4, temp$5;
+
+        this := @this: durbodax.commands.ComputeChildCredit;
+        output := @parameter0: java.lang.Integer;
+        temp$0 = this.<durbodax.commands.ComputeChildCredit: boolean suppressOutput>;
+        if temp$0 == 0 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("flow:153");
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        temp$3 = new java.lang.StringBuffer;
+        specialinvoke temp$3.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Child credit: ");
+        temp$4 = virtualinvoke output.<java.lang.Integer: java.lang.String toString()>();
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$4);
+        temp$5 = virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>(temp$5);
+
+     label1:
+        nop;
+        return;
+    }
+
+    public void suppressOutput()
+    {
+        durbodax.commands.ComputeChildCredit this;
+        java.io.PrintStream temp$0;
+        boolean temp$1;
+
+        this := @this: durbodax.commands.ComputeChildCredit;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:154");
+        temp$1 = 1;
+        this.<durbodax.commands.ComputeChildCredit: boolean suppressOutput> = temp$1;
+        return;
+    }
+}

@@ -1,0 +1,165 @@
+public class durbodax.commands.ComputeInLawTax extends java.lang.Object implements durbodax.commands.Command
+{
+    private durbodax.daos.DerbyDAOFactory derbyDAO;
+    private durbodax.daos.CustomerDAO customerDAO;
+    private int InlawTax;
+    private durbodax.customers.Customer customer;
+    private durbodax.customers.Enums.RelationWHeadHouse relation;
+    private java.lang.Integer i;
+    private boolean suppressOutput;
+
+    public void <init>()
+    {
+        durbodax.commands.ComputeInLawTax this;
+        boolean temp$0;
+        java.io.PrintStream temp$1;
+        int temp$2;
+        durbodax.daos.DerbyDAOFactory temp$3, temp$4;
+        durbodax.daos.DerbyCustomerDAO temp$5;
+
+        this := @this: durbodax.commands.ComputeInLawTax;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = 0;
+        this.<durbodax.commands.ComputeInLawTax: boolean suppressOutput> = temp$0;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("flow:176");
+        temp$2 = 0;
+        this.<durbodax.commands.ComputeInLawTax: int InlawTax> = temp$2;
+        temp$3 = new durbodax.daos.DerbyDAOFactory;
+        specialinvoke temp$3.<durbodax.daos.DerbyDAOFactory: void <init>()>();
+        this.<durbodax.commands.ComputeInLawTax: durbodax.daos.DerbyDAOFactory derbyDAO> = temp$3;
+        temp$4 = this.<durbodax.commands.ComputeInLawTax: durbodax.daos.DerbyDAOFactory derbyDAO>;
+        temp$5 = virtualinvoke temp$4.<durbodax.daos.DerbyDAOFactory: durbodax.daos.DerbyCustomerDAO getCustomerDAO()>();
+        this.<durbodax.commands.ComputeInLawTax: durbodax.daos.CustomerDAO customerDAO> = temp$5;
+        return;
+    }
+
+    public java.lang.Object execute(java.lang.String[])
+    {
+        durbodax.commands.ComputeInLawTax this;
+        java.lang.String[] params, temp$0;
+        int id, temp$1, temp$3;
+        java.lang.String temp$2;
+        java.io.PrintStream temp$4, temp$5, temp$13, temp$17;
+        java.lang.IllegalArgumentException temp$6;
+        durbodax.daos.CustomerDAO temp$7;
+        durbodax.customers.Customer temp$8, temp$9;
+        durbodax.customers.Enums.RelationWHeadHouse temp$10, temp$11, temp$12;
+        java.lang.Integer temp$14, temp$15, temp$18, temp$19;
+        java.lang.Object temp$16, temp$20;
+
+        this := @this: durbodax.commands.ComputeInLawTax;
+        params := @parameter0: java.lang.String[];
+        temp$0 = params;
+        temp$1 = 1;
+        temp$2 = temp$0[temp$1];
+        temp$3 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$2);
+        id = temp$3;
+        temp$4 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$4.<java.io.PrintStream: void println(java.lang.String)>("flow:177");
+        if id <= 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        if id > 88443 goto label1;
+
+        goto label2;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$5 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$5.<java.io.PrintStream: void println(java.lang.String)>("flow:178");
+        temp$6 = new java.lang.IllegalArgumentException;
+        specialinvoke temp$6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Invalid customer ID");
+        throw temp$6;
+
+     label2:
+        nop;
+        temp$7 = this.<durbodax.commands.ComputeInLawTax: durbodax.daos.CustomerDAO customerDAO>;
+        temp$8 = interfaceinvoke temp$7.<durbodax.daos.CustomerDAO: durbodax.customers.Customer selectCustomer(int)>(id);
+        this.<durbodax.commands.ComputeInLawTax: durbodax.customers.Customer customer> = temp$8;
+        temp$9 = this.<durbodax.commands.ComputeInLawTax: durbodax.customers.Customer customer>;
+        temp$10 = virtualinvoke temp$9.<durbodax.customers.Customer: durbodax.customers.Enums.RelationWHeadHouse getRelationshipWHouseholderEnum()>();
+        temp$11 = this.<durbodax.commands.ComputeInLawTax: durbodax.customers.Enums.RelationWHeadHouse relation>;
+        temp$12 = <durbodax.customers.Enums.RelationWHeadHouse: durbodax.customers.Enums.RelationWHeadHouse PARENT_IN_LAW>;
+        if temp$10 == temp$12 goto label3;
+
+        goto label4;
+
+     label3:
+        nop;
+        temp$13 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$13.<java.io.PrintStream: void println(java.lang.String)>("flow:179");
+        temp$14 = new java.lang.Integer;
+        specialinvoke temp$14.<java.lang.Integer: void <init>(int)>(500);
+        this.<durbodax.commands.ComputeInLawTax: java.lang.Integer i> = temp$14;
+        temp$15 = this.<durbodax.commands.ComputeInLawTax: java.lang.Integer i>;
+        virtualinvoke this.<durbodax.commands.ComputeInLawTax: void displayOutput(java.lang.Integer)>(temp$15);
+        temp$16 = this.<durbodax.commands.ComputeInLawTax: java.lang.Integer i>;
+        return temp$16;
+
+     label4:
+        nop;
+        temp$17 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$17.<java.io.PrintStream: void println(java.lang.String)>("flow:180");
+        temp$18 = new java.lang.Integer;
+        specialinvoke temp$18.<java.lang.Integer: void <init>(int)>(0);
+        this.<durbodax.commands.ComputeInLawTax: java.lang.Integer i> = temp$18;
+        temp$19 = this.<durbodax.commands.ComputeInLawTax: java.lang.Integer i>;
+        virtualinvoke this.<durbodax.commands.ComputeInLawTax: void displayOutput(java.lang.Integer)>(temp$19);
+        temp$20 = this.<durbodax.commands.ComputeInLawTax: java.lang.Integer i>;
+        return temp$20;
+    }
+
+    private final void displayOutput(java.lang.Integer)
+    {
+        durbodax.commands.ComputeInLawTax this;
+        java.lang.Integer output;
+        boolean temp$0;
+        java.io.PrintStream temp$1, temp$2;
+        java.lang.StringBuffer temp$3;
+        java.lang.String temp$4, temp$5;
+
+        this := @this: durbodax.commands.ComputeInLawTax;
+        output := @parameter0: java.lang.Integer;
+        temp$0 = this.<durbodax.commands.ComputeInLawTax: boolean suppressOutput>;
+        if temp$0 == 0 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("flow:181");
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        temp$3 = new java.lang.StringBuffer;
+        specialinvoke temp$3.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("In-Law Tax: ");
+        temp$4 = virtualinvoke output.<java.lang.Integer: java.lang.String toString()>();
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$4);
+        temp$5 = virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>(temp$5);
+
+     label1:
+        nop;
+        return;
+    }
+
+    public void suppressOutput()
+    {
+        durbodax.commands.ComputeInLawTax this;
+        java.io.PrintStream temp$0;
+        boolean temp$1;
+
+        this := @this: durbodax.commands.ComputeInLawTax;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:182");
+        temp$1 = 1;
+        this.<durbodax.commands.ComputeInLawTax: boolean suppressOutput> = temp$1;
+        return;
+    }
+}

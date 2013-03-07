@@ -1,0 +1,35 @@
+[EMMA v2.0.5312debian report, generated Tue Apr 03 13:18:50 EDT 2012]
+-------------------------------------------------------------------------------
+OVERALL COVERAGE SUMMARY:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+74%  (53/72)!	36%  (227/626)!	32%  (2083/6514)!	31%  (477.4/1523)!	all classes
+
+OVERALL STATS SUMMARY:
+
+total packages:	16
+total classes:	72
+total methods:	626
+total executable files:	57
+total executable lines:	1523
+
+COVERAGE BREAKDOWN BY PACKAGE:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+0%   (0/2)!	0%   (0/52)!	0%   (0/543)!	0%   (0/152)!	junit.framework
+0%   (0/3)!	0%   (0/7)!	0%   (0/89)!	0%   (0/23)!	org.junit.internal.requests
+0%   (0/3)!	0%   (0/19)!	0%   (0/368)!	0%   (0/89)!	org.junit.internal.runners
+100% (2/2)	4%   (6/171)!	2%   (29/1415)!	3%   (11/344)!	durbodax.customers
+33%  (1/3)!	11%  (6/55)!	6%   (32/508)!	8%   (11.5/141)!	org.junit
+100% (1/1)	33%  (1/3)!	22%  (2/9)!	20%  (1/5)!	junit.runner
+100% (3/3)	50%  (6/12)!	29%  (31/108)!	38%  (12/32)!	org.junit.internal.runners.model
+50%  (3/6)!	40%  (6/15)!	32%  (98/306)!	38%  (26.5/69)!	org.junit.internal.runners.statements
+67%  (2/3)!	58%  (11/19)!	37%  (105/283)!	45%  (27/60)!	org.junit.internal
+100% (9/9)	51%  (42/82)!	52%  (373/723)!	50%  (74/147)!	org.junit.runner
+75%  (6/8)!	76%  (19/25)	53%  (135/255)!	60%  (35/58)!	org.junit.internal.builders
+88%  (7/8)!	71%  (32/45)	59%  (412/696)!	65%  (82.6/127)!	org.junit.runners.model
+100% (8/8)	85%  (62/73)	69%  (623/904)!	70%  (138.1/196)!	org.junit.runners
+67%  (2/3)!	57%  (4/7)!	71%  (27/38)!	73%  (8/11)!	org.junit.runner.manipulation
+88%  (7/8)!	73%  (24/33)	76%  (168/221)!	66%  (35.7/54)!	org.junit.runner.notification
+100% (2/2)	100% (8/8)	100% (48/48)	100% (15/15)	durbodax.commands.customer
+-------------------------------------------------------------------------------

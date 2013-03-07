@@ -1,0 +1,203 @@
+public class durbodax.commands.ComputePromo extends java.lang.Object implements durbodax.commands.Command
+{
+    private boolean suppressOutput;
+    durbodax.daos.CustomerDAO customerDAO;
+    durbodax.daos.CustomerIncomeDAO incomeDAO;
+
+    public void <init>()
+    {
+        durbodax.commands.ComputePromo this;
+        boolean temp$0;
+        java.io.PrintStream temp$1;
+        durbodax.daos.DAOFactory temp$2, temp$4;
+        durbodax.daos.DerbyCustomerDAO temp$3;
+        durbodax.daos.DerbyCustomerIncomeDAO temp$5;
+
+        this := @this: durbodax.commands.ComputePromo;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = 0;
+        this.<durbodax.commands.ComputePromo: boolean suppressOutput> = temp$0;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("flow:183");
+        temp$2 = staticinvoke <durbodax.daos.DAOFactory: durbodax.daos.DAOFactory getDAOFactory()>();
+        temp$3 = virtualinvoke temp$2.<durbodax.daos.DAOFactory: durbodax.daos.DerbyCustomerDAO getCustomerDAO()>();
+        this.<durbodax.commands.ComputePromo: durbodax.daos.CustomerDAO customerDAO> = temp$3;
+        temp$4 = staticinvoke <durbodax.daos.DAOFactory: durbodax.daos.DAOFactory getDAOFactory()>();
+        temp$5 = virtualinvoke temp$4.<durbodax.daos.DAOFactory: durbodax.daos.DerbyCustomerIncomeDAO getIncomeDAO()>();
+        this.<durbodax.commands.ComputePromo: durbodax.daos.CustomerIncomeDAO incomeDAO> = temp$5;
+        return;
+    }
+
+    public java.lang.Object execute(java.lang.String[])
+    {
+        durbodax.commands.ComputePromo this;
+        java.lang.String[] params, temp$1;
+        durbodax.customers.Customer result, temp$5;
+        durbodax.daos.CustomerDAO temp$0;
+        int temp$2, temp$4, temp$10, income, temp$12, totalIncomes, temp$14, incomesLessThan, temp$16, temp$20, temp$22, temp$24, temp$29, temp$31, temp$33, temp$38, temp$40, temp$42, temp$44;
+        java.lang.String temp$3;
+        java.io.PrintStream temp$6, temp$7, temp$9, temp$21, temp$30, temp$39;
+        boolean temp$8;
+        java.lang.Object temp$11, temp$25, temp$34, temp$43, temp$45;
+        durbodax.daos.CustomerIncomeDAO temp$13, temp$15;
+        double temp$17, temp$18, temp$19, temp$26, temp$27, temp$28, temp$35, temp$36, temp$37;
+        java.lang.Integer temp$23, temp$32, temp$41;
+
+        this := @this: durbodax.commands.ComputePromo;
+        params := @parameter0: java.lang.String[];
+        temp$0 = this.<durbodax.commands.ComputePromo: durbodax.daos.CustomerDAO customerDAO>;
+        temp$1 = params;
+        temp$2 = 1;
+        temp$3 = temp$1[temp$2];
+        temp$4 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$3);
+        temp$5 = interfaceinvoke temp$0.<durbodax.daos.CustomerDAO: durbodax.customers.Customer selectCustomer(int)>(temp$4);
+        result = temp$5;
+        temp$6 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$6.<java.io.PrintStream: void println(java.lang.String)>("flow:184");
+        if result == null goto label0;
+
+        goto label3;
+
+     label0:
+        nop;
+        temp$7 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$7.<java.io.PrintStream: void println(java.lang.String)>("flow:185");
+        temp$8 = this.<durbodax.commands.ComputePromo: boolean suppressOutput>;
+        if temp$8 == 0 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$9 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$9.<java.io.PrintStream: void println(java.lang.String)>("Invalid Customer");
+
+     label2:
+        nop;
+        temp$10 = -1;
+        temp$11 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$10);
+        return temp$11;
+
+     label3:
+        nop;
+        temp$12 = virtualinvoke result.<durbodax.customers.Customer: int getTotalPersonalIncome()>();
+        income = temp$12;
+        temp$13 = this.<durbodax.commands.ComputePromo: durbodax.daos.CustomerIncomeDAO incomeDAO>;
+        temp$14 = interfaceinvoke temp$13.<durbodax.daos.CustomerIncomeDAO: int getTotalDistinctIncomes()>();
+        totalIncomes = temp$14;
+        temp$15 = this.<durbodax.commands.ComputePromo: durbodax.daos.CustomerIncomeDAO incomeDAO>;
+        temp$16 = interfaceinvoke temp$15.<durbodax.daos.CustomerIncomeDAO: int getTotalIncomesBelowGivenIncome(int)>(income);
+        incomesLessThan = temp$16;
+        temp$17 = (double) totalIncomes;
+        temp$18 = temp$17 * 0.9;
+        temp$19 = (double) incomesLessThan;
+        temp$20 = temp$19 cmpl temp$18;
+        if temp$20 < 0 goto label5;
+
+        goto label4;
+
+     label4:
+        nop;
+        temp$21 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$21.<java.io.PrintStream: void println(java.lang.String)>("flow:186");
+        temp$22 = 100;
+        temp$23 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$22);
+        virtualinvoke this.<durbodax.commands.ComputePromo: void displayOutput(java.lang.Integer)>(temp$23);
+        temp$24 = 100;
+        temp$25 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$24);
+        return temp$25;
+
+     label5:
+        nop;
+        temp$26 = (double) totalIncomes;
+        temp$27 = temp$26 * 0.85;
+        temp$28 = (double) incomesLessThan;
+        temp$29 = temp$28 cmpl temp$27;
+        if temp$29 < 0 goto label7;
+
+        goto label6;
+
+     label6:
+        nop;
+        temp$30 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$30.<java.io.PrintStream: void println(java.lang.String)>("flow:187");
+        temp$31 = 50;
+        temp$32 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$31);
+        virtualinvoke this.<durbodax.commands.ComputePromo: void displayOutput(java.lang.Integer)>(temp$32);
+        temp$33 = 50;
+        temp$34 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$33);
+        return temp$34;
+
+     label7:
+        nop;
+        temp$35 = (double) totalIncomes;
+        temp$36 = temp$35 * 0.8;
+        temp$37 = (double) incomesLessThan;
+        temp$38 = temp$37 cmpl temp$36;
+        if temp$38 < 0 goto label9;
+
+        goto label8;
+
+     label8:
+        nop;
+        temp$39 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$39.<java.io.PrintStream: void println(java.lang.String)>("flow:188");
+        temp$40 = 10;
+        temp$41 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$40);
+        virtualinvoke this.<durbodax.commands.ComputePromo: void displayOutput(java.lang.Integer)>(temp$41);
+        temp$42 = 10;
+        temp$43 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$42);
+        return temp$43;
+
+     label9:
+        nop;
+        temp$44 = 0;
+        temp$45 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$44);
+        return temp$45;
+    }
+
+    private final void displayOutput(java.lang.Integer)
+    {
+        durbodax.commands.ComputePromo this;
+        java.lang.Integer output;
+        boolean temp$0;
+        java.io.PrintStream temp$1, temp$2;
+        java.lang.StringBuffer temp$3;
+        java.lang.String temp$4, temp$5;
+
+        this := @this: durbodax.commands.ComputePromo;
+        output := @parameter0: java.lang.Integer;
+        temp$0 = this.<durbodax.commands.ComputePromo: boolean suppressOutput>;
+        if temp$0 == 0 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("flow:189");
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        temp$3 = new java.lang.StringBuffer;
+        specialinvoke temp$3.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Customer promo is $");
+        temp$4 = virtualinvoke output.<java.lang.Integer: java.lang.String toString()>();
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$4);
+        temp$5 = virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>(temp$5);
+
+     label1:
+        nop;
+        return;
+    }
+
+    public void suppressOutput()
+    {
+        durbodax.commands.ComputePromo this;
+        boolean temp$0;
+
+        this := @this: durbodax.commands.ComputePromo;
+        temp$0 = 1;
+        this.<durbodax.commands.ComputePromo: boolean suppressOutput> = temp$0;
+        return;
+    }
+}

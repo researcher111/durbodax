@@ -1,0 +1,32 @@
+public class durbodax.commands.customer.ViewCustomerData extends java.lang.Object implements durbodax.commands.Command
+{
+
+    public java.lang.Object execute(java.lang.String[])
+    {
+        durbodax.commands.customer.ViewCustomerData this;
+        java.lang.String[] params;
+        java.io.PrintStream temp$0;
+        durbodax.customers.CustomerData temp$1;
+        int temp$2;
+        java.lang.Object temp$3;
+
+        this := @this: durbodax.commands.customer.ViewCustomerData;
+        params := @parameter0: java.lang.String[];
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:274");
+        temp$1 = <durbodax.customers.CustomerData: durbodax.customers.CustomerData CUSTOMER>;
+        virtualinvoke temp$1.<durbodax.customers.CustomerData: void displayCustomerData()>();
+        temp$2 = 0;
+        temp$3 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$2);
+        return temp$3;
+    }
+
+    public void <init>()
+    {
+        durbodax.commands.customer.ViewCustomerData this;
+
+        this := @this: durbodax.commands.customer.ViewCustomerData;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

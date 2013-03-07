@@ -1,0 +1,29 @@
+public abstract class durbodax.daos.DAOFactory extends java.lang.Object
+{
+
+    public static durbodax.daos.DAOFactory getDAOFactory()
+    {
+        durbodax.daos.DerbyDAOFactory temp$0;
+
+        temp$0 = new durbodax.daos.DerbyDAOFactory;
+        specialinvoke temp$0.<durbodax.daos.DerbyDAOFactory: void <init>()>();
+        return temp$0;
+    }
+
+    public abstract durbodax.daos.DerbyCustomerDAO getCustomerDAO();
+
+    public abstract durbodax.daos.DerbyMarketingDAO getMarketingDAO();
+
+    public abstract durbodax.daos.DerbyCustomerIncomeDAO getIncomeDAO();
+
+    public abstract durbodax.daos.DerbyCustomerCompareDAO getCompareDAO();
+
+    public void <init>()
+    {
+        durbodax.daos.DAOFactory this;
+
+        this := @this: durbodax.daos.DAOFactory;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

@@ -1,0 +1,142 @@
+public final class durbodax.commands.CommandPrompt$6Anonymous1 extends java.lang.Object implements durbodax.commands.PromptTest
+{
+    durbodax.commands.CommandPrompt this$0;
+
+    public final boolean validate(java.lang.String)
+    {
+        durbodax.commands.CommandPrompt$6Anonymous1 this;
+        java.lang.String input;
+        int value, temp$0;
+        boolean temp$1, temp$2, temp$3;
+        java.lang.NumberFormatException e;
+
+        this := @this: durbodax.commands.CommandPrompt$6Anonymous1;
+        input := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(input);
+        value = temp$0;
+        if value == 0 goto label11;
+
+        goto label1;
+
+     label1:
+        nop;
+        if value == 10 goto label11;
+
+        goto label2;
+
+        goto label2;
+
+     label2:
+        nop;
+        if value == 20 goto label11;
+
+        goto label3;
+
+        goto label3;
+
+     label3:
+        nop;
+        if value == 31 goto label11;
+
+        goto label4;
+
+        goto label4;
+
+     label4:
+        nop;
+        if value == 32 goto label11;
+
+        goto label5;
+
+        goto label5;
+
+     label5:
+        nop;
+        if value == 33 goto label11;
+
+        goto label6;
+
+        goto label6;
+
+     label6:
+        nop;
+        if value == 34 goto label11;
+
+        goto label7;
+
+        goto label7;
+
+     label7:
+        nop;
+        if value == 35 goto label11;
+
+        goto label8;
+
+        goto label8;
+
+     label8:
+        nop;
+        if value == 36 goto label11;
+
+        goto label9;
+
+        goto label9;
+
+     label9:
+        nop;
+        if value == 40 goto label11;
+
+        goto label10;
+
+        goto label10;
+
+     label10:
+        nop;
+        if value == 50 goto label11;
+
+        goto label13;
+
+        goto label13;
+
+     label11:
+        nop;
+        temp$1 = 1;
+
+     label12:
+        nop;
+        return temp$1;
+
+     label13:
+        nop;
+        temp$2 = 0;
+
+     label14:
+        nop;
+        return temp$2;
+
+     label15:
+        nop;
+        e := @caughtexception;
+        temp$3 = 0;
+        nop;
+        return temp$3;
+
+        catch java.lang.NumberFormatException from label0 to label12 with label15;
+        catch java.lang.NumberFormatException from label13 to label14 with label15;
+    }
+
+    public void <init>(durbodax.commands.CommandPrompt)
+    {
+        durbodax.commands.CommandPrompt$6Anonymous1 this;
+        durbodax.commands.CommandPrompt temp$0;
+
+        this := @this: durbodax.commands.CommandPrompt$6Anonymous1;
+        temp$0 := @parameter0: durbodax.commands.CommandPrompt;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        this.<durbodax.commands.CommandPrompt$6Anonymous1: durbodax.commands.CommandPrompt this$0> = temp$0;
+        return;
+    }
+}

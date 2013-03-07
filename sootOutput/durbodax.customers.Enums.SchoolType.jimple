@@ -1,0 +1,231 @@
+public final enum class durbodax.customers.Enums.SchoolType extends java.lang.Enum
+{
+    public static final enum durbodax.customers.Enums.SchoolType NA;
+    public static final enum durbodax.customers.Enums.SchoolType NOT_ENROLLED;
+    public static final enum durbodax.customers.Enums.SchoolType PUBLIC_SCHOOL;
+    public static final enum durbodax.customers.Enums.SchoolType PRIVATE_SCHOOL;
+    public static final enum durbodax.customers.Enums.SchoolType CHURCH_RELATED;
+    public static final enum durbodax.customers.Enums.SchoolType PAROCHIAL;
+    public static final enum durbodax.customers.Enums.SchoolType OTHER_PRIVATE_1980;
+    public static final enum durbodax.customers.Enums.SchoolType OTHER_PRIVATE_1970;
+    private static final java.util.Map lookup;
+    private int code;
+    private static final durbodax.customers.Enums.SchoolType[] $VALUES;
+    public static java.lang.Class class$durbodax$customers$Enums$SchoolType;
+
+    static void <clinit>()
+    {
+        durbodax.customers.Enums.SchoolType temp$0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, schoolType, temp$22, temp$24, temp$25, temp$26, temp$27, temp$28, temp$29, temp$30, temp$31;
+        java.util.HashMap temp$8;
+        java.lang.Class temp$9, temp$10, temp$11;
+        java.util.EnumSet temp$12, temp$13;
+        java.util.Iterator temp$14;
+        boolean temp$15;
+        java.lang.Object temp$16, temp$21;
+        java.io.PrintStream temp$17;
+        java.util.Map temp$18;
+        int temp$19;
+        java.lang.Integer temp$20;
+        durbodax.customers.Enums.SchoolType[] temp$23;
+
+        temp$0 = new durbodax.customers.Enums.SchoolType;
+        specialinvoke temp$0.<durbodax.customers.Enums.SchoolType: void <init>(java.lang.String,int,int)>("NA", 0, 0);
+        <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType NA> = temp$0;
+        temp$1 = new durbodax.customers.Enums.SchoolType;
+        specialinvoke temp$1.<durbodax.customers.Enums.SchoolType: void <init>(java.lang.String,int,int)>("NOT_ENROLLED", 1, 1);
+        <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType NOT_ENROLLED> = temp$1;
+        temp$2 = new durbodax.customers.Enums.SchoolType;
+        specialinvoke temp$2.<durbodax.customers.Enums.SchoolType: void <init>(java.lang.String,int,int)>("PUBLIC_SCHOOL", 2, 2);
+        <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType PUBLIC_SCHOOL> = temp$2;
+        temp$3 = new durbodax.customers.Enums.SchoolType;
+        specialinvoke temp$3.<durbodax.customers.Enums.SchoolType: void <init>(java.lang.String,int,int)>("PRIVATE_SCHOOL", 3, 3);
+        <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType PRIVATE_SCHOOL> = temp$3;
+        temp$4 = new durbodax.customers.Enums.SchoolType;
+        specialinvoke temp$4.<durbodax.customers.Enums.SchoolType: void <init>(java.lang.String,int,int)>("CHURCH_RELATED", 4, 4);
+        <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType CHURCH_RELATED> = temp$4;
+        temp$5 = new durbodax.customers.Enums.SchoolType;
+        specialinvoke temp$5.<durbodax.customers.Enums.SchoolType: void <init>(java.lang.String,int,int)>("PAROCHIAL", 5, 5);
+        <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType PAROCHIAL> = temp$5;
+        temp$6 = new durbodax.customers.Enums.SchoolType;
+        specialinvoke temp$6.<durbodax.customers.Enums.SchoolType: void <init>(java.lang.String,int,int)>("OTHER_PRIVATE_1980", 6, 6);
+        <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType OTHER_PRIVATE_1980> = temp$6;
+        temp$7 = new durbodax.customers.Enums.SchoolType;
+        specialinvoke temp$7.<durbodax.customers.Enums.SchoolType: void <init>(java.lang.String,int,int)>("OTHER_PRIVATE_1970", 7, 7);
+        <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType OTHER_PRIVATE_1970> = temp$7;
+        temp$8 = new java.util.HashMap;
+        specialinvoke temp$8.<java.util.HashMap: void <init>()>();
+        <durbodax.customers.Enums.SchoolType: java.util.Map lookup> = temp$8;
+        temp$10 = <durbodax.customers.Enums.SchoolType: java.lang.Class class$durbodax$customers$Enums$SchoolType>;
+        if temp$10 != null goto label0;
+
+        temp$11 = staticinvoke <durbodax.customers.Enums.SchoolType: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.SchoolType");
+        <durbodax.customers.Enums.SchoolType: java.lang.Class class$durbodax$customers$Enums$SchoolType> = temp$11;
+        temp$9 = temp$11;
+        goto label1;
+
+     label0:
+        nop;
+        temp$9 = <durbodax.customers.Enums.SchoolType: java.lang.Class class$durbodax$customers$Enums$SchoolType>;
+
+     label1:
+        nop;
+        temp$12 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(temp$9);
+        temp$13 = (java.util.EnumSet) temp$12;
+        temp$14 = interfaceinvoke temp$13.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label2:
+        nop;
+        temp$15 = interfaceinvoke temp$14.<java.util.Iterator: boolean hasNext()>();
+        if temp$15 == 0 goto label3;
+
+        temp$16 = interfaceinvoke temp$14.<java.util.Iterator: java.lang.Object next()>();
+        schoolType = (durbodax.customers.Enums.SchoolType) temp$16;
+        temp$17 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$17.<java.io.PrintStream: void println(java.lang.String)>("flow:373");
+        temp$18 = <durbodax.customers.Enums.SchoolType: java.util.Map lookup>;
+        temp$19 = virtualinvoke schoolType.<durbodax.customers.Enums.SchoolType: int getCode()>();
+        temp$20 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$19);
+        temp$21 = interfaceinvoke temp$18.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$20, schoolType);
+        temp$22 = (durbodax.customers.Enums.SchoolType) temp$21;
+        nop;
+        goto label2;
+
+     label3:
+        nop;
+        temp$23 = newarray (durbodax.customers.Enums.SchoolType)[8];
+        temp$24 = <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType NA>;
+        temp$23[0] = temp$24;
+        temp$25 = <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType NOT_ENROLLED>;
+        temp$23[1] = temp$25;
+        temp$26 = <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType PUBLIC_SCHOOL>;
+        temp$23[2] = temp$26;
+        temp$27 = <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType PRIVATE_SCHOOL>;
+        temp$23[3] = temp$27;
+        temp$28 = <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType CHURCH_RELATED>;
+        temp$23[4] = temp$28;
+        temp$29 = <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType PAROCHIAL>;
+        temp$23[5] = temp$29;
+        temp$30 = <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType OTHER_PRIVATE_1980>;
+        temp$23[6] = temp$30;
+        temp$31 = <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType OTHER_PRIVATE_1970>;
+        temp$23[7] = temp$31;
+        <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType[] $VALUES> = temp$23;
+        return;
+    }
+
+    private void <init>(java.lang.String, int, int)
+    {
+        durbodax.customers.Enums.SchoolType this;
+        java.lang.String @p0;
+        int @p1, code;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.customers.Enums.SchoolType;
+        @p0 := @parameter0: java.lang.String;
+        @p1 := @parameter1: int;
+        code := @parameter2: int;
+        specialinvoke this.<java.lang.Enum: void <init>(java.lang.String,int)>(@p0, @p1);
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:374");
+        this.<durbodax.customers.Enums.SchoolType: int code> = code;
+        return;
+    }
+
+    public final int getCode()
+    {
+        durbodax.customers.Enums.SchoolType this;
+        java.io.PrintStream temp$0;
+        int temp$1;
+
+        this := @this: durbodax.customers.Enums.SchoolType;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:375");
+        temp$1 = this.<durbodax.customers.Enums.SchoolType: int code>;
+        return temp$1;
+    }
+
+    public static final durbodax.customers.Enums.SchoolType getSchoolType(int)
+    {
+        int code;
+        java.io.PrintStream temp$0;
+        java.util.Map temp$1;
+        java.lang.Integer temp$2;
+        java.lang.Object temp$3;
+        durbodax.customers.Enums.SchoolType temp$4;
+
+        code := @parameter0: int;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:376");
+        temp$1 = <durbodax.customers.Enums.SchoolType: java.util.Map lookup>;
+        temp$2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(code);
+        temp$3 = interfaceinvoke temp$1.<java.util.Map: java.lang.Object get(java.lang.Object)>(temp$2);
+        temp$4 = (durbodax.customers.Enums.SchoolType) temp$3;
+        return temp$4;
+    }
+
+    public static final durbodax.customers.Enums.SchoolType[] values()
+    {
+        durbodax.customers.Enums.SchoolType[] temp$0, temp$2;
+        java.lang.Object temp$1;
+
+        temp$0 = <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType[] $VALUES>;
+        temp$1 = virtualinvoke temp$0.<java.lang.Object: java.lang.Object clone()>();
+        temp$2 = (durbodax.customers.Enums.SchoolType[]) temp$1;
+        return temp$2;
+    }
+
+    public static final durbodax.customers.Enums.SchoolType valueOf(java.lang.String)
+    {
+        java.lang.String s;
+        java.lang.Class temp$0, temp$1, temp$2;
+        java.lang.Enum temp$3;
+        durbodax.customers.Enums.SchoolType temp$4;
+
+        s := @parameter0: java.lang.String;
+        temp$1 = <durbodax.customers.Enums.SchoolType: java.lang.Class class$durbodax$customers$Enums$SchoolType>;
+        if temp$1 != null goto label0;
+
+        temp$2 = staticinvoke <durbodax.customers.Enums.SchoolType: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.SchoolType");
+        <durbodax.customers.Enums.SchoolType: java.lang.Class class$durbodax$customers$Enums$SchoolType> = temp$2;
+        temp$0 = temp$2;
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <durbodax.customers.Enums.SchoolType: java.lang.Class class$durbodax$customers$Enums$SchoolType>;
+
+     label1:
+        nop;
+        temp$3 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(temp$0, s);
+        temp$4 = (durbodax.customers.Enums.SchoolType) temp$3;
+        return temp$4;
+    }
+
+    public static final java.lang.Class class$(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.lang.Class temp$0;
+        java.lang.ClassNotFoundException e;
+        java.lang.NoClassDefFoundError temp$1;
+
+        name := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(name);
+
+     label1:
+        nop;
+        return temp$0;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$1 = new java.lang.NoClassDefFoundError;
+        temp$2 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String getMessage()>();
+        specialinvoke temp$1.<java.lang.NoClassDefFoundError: void <init>(java.lang.String)>(temp$2);
+        throw temp$1;
+
+        catch java.lang.ClassNotFoundException from label0 to label1 with label2;
+    }
+}

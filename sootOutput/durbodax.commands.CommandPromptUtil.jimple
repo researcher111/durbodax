@@ -1,0 +1,59 @@
+public class durbodax.commands.CommandPromptUtil extends java.lang.Object
+{
+    private static java.util.HashMap commandPrompts;
+
+    static void <clinit>()
+    {
+        java.util.HashMap temp$0;
+
+        temp$0 = new java.util.HashMap;
+        specialinvoke temp$0.<java.util.HashMap: void <init>()>();
+        <durbodax.commands.CommandPromptUtil: java.util.HashMap commandPrompts> = temp$0;
+        return;
+    }
+
+    private void <init>()
+    {
+        durbodax.commands.CommandPromptUtil this;
+
+        this := @this: durbodax.commands.CommandPromptUtil;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static final durbodax.commands.CommandPrompt getCommandPrompt(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.io.PrintStream temp$0;
+        durbodax.commands.CommandPrompt prompt;
+        java.util.HashMap temp$1;
+        java.lang.Object temp$3;
+
+        name := @parameter0: java.lang.String;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:117");
+        temp$1 = <durbodax.commands.CommandPromptUtil: java.util.HashMap commandPrompts>;
+        temp$2 = virtualinvoke name.<java.lang.String: java.lang.String toLowerCase()>();
+        temp$3 = virtualinvoke temp$1.<java.util.HashMap: java.lang.Object get(java.lang.Object)>(temp$2);
+        prompt = (durbodax.commands.CommandPrompt) temp$3;
+        return prompt;
+    }
+
+    public static final void registerCommandPrompt(java.lang.String, durbodax.commands.CommandPrompt)
+    {
+        java.lang.String name, temp$2;
+        durbodax.commands.CommandPrompt prompt;
+        java.io.PrintStream temp$0;
+        java.util.HashMap temp$1;
+        java.lang.Object temp$3;
+
+        name := @parameter0: java.lang.String;
+        prompt := @parameter1: durbodax.commands.CommandPrompt;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:118");
+        temp$1 = <durbodax.commands.CommandPromptUtil: java.util.HashMap commandPrompts>;
+        temp$2 = virtualinvoke name.<java.lang.String: java.lang.String toLowerCase()>();
+        temp$3 = virtualinvoke temp$1.<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$2, prompt);
+        return;
+    }
+}

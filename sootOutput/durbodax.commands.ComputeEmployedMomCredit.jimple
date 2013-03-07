@@ -1,0 +1,197 @@
+public class durbodax.commands.ComputeEmployedMomCredit extends java.lang.Object implements durbodax.commands.Command
+{
+    private static final int[] $SwitchMap$durbodax$customers$Enums$Sex;
+
+    private static final int[] $SwitchMap$durbodax$customers$Enums$Sex()
+    {
+        int[] temp$0, temp$3, temp$4, temp$9, temp$14;
+        durbodax.customers.Enums.Sex[] temp$1;
+        int temp$2, temp$6, temp$7, temp$8, temp$11, temp$12, temp$13;
+        durbodax.customers.Enums.Sex temp$5, temp$10;
+        java.lang.NoSuchFieldError e, e;
+
+        temp$0 = <durbodax.commands.ComputeEmployedMomCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex>;
+        if temp$0 == null goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$1 = staticinvoke <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex[] values()>();
+        temp$2 = lengthof temp$1;
+        temp$3 = newarray (int)[temp$2];
+        <durbodax.commands.ComputeEmployedMomCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex> = temp$3;
+
+     label1:
+        nop;
+
+     label2:
+        nop;
+        temp$4 = <durbodax.commands.ComputeEmployedMomCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex>;
+        temp$5 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Male>;
+        temp$6 = virtualinvoke temp$5.<durbodax.customers.Enums.Sex: int ordinal()>();
+        temp$7 = temp$6;
+        temp$8 = 1;
+        temp$4[temp$7] = temp$8;
+        goto label4;
+
+     label3:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label4;
+
+     label4:
+        nop;
+
+     label5:
+        nop;
+        temp$9 = <durbodax.commands.ComputeEmployedMomCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex>;
+        temp$10 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Female>;
+        temp$11 = virtualinvoke temp$10.<durbodax.customers.Enums.Sex: int ordinal()>();
+        temp$12 = temp$11;
+        temp$13 = 2;
+        temp$9[temp$12] = temp$13;
+        goto label7;
+
+     label6:
+        nop;
+        e := @caughtexception;
+        nop;
+        goto label7;
+
+     label7:
+        nop;
+        temp$14 = <durbodax.commands.ComputeEmployedMomCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex>;
+        return temp$14;
+
+        catch java.lang.NoSuchFieldError from label2 to label3 with label3;
+        catch java.lang.NoSuchFieldError from label5 to label6 with label6;
+    }
+
+    public java.lang.Object execute(java.lang.String[])
+    {
+        durbodax.commands.ComputeEmployedMomCredit this;
+        java.lang.String[] params, temp$2, temp$16, temp$17, temp$22, temp$23;
+        int employedMotherCredit, temp$0, customerID, temp$3, temp$5, childCredit, temp$18, inLawTax, temp$24, temp$28, temp$35, temp$36, temp$37;
+        java.io.PrintStream temp$1, temp$10, temp$11, temp$13, temp$29;
+        java.lang.String temp$4, temp$19, temp$25, temp$31, temp$32;
+        durbodax.daos.CustomerDAO customerDAO;
+        durbodax.daos.DAOFactory temp$6;
+        durbodax.daos.DerbyCustomerDAO temp$7;
+        durbodax.customers.Customer customer, temp$8;
+        durbodax.customers.Enums.Sex gender, temp$9;
+        java.lang.Object temp$12, temp$20, temp$26, temp$38;
+        durbodax.commands.ComputeChildCredit computeChildCredit;
+        durbodax.commands.Command temp$14, temp$15;
+        durbodax.commands.ComputeInLawTax computeInLawTax;
+        java.lang.Integer temp$21, temp$27;
+        java.lang.StringBuffer temp$30;
+        int[] temp$33, temp$34;
+
+        this := @this: durbodax.commands.ComputeEmployedMomCredit;
+        params := @parameter0: java.lang.String[];
+        employedMotherCredit = 0;
+        temp$0 = lengthof params;
+        if temp$0 >= 1 goto label0;
+
+        goto label5;
+
+     label0:
+        nop;
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("flow:155");
+        temp$2 = params;
+        temp$3 = 1;
+        temp$4 = temp$2[temp$3];
+        temp$5 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$4);
+        customerID = temp$5;
+        temp$6 = staticinvoke <durbodax.daos.DAOFactory: durbodax.daos.DAOFactory getDAOFactory()>();
+        temp$7 = virtualinvoke temp$6.<durbodax.daos.DAOFactory: durbodax.daos.DerbyCustomerDAO getCustomerDAO()>();
+        customerDAO = temp$7;
+        temp$8 = interfaceinvoke customerDAO.<durbodax.daos.CustomerDAO: durbodax.customers.Customer selectCustomer(int)>(customerID);
+        customer = temp$8;
+        temp$9 = virtualinvoke customer.<durbodax.customers.Customer: durbodax.customers.Enums.Sex getGenderEnum()>();
+        gender = temp$9;
+        goto label3;
+
+     label1:
+        nop;
+        temp$10 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$10.<java.io.PrintStream: void println(java.lang.String)>("flow:156");
+        temp$11 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$11.<java.io.PrintStream: void println(java.lang.String)>("Employed Mom Credit = 0");
+        temp$12 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(employedMotherCredit);
+        return temp$12;
+
+     label2:
+        nop;
+        temp$13 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$13.<java.io.PrintStream: void println(java.lang.String)>("flow:157");
+        temp$14 = staticinvoke <durbodax.commands.CommandUtil: durbodax.commands.Command getComputeChildCreditCommand()>();
+        computeChildCredit = (durbodax.commands.ComputeChildCredit) temp$14;
+        temp$15 = staticinvoke <durbodax.commands.CommandUtil: durbodax.commands.Command getComputeInLawTaxCommand()>();
+        computeInLawTax = (durbodax.commands.ComputeInLawTax) temp$15;
+        temp$16 = newarray (java.lang.String)[2];
+        temp$16[0] = "command";
+        temp$17 = params;
+        temp$18 = 1;
+        temp$19 = temp$17[temp$18];
+        temp$16[1] = temp$19;
+        temp$20 = virtualinvoke computeChildCredit.<durbodax.commands.ComputeChildCredit: java.lang.Object execute(java.lang.String[])>(temp$16);
+        temp$21 = (java.lang.Integer) temp$20;
+        childCredit = virtualinvoke temp$21.<java.lang.Integer: int intValue()>();
+        temp$22 = newarray (java.lang.String)[2];
+        temp$22[0] = "command";
+        temp$23 = params;
+        temp$24 = 1;
+        temp$25 = temp$23[temp$24];
+        temp$22[1] = temp$25;
+        temp$26 = virtualinvoke computeInLawTax.<durbodax.commands.ComputeInLawTax: java.lang.Object execute(java.lang.String[])>(temp$22);
+        temp$27 = (java.lang.Integer) temp$26;
+        inLawTax = virtualinvoke temp$27.<java.lang.Integer: int intValue()>();
+        temp$28 = childCredit - inLawTax;
+        employedMotherCredit = temp$28;
+        temp$29 = <java.lang.System: java.io.PrintStream out>;
+        temp$30 = new java.lang.StringBuffer;
+        specialinvoke temp$30.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$30.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Employed Mom Credit = ");
+        temp$31 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(employedMotherCredit);
+        virtualinvoke temp$30.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$31);
+        temp$32 = virtualinvoke temp$30.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$29.<java.io.PrintStream: void println(java.lang.String)>(temp$32);
+        goto label4;
+
+     label3:
+        nop;
+        temp$33 = staticinvoke <durbodax.commands.ComputeEmployedMomCredit: int[] $SwitchMap$durbodax$customers$Enums$Sex()>();
+        temp$34 = temp$33;
+        temp$35 = virtualinvoke gender.<durbodax.customers.Enums.Sex: int ordinal()>();
+        temp$36 = temp$35;
+        temp$37 = temp$34[temp$36];
+        nop;
+        tableswitch(temp$37)
+        {
+            case 1: goto label1;
+            case 2: goto label2;
+            default: goto label4;
+        };
+
+     label4:
+        nop;
+
+     label5:
+        nop;
+        temp$38 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(employedMotherCredit);
+        return temp$38;
+    }
+
+    public void <init>()
+    {
+        durbodax.commands.ComputeEmployedMomCredit this;
+
+        this := @this: durbodax.commands.ComputeEmployedMomCredit;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

@@ -1,0 +1,246 @@
+public final enum class durbodax.customers.Enums.LastYearWorked extends java.lang.Enum
+{
+    public static final enum durbodax.customers.Enums.LastYearWorked NA;
+    public static final enum durbodax.customers.Enums.LastYearWorked CURRENT_YEAR;
+    public static final enum durbodax.customers.Enums.LastYearWorked PREVIOUS_YEAR;
+    public static final enum durbodax.customers.Enums.LastYearWorked TWO_YEARS_PRIOR;
+    public static final enum durbodax.customers.Enums.LastYearWorked TWO_TO_FIVE_YEARS;
+    public static final enum durbodax.customers.Enums.LastYearWorked THREE_TO_FIVE_YEARS;
+    public static final enum durbodax.customers.Enums.LastYearWorked THREE_TO_SIX_YEARS;
+    public static final enum durbodax.customers.Enums.LastYearWorked SIX_TO_TEN_YEARS;
+    public static final enum durbodax.customers.Enums.LastYearWorked SEVEN_TO_TEN_YEARS;
+    public static final enum durbodax.customers.Enums.LastYearWorked TEN_PLUS_YEARS_AGO;
+    public static final enum durbodax.customers.Enums.LastYearWorked NEVER_WORKED;
+    private static final java.util.Map lookup;
+    private int code;
+    private static final durbodax.customers.Enums.LastYearWorked[] $VALUES;
+    public static java.lang.Class class$durbodax$customers$Enums$LastYearWorked;
+
+    static void <clinit>()
+    {
+        durbodax.customers.Enums.LastYearWorked temp$0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, temp$10, lastYear, temp$25, temp$27, temp$28, temp$29, temp$30, temp$31, temp$32, temp$33, temp$34, temp$35, temp$36, temp$37;
+        java.util.HashMap temp$11;
+        java.lang.Class temp$12, temp$13, temp$14;
+        java.util.EnumSet temp$15, temp$16;
+        java.util.Iterator temp$17;
+        boolean temp$18;
+        java.lang.Object temp$19, temp$24;
+        java.io.PrintStream temp$20;
+        java.util.Map temp$21;
+        int temp$22;
+        java.lang.Integer temp$23;
+        durbodax.customers.Enums.LastYearWorked[] temp$26;
+
+        temp$0 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$0.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("NA", 0, 0);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked NA> = temp$0;
+        temp$1 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$1.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("CURRENT_YEAR", 1, 10);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked CURRENT_YEAR> = temp$1;
+        temp$2 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$2.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("PREVIOUS_YEAR", 2, 20);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked PREVIOUS_YEAR> = temp$2;
+        temp$3 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$3.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("TWO_YEARS_PRIOR", 3, 31);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked TWO_YEARS_PRIOR> = temp$3;
+        temp$4 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$4.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("TWO_TO_FIVE_YEARS", 4, 32);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked TWO_TO_FIVE_YEARS> = temp$4;
+        temp$5 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$5.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("THREE_TO_FIVE_YEARS", 5, 33);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked THREE_TO_FIVE_YEARS> = temp$5;
+        temp$6 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$6.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("THREE_TO_SIX_YEARS", 6, 34);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked THREE_TO_SIX_YEARS> = temp$6;
+        temp$7 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$7.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("SIX_TO_TEN_YEARS", 7, 35);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked SIX_TO_TEN_YEARS> = temp$7;
+        temp$8 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$8.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("SEVEN_TO_TEN_YEARS", 8, 36);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked SEVEN_TO_TEN_YEARS> = temp$8;
+        temp$9 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$9.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("TEN_PLUS_YEARS_AGO", 9, 40);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked TEN_PLUS_YEARS_AGO> = temp$9;
+        temp$10 = new durbodax.customers.Enums.LastYearWorked;
+        specialinvoke temp$10.<durbodax.customers.Enums.LastYearWorked: void <init>(java.lang.String,int,int)>("NEVER_WORKED", 10, 50);
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked NEVER_WORKED> = temp$10;
+        temp$11 = new java.util.HashMap;
+        specialinvoke temp$11.<java.util.HashMap: void <init>()>();
+        <durbodax.customers.Enums.LastYearWorked: java.util.Map lookup> = temp$11;
+        temp$13 = <durbodax.customers.Enums.LastYearWorked: java.lang.Class class$durbodax$customers$Enums$LastYearWorked>;
+        if temp$13 != null goto label0;
+
+        temp$14 = staticinvoke <durbodax.customers.Enums.LastYearWorked: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.LastYearWorked");
+        <durbodax.customers.Enums.LastYearWorked: java.lang.Class class$durbodax$customers$Enums$LastYearWorked> = temp$14;
+        temp$12 = temp$14;
+        goto label1;
+
+     label0:
+        nop;
+        temp$12 = <durbodax.customers.Enums.LastYearWorked: java.lang.Class class$durbodax$customers$Enums$LastYearWorked>;
+
+     label1:
+        nop;
+        temp$15 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(temp$12);
+        temp$16 = (java.util.EnumSet) temp$15;
+        temp$17 = interfaceinvoke temp$16.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label2:
+        nop;
+        temp$18 = interfaceinvoke temp$17.<java.util.Iterator: boolean hasNext()>();
+        if temp$18 == 0 goto label3;
+
+        temp$19 = interfaceinvoke temp$17.<java.util.Iterator: java.lang.Object next()>();
+        lastYear = (durbodax.customers.Enums.LastYearWorked) temp$19;
+        temp$20 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$20.<java.io.PrintStream: void println(java.lang.String)>("flow:329");
+        temp$21 = <durbodax.customers.Enums.LastYearWorked: java.util.Map lookup>;
+        temp$22 = virtualinvoke lastYear.<durbodax.customers.Enums.LastYearWorked: int getCode()>();
+        temp$23 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$22);
+        temp$24 = interfaceinvoke temp$21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$23, lastYear);
+        temp$25 = (durbodax.customers.Enums.LastYearWorked) temp$24;
+        nop;
+        goto label2;
+
+     label3:
+        nop;
+        temp$26 = newarray (durbodax.customers.Enums.LastYearWorked)[11];
+        temp$27 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked NA>;
+        temp$26[0] = temp$27;
+        temp$28 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked CURRENT_YEAR>;
+        temp$26[1] = temp$28;
+        temp$29 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked PREVIOUS_YEAR>;
+        temp$26[2] = temp$29;
+        temp$30 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked TWO_YEARS_PRIOR>;
+        temp$26[3] = temp$30;
+        temp$31 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked TWO_TO_FIVE_YEARS>;
+        temp$26[4] = temp$31;
+        temp$32 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked THREE_TO_FIVE_YEARS>;
+        temp$26[5] = temp$32;
+        temp$33 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked THREE_TO_SIX_YEARS>;
+        temp$26[6] = temp$33;
+        temp$34 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked SIX_TO_TEN_YEARS>;
+        temp$26[7] = temp$34;
+        temp$35 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked SEVEN_TO_TEN_YEARS>;
+        temp$26[8] = temp$35;
+        temp$36 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked TEN_PLUS_YEARS_AGO>;
+        temp$26[9] = temp$36;
+        temp$37 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked NEVER_WORKED>;
+        temp$26[10] = temp$37;
+        <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked[] $VALUES> = temp$26;
+        return;
+    }
+
+    private void <init>(java.lang.String, int, int)
+    {
+        durbodax.customers.Enums.LastYearWorked this;
+        java.lang.String @p0;
+        int @p1, code;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.customers.Enums.LastYearWorked;
+        @p0 := @parameter0: java.lang.String;
+        @p1 := @parameter1: int;
+        code := @parameter2: int;
+        specialinvoke this.<java.lang.Enum: void <init>(java.lang.String,int)>(@p0, @p1);
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:330");
+        this.<durbodax.customers.Enums.LastYearWorked: int code> = code;
+        return;
+    }
+
+    public final int getCode()
+    {
+        durbodax.customers.Enums.LastYearWorked this;
+        java.io.PrintStream temp$0;
+        int temp$1;
+
+        this := @this: durbodax.customers.Enums.LastYearWorked;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:331");
+        temp$1 = this.<durbodax.customers.Enums.LastYearWorked: int code>;
+        return temp$1;
+    }
+
+    public static final durbodax.customers.Enums.LastYearWorked getLastYear(int)
+    {
+        int code;
+        java.util.Map temp$0;
+        java.lang.Integer temp$1;
+        java.lang.Object temp$2;
+        durbodax.customers.Enums.LastYearWorked temp$3;
+
+        code := @parameter0: int;
+        temp$0 = <durbodax.customers.Enums.LastYearWorked: java.util.Map lookup>;
+        temp$1 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(code);
+        temp$2 = interfaceinvoke temp$0.<java.util.Map: java.lang.Object get(java.lang.Object)>(temp$1);
+        temp$3 = (durbodax.customers.Enums.LastYearWorked) temp$2;
+        return temp$3;
+    }
+
+    public static final durbodax.customers.Enums.LastYearWorked[] values()
+    {
+        durbodax.customers.Enums.LastYearWorked[] temp$0, temp$2;
+        java.lang.Object temp$1;
+
+        temp$0 = <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked[] $VALUES>;
+        temp$1 = virtualinvoke temp$0.<java.lang.Object: java.lang.Object clone()>();
+        temp$2 = (durbodax.customers.Enums.LastYearWorked[]) temp$1;
+        return temp$2;
+    }
+
+    public static final durbodax.customers.Enums.LastYearWorked valueOf(java.lang.String)
+    {
+        java.lang.String s;
+        java.lang.Class temp$0, temp$1, temp$2;
+        java.lang.Enum temp$3;
+        durbodax.customers.Enums.LastYearWorked temp$4;
+
+        s := @parameter0: java.lang.String;
+        temp$1 = <durbodax.customers.Enums.LastYearWorked: java.lang.Class class$durbodax$customers$Enums$LastYearWorked>;
+        if temp$1 != null goto label0;
+
+        temp$2 = staticinvoke <durbodax.customers.Enums.LastYearWorked: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.LastYearWorked");
+        <durbodax.customers.Enums.LastYearWorked: java.lang.Class class$durbodax$customers$Enums$LastYearWorked> = temp$2;
+        temp$0 = temp$2;
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <durbodax.customers.Enums.LastYearWorked: java.lang.Class class$durbodax$customers$Enums$LastYearWorked>;
+
+     label1:
+        nop;
+        temp$3 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(temp$0, s);
+        temp$4 = (durbodax.customers.Enums.LastYearWorked) temp$3;
+        return temp$4;
+    }
+
+    public static final java.lang.Class class$(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.lang.Class temp$0;
+        java.lang.ClassNotFoundException e;
+        java.lang.NoClassDefFoundError temp$1;
+
+        name := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(name);
+
+     label1:
+        nop;
+        return temp$0;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$1 = new java.lang.NoClassDefFoundError;
+        temp$2 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String getMessage()>();
+        specialinvoke temp$1.<java.lang.NoClassDefFoundError: void <init>(java.lang.String)>(temp$2);
+        throw temp$1;
+
+        catch java.lang.ClassNotFoundException from label0 to label1 with label2;
+    }
+}

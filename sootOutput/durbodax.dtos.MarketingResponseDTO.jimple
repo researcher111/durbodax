@@ -1,0 +1,213 @@
+public class durbodax.dtos.MarketingResponseDTO extends java.lang.Object
+{
+    private int id;
+    private int count;
+    private int income;
+    private java.lang.String incomeDesc;
+    private int age;
+    private java.lang.String ageDesc;
+    private int maritalStatus;
+    private java.lang.String birthPlace;
+
+    public int getId()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        temp$0 = this.<durbodax.dtos.MarketingResponseDTO: int id>;
+        return temp$0;
+    }
+
+    public void setId(int)
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int id;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        id := @parameter0: int;
+        this.<durbodax.dtos.MarketingResponseDTO: int id> = id;
+        return;
+    }
+
+    public int getCount()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        temp$0 = this.<durbodax.dtos.MarketingResponseDTO: int count>;
+        return temp$0;
+    }
+
+    public void setCount(int)
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int count;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        count := @parameter0: int;
+        this.<durbodax.dtos.MarketingResponseDTO: int count> = count;
+        return;
+    }
+
+    public int getIncome()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        temp$0 = this.<durbodax.dtos.MarketingResponseDTO: int income>;
+        return temp$0;
+    }
+
+    public void setIncome(int)
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int income;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        income := @parameter0: int;
+        this.<durbodax.dtos.MarketingResponseDTO: int income> = income;
+        return;
+    }
+
+    public java.lang.String getIncomeDesc()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        java.lang.String temp$0;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        temp$0 = this.<durbodax.dtos.MarketingResponseDTO: java.lang.String incomeDesc>;
+        return temp$0;
+    }
+
+    public void setIncomeDesc(java.lang.String)
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        java.lang.String incomeDesc;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        incomeDesc := @parameter0: java.lang.String;
+        this.<durbodax.dtos.MarketingResponseDTO: java.lang.String incomeDesc> = incomeDesc;
+        return;
+    }
+
+    public int getAge()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        temp$0 = this.<durbodax.dtos.MarketingResponseDTO: int age>;
+        return temp$0;
+    }
+
+    public void setAge(int)
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int age;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        age := @parameter0: int;
+        this.<durbodax.dtos.MarketingResponseDTO: int age> = age;
+        return;
+    }
+
+    public java.lang.String getAgeDesc()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        java.lang.String temp$0;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        temp$0 = this.<durbodax.dtos.MarketingResponseDTO: java.lang.String ageDesc>;
+        return temp$0;
+    }
+
+    public void setAgeDesc(java.lang.String)
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        java.lang.String ageDesc;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        ageDesc := @parameter0: java.lang.String;
+        this.<durbodax.dtos.MarketingResponseDTO: java.lang.String ageDesc> = ageDesc;
+        return;
+    }
+
+    public int getMaritalStatus()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        temp$0 = this.<durbodax.dtos.MarketingResponseDTO: int maritalStatus>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.MaritalStatus getMaritalStatusEnum()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int temp$0;
+        durbodax.customers.Enums.MaritalStatus temp$1;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        temp$0 = this.<durbodax.dtos.MarketingResponseDTO: int maritalStatus>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.MaritalStatus: durbodax.customers.Enums.MaritalStatus getStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public void setMaritalStatus(int)
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        int maritalStatus;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        maritalStatus := @parameter0: int;
+        this.<durbodax.dtos.MarketingResponseDTO: int maritalStatus> = maritalStatus;
+        return;
+    }
+
+    public void setMaritalStatus(durbodax.customers.Enums.MaritalStatus)
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        durbodax.customers.Enums.MaritalStatus maritalStatus;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        maritalStatus := @parameter0: durbodax.customers.Enums.MaritalStatus;
+        temp$0 = virtualinvoke maritalStatus.<durbodax.customers.Enums.MaritalStatus: int getCode()>();
+        this.<durbodax.dtos.MarketingResponseDTO: int maritalStatus> = temp$0;
+        return;
+    }
+
+    public java.lang.String getBirthPlace()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        java.lang.String temp$0;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        temp$0 = this.<durbodax.dtos.MarketingResponseDTO: java.lang.String birthPlace>;
+        return temp$0;
+    }
+
+    public void setBirthPlace(java.lang.String)
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+        java.lang.String birthPlace;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        birthPlace := @parameter0: java.lang.String;
+        this.<durbodax.dtos.MarketingResponseDTO: java.lang.String birthPlace> = birthPlace;
+        return;
+    }
+
+    public void <init>()
+    {
+        durbodax.dtos.MarketingResponseDTO this;
+
+        this := @this: durbodax.dtos.MarketingResponseDTO;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

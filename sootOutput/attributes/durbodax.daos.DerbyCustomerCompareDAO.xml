@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="6" eline="6" spos="0" epos="0"/>
+<text info="[condition]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="26" eline="26" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="61" eline="61" spos="0" epos="0"/>
+<text info="[query, gender]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="74" eline="74" spos="14" epos="38"/>
+<jmpPos sline="285" eline="285" spos="0" epos="0"/>
+<text info="soot.tagkit.ThrowCreatedByCompilerTag@60939442" aType="ThrowCreatedByCompilerTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="300" eline="300" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+</attributes>

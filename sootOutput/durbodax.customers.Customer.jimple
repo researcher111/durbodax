@@ -1,0 +1,1863 @@
+public class durbodax.customers.Customer extends java.lang.Object
+{
+    private int educationLevel;
+    private int employmentStatus;
+    private int farmStatus;
+    private int id;
+    private int laborForce;
+    private int lastYearWorked;
+    private int maritalStatus;
+    private int ownership;
+    private int race;
+    private int relationshipWHouseholder;
+    private int residentialStatus;
+    private int schoolStatus;
+    private int schoolType;
+    private int gender;
+    private int veteranStatus;
+    private int weeksWorkedPerYear;
+    private int workHours;
+    private int workClass;
+    private int value;
+    private int rent;
+    private int totalFamilyIncome;
+    private int numFamiliesInHouse;
+    private int numCouplesInHouse;
+    private int numMothersInHouse;
+    private int numFathersInHouse;
+    private int mothersLocationInHouse;
+    private int probableStepMother;
+    private int linkToMother;
+    private int fathersLocationInHouse;
+    private int probableStepFather;
+    private int linkToFather;
+    private int spouseLocationInHouse;
+    private int linkToSpouse;
+    private int numFamilyMembersInHouse;
+    private int numChildrenInHouse;
+    private int numChildenUnderFiveInHouse;
+    private int familyMembership;
+    private int ageOfEldestChild;
+    private int ageOfYoungestChild;
+    private int numSiblingsInHouse;
+    private int occupation1950Basis;
+    private int occupationIncomeScore;
+    private int socioEconomicIndex;
+    private int industry1950Basis;
+    private int totalPersonalIncome;
+    private int wageAndSalaryIncome;
+    private int nonFarmBusinessIncome;
+    private int farmIncome;
+    private int socialSecurityIncome;
+    private int welfareIncome;
+    private int otherIncome;
+    private int povertyStatus;
+    private int movedInCode;
+    private java.lang.String childBorn;
+    private java.lang.String birthplace;
+    private java.lang.String employmentIndustry;
+    private java.lang.String residence5YearsAgo;
+    private java.lang.String occupation;
+    private int age;
+
+    public void <init>()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = -1;
+        this.<durbodax.customers.Customer: int id> = temp$0;
+        return;
+    }
+
+    public void setBirthplace(java.lang.String)
+    {
+        durbodax.customers.Customer this;
+        java.lang.String birthplace;
+
+        this := @this: durbodax.customers.Customer;
+        birthplace := @parameter0: java.lang.String;
+        this.<durbodax.customers.Customer: java.lang.String birthplace> = birthplace;
+        return;
+    }
+
+    public void setChildBorn(java.lang.String)
+    {
+        durbodax.customers.Customer this;
+        java.lang.String childBorn;
+
+        this := @this: durbodax.customers.Customer;
+        childBorn := @parameter0: java.lang.String;
+        this.<durbodax.customers.Customer: java.lang.String childBorn> = childBorn;
+        return;
+    }
+
+    public void setEducationLevel(int)
+    {
+        durbodax.customers.Customer this;
+        int educationLevel;
+
+        this := @this: durbodax.customers.Customer;
+        educationLevel := @parameter0: int;
+        this.<durbodax.customers.Customer: int educationLevel> = educationLevel;
+        return;
+    }
+
+    public void setEducationLevel(durbodax.customers.Enums.EducationLevel)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.EducationLevel educationLevel;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        educationLevel := @parameter0: durbodax.customers.Enums.EducationLevel;
+        temp$0 = virtualinvoke educationLevel.<durbodax.customers.Enums.EducationLevel: int getCode()>();
+        this.<durbodax.customers.Customer: int educationLevel> = temp$0;
+        return;
+    }
+
+    public void setEmploymentIndustry(java.lang.String)
+    {
+        durbodax.customers.Customer this;
+        java.lang.String employmentIndustry;
+
+        this := @this: durbodax.customers.Customer;
+        employmentIndustry := @parameter0: java.lang.String;
+        this.<durbodax.customers.Customer: java.lang.String employmentIndustry> = employmentIndustry;
+        return;
+    }
+
+    public void setEmploymentStatus(int)
+    {
+        durbodax.customers.Customer this;
+        int employmentStatus;
+
+        this := @this: durbodax.customers.Customer;
+        employmentStatus := @parameter0: int;
+        this.<durbodax.customers.Customer: int employmentStatus> = employmentStatus;
+        return;
+    }
+
+    public void setEmploymentStatus(durbodax.customers.Enums.EmploymentStatus)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.EmploymentStatus employmentStatus;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        employmentStatus := @parameter0: durbodax.customers.Enums.EmploymentStatus;
+        temp$0 = virtualinvoke employmentStatus.<durbodax.customers.Enums.EmploymentStatus: int getCode()>();
+        this.<durbodax.customers.Customer: int employmentStatus> = temp$0;
+        return;
+    }
+
+    public void setFarmStatus(int)
+    {
+        durbodax.customers.Customer this;
+        int farmStatus;
+
+        this := @this: durbodax.customers.Customer;
+        farmStatus := @parameter0: int;
+        this.<durbodax.customers.Customer: int farmStatus> = farmStatus;
+        return;
+    }
+
+    public void setFarmStatus(durbodax.customers.Enums.Farm)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.Farm farmStatus;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        farmStatus := @parameter0: durbodax.customers.Enums.Farm;
+        temp$0 = virtualinvoke farmStatus.<durbodax.customers.Enums.Farm: int getCode()>();
+        this.<durbodax.customers.Customer: int farmStatus> = temp$0;
+        return;
+    }
+
+    public void setGender(int)
+    {
+        durbodax.customers.Customer this;
+        int gender;
+
+        this := @this: durbodax.customers.Customer;
+        gender := @parameter0: int;
+        this.<durbodax.customers.Customer: int gender> = gender;
+        return;
+    }
+
+    public void setGender(durbodax.customers.Enums.Sex)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.Sex gender;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        gender := @parameter0: durbodax.customers.Enums.Sex;
+        temp$0 = virtualinvoke gender.<durbodax.customers.Enums.Sex: int getCode()>();
+        this.<durbodax.customers.Customer: int gender> = temp$0;
+        return;
+    }
+
+    public void setId(int)
+    {
+        durbodax.customers.Customer this;
+        int id;
+
+        this := @this: durbodax.customers.Customer;
+        id := @parameter0: int;
+        this.<durbodax.customers.Customer: int id> = id;
+        return;
+    }
+
+    public void setLaborForce(int)
+    {
+        durbodax.customers.Customer this;
+        int laborForce;
+
+        this := @this: durbodax.customers.Customer;
+        laborForce := @parameter0: int;
+        this.<durbodax.customers.Customer: int laborForce> = laborForce;
+        return;
+    }
+
+    public void setLaborForce(durbodax.customers.Enums.LaborForce)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.LaborForce laborForce;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        laborForce := @parameter0: durbodax.customers.Enums.LaborForce;
+        temp$0 = virtualinvoke laborForce.<durbodax.customers.Enums.LaborForce: int getCode()>();
+        this.<durbodax.customers.Customer: int laborForce> = temp$0;
+        return;
+    }
+
+    public void setLastYearWorked(int)
+    {
+        durbodax.customers.Customer this;
+        int lastYearWorked;
+
+        this := @this: durbodax.customers.Customer;
+        lastYearWorked := @parameter0: int;
+        this.<durbodax.customers.Customer: int lastYearWorked> = lastYearWorked;
+        return;
+    }
+
+    public void setLastYearWorked(durbodax.customers.Enums.LastYearWorked)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.LastYearWorked lastYearWorked;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        lastYearWorked := @parameter0: durbodax.customers.Enums.LastYearWorked;
+        temp$0 = virtualinvoke lastYearWorked.<durbodax.customers.Enums.LastYearWorked: int getCode()>();
+        this.<durbodax.customers.Customer: int lastYearWorked> = temp$0;
+        return;
+    }
+
+    public void setMaritalStatus(int)
+    {
+        durbodax.customers.Customer this;
+        int maritalStatus;
+
+        this := @this: durbodax.customers.Customer;
+        maritalStatus := @parameter0: int;
+        this.<durbodax.customers.Customer: int maritalStatus> = maritalStatus;
+        return;
+    }
+
+    public void setMaritalStatus(durbodax.customers.Enums.MaritalStatus)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.MaritalStatus maritalStatus;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        maritalStatus := @parameter0: durbodax.customers.Enums.MaritalStatus;
+        temp$0 = virtualinvoke maritalStatus.<durbodax.customers.Enums.MaritalStatus: int getCode()>();
+        this.<durbodax.customers.Customer: int maritalStatus> = temp$0;
+        return;
+    }
+
+    public void setOccupation(java.lang.String)
+    {
+        durbodax.customers.Customer this;
+        java.lang.String occupation;
+
+        this := @this: durbodax.customers.Customer;
+        occupation := @parameter0: java.lang.String;
+        this.<durbodax.customers.Customer: java.lang.String occupation> = occupation;
+        return;
+    }
+
+    public void setOwnership(int)
+    {
+        durbodax.customers.Customer this;
+        int ownership;
+
+        this := @this: durbodax.customers.Customer;
+        ownership := @parameter0: int;
+        this.<durbodax.customers.Customer: int ownership> = ownership;
+        return;
+    }
+
+    public void setOwnership(durbodax.customers.Enums.Ownership)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.Ownership ownership;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        ownership := @parameter0: durbodax.customers.Enums.Ownership;
+        temp$0 = virtualinvoke ownership.<durbodax.customers.Enums.Ownership: int getCode()>();
+        this.<durbodax.customers.Customer: int ownership> = temp$0;
+        return;
+    }
+
+    public void setRace(int)
+    {
+        durbodax.customers.Customer this;
+        int race;
+
+        this := @this: durbodax.customers.Customer;
+        race := @parameter0: int;
+        this.<durbodax.customers.Customer: int race> = race;
+        return;
+    }
+
+    public void setRace(durbodax.customers.Enums.Race)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.Race race;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        race := @parameter0: durbodax.customers.Enums.Race;
+        temp$0 = virtualinvoke race.<durbodax.customers.Enums.Race: int getCode()>();
+        this.<durbodax.customers.Customer: int race> = temp$0;
+        return;
+    }
+
+    public void setRelationshipWHouseholder(int)
+    {
+        durbodax.customers.Customer this;
+        int relationshipWHouseholder;
+
+        this := @this: durbodax.customers.Customer;
+        relationshipWHouseholder := @parameter0: int;
+        this.<durbodax.customers.Customer: int relationshipWHouseholder> = relationshipWHouseholder;
+        return;
+    }
+
+    public void setRelationshipWHouseholder(durbodax.customers.Enums.RelationWHeadHouse)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.RelationWHeadHouse relationshipWHouseholder;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        relationshipWHouseholder := @parameter0: durbodax.customers.Enums.RelationWHeadHouse;
+        temp$0 = virtualinvoke relationshipWHouseholder.<durbodax.customers.Enums.RelationWHeadHouse: int getCode()>();
+        this.<durbodax.customers.Customer: int relationshipWHouseholder> = temp$0;
+        return;
+    }
+
+    public void setResidence5YearsAgo(java.lang.String)
+    {
+        durbodax.customers.Customer this;
+        java.lang.String residence5YearsAgo;
+
+        this := @this: durbodax.customers.Customer;
+        residence5YearsAgo := @parameter0: java.lang.String;
+        this.<durbodax.customers.Customer: java.lang.String residence5YearsAgo> = residence5YearsAgo;
+        return;
+    }
+
+    public void setResidentialStatus(int)
+    {
+        durbodax.customers.Customer this;
+        int residentialStatus;
+
+        this := @this: durbodax.customers.Customer;
+        residentialStatus := @parameter0: int;
+        this.<durbodax.customers.Customer: int residentialStatus> = residentialStatus;
+        return;
+    }
+
+    public void setResidentialStatus(durbodax.customers.Enums.ResidentialStatus)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.ResidentialStatus residentialStatus;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        residentialStatus := @parameter0: durbodax.customers.Enums.ResidentialStatus;
+        temp$0 = virtualinvoke residentialStatus.<durbodax.customers.Enums.ResidentialStatus: int getCode()>();
+        this.<durbodax.customers.Customer: int residentialStatus> = temp$0;
+        return;
+    }
+
+    public void setSchoolStatus(int)
+    {
+        durbodax.customers.Customer this;
+        int schoolStatus;
+
+        this := @this: durbodax.customers.Customer;
+        schoolStatus := @parameter0: int;
+        this.<durbodax.customers.Customer: int schoolStatus> = schoolStatus;
+        return;
+    }
+
+    public void setSchoolStatus(durbodax.customers.Enums.SchoolStatus)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.SchoolStatus schoolStatus;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        schoolStatus := @parameter0: durbodax.customers.Enums.SchoolStatus;
+        temp$0 = virtualinvoke schoolStatus.<durbodax.customers.Enums.SchoolStatus: int getCode()>();
+        this.<durbodax.customers.Customer: int schoolStatus> = temp$0;
+        return;
+    }
+
+    public void setSchoolType(int)
+    {
+        durbodax.customers.Customer this;
+        int schoolType;
+
+        this := @this: durbodax.customers.Customer;
+        schoolType := @parameter0: int;
+        this.<durbodax.customers.Customer: int schoolType> = schoolType;
+        return;
+    }
+
+    public void setSchoolType(durbodax.customers.Enums.SchoolType)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.SchoolType schoolType;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        schoolType := @parameter0: durbodax.customers.Enums.SchoolType;
+        temp$0 = virtualinvoke schoolType.<durbodax.customers.Enums.SchoolType: int getCode()>();
+        this.<durbodax.customers.Customer: int schoolType> = temp$0;
+        return;
+    }
+
+    public void setVeteranStatus(int)
+    {
+        durbodax.customers.Customer this;
+        int veteranStatus;
+
+        this := @this: durbodax.customers.Customer;
+        veteranStatus := @parameter0: int;
+        this.<durbodax.customers.Customer: int veteranStatus> = veteranStatus;
+        return;
+    }
+
+    public void setVeteranStatus(durbodax.customers.Enums.VeteranStatus)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.VeteranStatus veteranStatus;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        veteranStatus := @parameter0: durbodax.customers.Enums.VeteranStatus;
+        temp$0 = virtualinvoke veteranStatus.<durbodax.customers.Enums.VeteranStatus: int getCode()>();
+        this.<durbodax.customers.Customer: int veteranStatus> = temp$0;
+        return;
+    }
+
+    public void setWeeksWorkedPerYear(int)
+    {
+        durbodax.customers.Customer this;
+        int weeksWorkedPerYear;
+
+        this := @this: durbodax.customers.Customer;
+        weeksWorkedPerYear := @parameter0: int;
+        this.<durbodax.customers.Customer: int weeksWorkedPerYear> = weeksWorkedPerYear;
+        return;
+    }
+
+    public void setWeeksWorkedPerYear(durbodax.customers.Enums.WeeksWorkedPerYear)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.WeeksWorkedPerYear weeksWorkedPerYear;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        weeksWorkedPerYear := @parameter0: durbodax.customers.Enums.WeeksWorkedPerYear;
+        temp$0 = virtualinvoke weeksWorkedPerYear.<durbodax.customers.Enums.WeeksWorkedPerYear: int getCode()>();
+        this.<durbodax.customers.Customer: int weeksWorkedPerYear> = temp$0;
+        return;
+    }
+
+    public void setWorkClass(int)
+    {
+        durbodax.customers.Customer this;
+        int workClass;
+
+        this := @this: durbodax.customers.Customer;
+        workClass := @parameter0: int;
+        this.<durbodax.customers.Customer: int workClass> = workClass;
+        return;
+    }
+
+    public void setWorkClass(durbodax.customers.Enums.WorkingClass)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.WorkingClass workClass;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        workClass := @parameter0: durbodax.customers.Enums.WorkingClass;
+        temp$0 = virtualinvoke workClass.<durbodax.customers.Enums.WorkingClass: int getCode()>();
+        this.<durbodax.customers.Customer: int workClass> = temp$0;
+        return;
+    }
+
+    public void setWorkHours(int)
+    {
+        durbodax.customers.Customer this;
+        int workHours;
+
+        this := @this: durbodax.customers.Customer;
+        workHours := @parameter0: int;
+        this.<durbodax.customers.Customer: int workHours> = workHours;
+        return;
+    }
+
+    public void setWorkHours(durbodax.customers.Enums.WorkHours)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.WorkHours workHours;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        workHours := @parameter0: durbodax.customers.Enums.WorkHours;
+        temp$0 = virtualinvoke workHours.<durbodax.customers.Enums.WorkHours: int getCode()>();
+        this.<durbodax.customers.Customer: int workHours> = temp$0;
+        return;
+    }
+
+    public void setAgeOfEldestChild(int)
+    {
+        durbodax.customers.Customer this;
+        int ageOfEldestChild;
+
+        this := @this: durbodax.customers.Customer;
+        ageOfEldestChild := @parameter0: int;
+        this.<durbodax.customers.Customer: int ageOfEldestChild> = ageOfEldestChild;
+        return;
+    }
+
+    public void setAgeOfYoungestChild(int)
+    {
+        durbodax.customers.Customer this;
+        int ageOfYoungestChild;
+
+        this := @this: durbodax.customers.Customer;
+        ageOfYoungestChild := @parameter0: int;
+        this.<durbodax.customers.Customer: int ageOfYoungestChild> = ageOfYoungestChild;
+        return;
+    }
+
+    public void setFamilyMembership(int)
+    {
+        durbodax.customers.Customer this;
+        int familyMembership;
+
+        this := @this: durbodax.customers.Customer;
+        familyMembership := @parameter0: int;
+        this.<durbodax.customers.Customer: int familyMembership> = familyMembership;
+        return;
+    }
+
+    public void setFarmIncome(int)
+    {
+        durbodax.customers.Customer this;
+        int farmIncome;
+
+        this := @this: durbodax.customers.Customer;
+        farmIncome := @parameter0: int;
+        this.<durbodax.customers.Customer: int farmIncome> = farmIncome;
+        return;
+    }
+
+    public void setFathersLocationInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int fathersLocationInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        fathersLocationInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int fathersLocationInHouse> = fathersLocationInHouse;
+        return;
+    }
+
+    public void setIndustry1950Basis(int)
+    {
+        durbodax.customers.Customer this;
+        int industry1950Basis;
+
+        this := @this: durbodax.customers.Customer;
+        industry1950Basis := @parameter0: int;
+        this.<durbodax.customers.Customer: int industry1950Basis> = industry1950Basis;
+        return;
+    }
+
+    public void setLinkToFather(int)
+    {
+        durbodax.customers.Customer this;
+        int linkToFather;
+
+        this := @this: durbodax.customers.Customer;
+        linkToFather := @parameter0: int;
+        this.<durbodax.customers.Customer: int linkToFather> = linkToFather;
+        return;
+    }
+
+    public void setLinkToFather(durbodax.customers.Enums.LinkToFather)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.LinkToFather link;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        link := @parameter0: durbodax.customers.Enums.LinkToFather;
+        temp$0 = virtualinvoke link.<durbodax.customers.Enums.LinkToFather: int getCode()>();
+        this.<durbodax.customers.Customer: int linkToFather> = temp$0;
+        return;
+    }
+
+    public void setLinkToMother(int)
+    {
+        durbodax.customers.Customer this;
+        int linkToMother;
+
+        this := @this: durbodax.customers.Customer;
+        linkToMother := @parameter0: int;
+        this.<durbodax.customers.Customer: int linkToMother> = linkToMother;
+        return;
+    }
+
+    public void setLinkToMother(durbodax.customers.Enums.LinkToMother)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.LinkToMother link;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        link := @parameter0: durbodax.customers.Enums.LinkToMother;
+        temp$0 = virtualinvoke link.<durbodax.customers.Enums.LinkToMother: int getCode()>();
+        this.<durbodax.customers.Customer: int linkToMother> = temp$0;
+        return;
+    }
+
+    public void setLinkToSpouse(int)
+    {
+        durbodax.customers.Customer this;
+        int linkToSpouse;
+
+        this := @this: durbodax.customers.Customer;
+        linkToSpouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int linkToSpouse> = linkToSpouse;
+        return;
+    }
+
+    public void setLinkToSpouse(durbodax.customers.Enums.LinkToSpouse)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.LinkToSpouse link;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        link := @parameter0: durbodax.customers.Enums.LinkToSpouse;
+        temp$0 = virtualinvoke link.<durbodax.customers.Enums.LinkToSpouse: int getCode()>();
+        this.<durbodax.customers.Customer: int linkToSpouse> = temp$0;
+        return;
+    }
+
+    public void setMothersLocationInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int mothersLocationInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        mothersLocationInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int mothersLocationInHouse> = mothersLocationInHouse;
+        return;
+    }
+
+    public void setMovedInCode(int)
+    {
+        durbodax.customers.Customer this;
+        int movedInCode;
+
+        this := @this: durbodax.customers.Customer;
+        movedInCode := @parameter0: int;
+        this.<durbodax.customers.Customer: int movedInCode> = movedInCode;
+        return;
+    }
+
+    public void setMovedInCode(durbodax.customers.Enums.MovedIn)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.MovedIn moved;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        moved := @parameter0: durbodax.customers.Enums.MovedIn;
+        temp$0 = virtualinvoke moved.<durbodax.customers.Enums.MovedIn: int getCode()>();
+        this.<durbodax.customers.Customer: int movedInCode> = temp$0;
+        return;
+    }
+
+    public void setNonFarmBusinessIncome(int)
+    {
+        durbodax.customers.Customer this;
+        int nonFarmBusinessIncome;
+
+        this := @this: durbodax.customers.Customer;
+        nonFarmBusinessIncome := @parameter0: int;
+        this.<durbodax.customers.Customer: int nonFarmBusinessIncome> = nonFarmBusinessIncome;
+        return;
+    }
+
+    public void setNumChildenUnderFiveInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int numChildenUnderFiveInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        numChildenUnderFiveInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int numChildenUnderFiveInHouse> = numChildenUnderFiveInHouse;
+        return;
+    }
+
+    public void setNumChildrenUnderFiveInHouse(durbodax.customers.Enums.ChildrenUnderFive)
+    {
+        durbodax.customers.Customer this;
+        durbodax.customers.Enums.ChildrenUnderFive children;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        children := @parameter0: durbodax.customers.Enums.ChildrenUnderFive;
+        temp$0 = virtualinvoke children.<durbodax.customers.Enums.ChildrenUnderFive: int getCode()>();
+        this.<durbodax.customers.Customer: int numChildenUnderFiveInHouse> = temp$0;
+        return;
+    }
+
+    public void setNumChildrenInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int numChildrenInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        numChildrenInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int numChildrenInHouse> = numChildrenInHouse;
+        return;
+    }
+
+    public void setNumCouplesInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int numCouplesInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        numCouplesInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int numCouplesInHouse> = numCouplesInHouse;
+        return;
+    }
+
+    public void setNumFamiliesInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int numFamiliesInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        numFamiliesInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int numFamiliesInHouse> = numFamiliesInHouse;
+        return;
+    }
+
+    public void setNumFamilyMembersInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int numFamilyMembersInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        numFamilyMembersInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int numFamilyMembersInHouse> = numFamilyMembersInHouse;
+        return;
+    }
+
+    public void setNumFathersInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int numFathersInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        numFathersInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int numFathersInHouse> = numFathersInHouse;
+        return;
+    }
+
+    public void setNumMothersInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int numMothersInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        numMothersInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int numMothersInHouse> = numMothersInHouse;
+        return;
+    }
+
+    public void setNumSiblingsInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int numSiblingsInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        numSiblingsInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int numSiblingsInHouse> = numSiblingsInHouse;
+        return;
+    }
+
+    public void setOccupation1950Basis(int)
+    {
+        durbodax.customers.Customer this;
+        int occupation1950Basis;
+
+        this := @this: durbodax.customers.Customer;
+        occupation1950Basis := @parameter0: int;
+        this.<durbodax.customers.Customer: int occupation1950Basis> = occupation1950Basis;
+        return;
+    }
+
+    public void setOccupationIncomeScore(int)
+    {
+        durbodax.customers.Customer this;
+        int occupationIncomeScore;
+
+        this := @this: durbodax.customers.Customer;
+        occupationIncomeScore := @parameter0: int;
+        this.<durbodax.customers.Customer: int occupationIncomeScore> = occupationIncomeScore;
+        return;
+    }
+
+    public void setOtherIncome(int)
+    {
+        durbodax.customers.Customer this;
+        int otherIncome;
+
+        this := @this: durbodax.customers.Customer;
+        otherIncome := @parameter0: int;
+        this.<durbodax.customers.Customer: int otherIncome> = otherIncome;
+        return;
+    }
+
+    public void setPovertyStatus(int)
+    {
+        durbodax.customers.Customer this;
+        int povertyStatus;
+
+        this := @this: durbodax.customers.Customer;
+        povertyStatus := @parameter0: int;
+        this.<durbodax.customers.Customer: int povertyStatus> = povertyStatus;
+        return;
+    }
+
+    public void setProbableStepFather(int)
+    {
+        durbodax.customers.Customer this;
+        int probableStepFather;
+
+        this := @this: durbodax.customers.Customer;
+        probableStepFather := @parameter0: int;
+        this.<durbodax.customers.Customer: int probableStepFather> = probableStepFather;
+        return;
+    }
+
+    public void setProbableStepMother(int)
+    {
+        durbodax.customers.Customer this;
+        int probableStepMother;
+
+        this := @this: durbodax.customers.Customer;
+        probableStepMother := @parameter0: int;
+        this.<durbodax.customers.Customer: int probableStepMother> = probableStepMother;
+        return;
+    }
+
+    public void setRent(int)
+    {
+        durbodax.customers.Customer this;
+        int rent;
+
+        this := @this: durbodax.customers.Customer;
+        rent := @parameter0: int;
+        this.<durbodax.customers.Customer: int rent> = rent;
+        return;
+    }
+
+    public void setSocialSecurityIncome(int)
+    {
+        durbodax.customers.Customer this;
+        int socialSecurityIncome;
+
+        this := @this: durbodax.customers.Customer;
+        socialSecurityIncome := @parameter0: int;
+        this.<durbodax.customers.Customer: int socialSecurityIncome> = socialSecurityIncome;
+        return;
+    }
+
+    public void setSocioEconomicIndex(int)
+    {
+        durbodax.customers.Customer this;
+        int socioEconomicIndex;
+
+        this := @this: durbodax.customers.Customer;
+        socioEconomicIndex := @parameter0: int;
+        this.<durbodax.customers.Customer: int socioEconomicIndex> = socioEconomicIndex;
+        return;
+    }
+
+    public void setSpouseLocationInHouse(int)
+    {
+        durbodax.customers.Customer this;
+        int spouseLocationInHouse;
+
+        this := @this: durbodax.customers.Customer;
+        spouseLocationInHouse := @parameter0: int;
+        this.<durbodax.customers.Customer: int spouseLocationInHouse> = spouseLocationInHouse;
+        return;
+    }
+
+    public void setTotalFamilyIncome(int)
+    {
+        durbodax.customers.Customer this;
+        int totalFamilyIncome;
+
+        this := @this: durbodax.customers.Customer;
+        totalFamilyIncome := @parameter0: int;
+        this.<durbodax.customers.Customer: int totalFamilyIncome> = totalFamilyIncome;
+        return;
+    }
+
+    public void setTotalPersonalIncome(int)
+    {
+        durbodax.customers.Customer this;
+        int totalPersonalIncome;
+
+        this := @this: durbodax.customers.Customer;
+        totalPersonalIncome := @parameter0: int;
+        this.<durbodax.customers.Customer: int totalPersonalIncome> = totalPersonalIncome;
+        return;
+    }
+
+    public void setValue(int)
+    {
+        durbodax.customers.Customer this;
+        int value;
+
+        this := @this: durbodax.customers.Customer;
+        value := @parameter0: int;
+        this.<durbodax.customers.Customer: int value> = value;
+        return;
+    }
+
+    public void setWageAndSalaryIncome(int)
+    {
+        durbodax.customers.Customer this;
+        int wageAndSalaryIncome;
+
+        this := @this: durbodax.customers.Customer;
+        wageAndSalaryIncome := @parameter0: int;
+        this.<durbodax.customers.Customer: int wageAndSalaryIncome> = wageAndSalaryIncome;
+        return;
+    }
+
+    public void setWelfareIncome(int)
+    {
+        durbodax.customers.Customer this;
+        int welfareIncome;
+
+        this := @this: durbodax.customers.Customer;
+        welfareIncome := @parameter0: int;
+        this.<durbodax.customers.Customer: int welfareIncome> = welfareIncome;
+        return;
+    }
+
+    public java.lang.String getBirthplace()
+    {
+        durbodax.customers.Customer this;
+        java.lang.String temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: java.lang.String birthplace>;
+        return temp$0;
+    }
+
+    public java.lang.String getChildBorn()
+    {
+        durbodax.customers.Customer this;
+        java.lang.String temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: java.lang.String childBorn>;
+        return temp$0;
+    }
+
+    public int getEducationLevel()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int educationLevel>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.EducationLevel getEducationLevelEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.EducationLevel temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int educationLevel>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.EducationLevel: durbodax.customers.Enums.EducationLevel getLevel(int)>(temp$0);
+        return temp$1;
+    }
+
+    public java.lang.String getEmploymentIndustry()
+    {
+        durbodax.customers.Customer this;
+        java.lang.String temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: java.lang.String employmentIndustry>;
+        return temp$0;
+    }
+
+    public int getEmploymentStatus()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int employmentStatus>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.EmploymentStatus getEmploymentStatusEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.EmploymentStatus temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int employmentStatus>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.EmploymentStatus: durbodax.customers.Enums.EmploymentStatus getStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getFarmStatus()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int farmStatus>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.Farm getFarmStatusEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.Farm temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int farmStatus>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.Farm: durbodax.customers.Enums.Farm getStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getGender()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int gender>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.Sex getGenderEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.Sex temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int gender>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex getGender(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getLaborForce()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int laborForce>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.LaborForce getLaborForceEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.LaborForce temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int laborForce>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.LaborForce: durbodax.customers.Enums.LaborForce getStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getLastYearWorked()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int lastYearWorked>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.LastYearWorked getLastYearWorkedEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.LastYearWorked temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int lastYearWorked>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.LastYearWorked: durbodax.customers.Enums.LastYearWorked getLastYear(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getMaritalStatus()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int maritalStatus>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.MaritalStatus getMaritalStatusEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.MaritalStatus temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int maritalStatus>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.MaritalStatus: durbodax.customers.Enums.MaritalStatus getStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public java.lang.String getOccupation()
+    {
+        durbodax.customers.Customer this;
+        java.lang.String temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: java.lang.String occupation>;
+        return temp$0;
+    }
+
+    public int getOwnership()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int ownership>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.Ownership getOwnershipEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.Ownership temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int ownership>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.Ownership: durbodax.customers.Enums.Ownership getOwnershipStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getRace()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int race>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.Race getRaceEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.Race temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int race>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.Race: durbodax.customers.Enums.Race getRace(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getRelationshipWHouseholder()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int relationshipWHouseholder>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.RelationWHeadHouse getRelationshipWHouseholderEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.RelationWHeadHouse temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int relationshipWHouseholder>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.RelationWHeadHouse: durbodax.customers.Enums.RelationWHeadHouse getRelationship(int)>(temp$0);
+        return temp$1;
+    }
+
+    public java.lang.String getResidence5YearsAgo()
+    {
+        durbodax.customers.Customer this;
+        java.lang.String temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: java.lang.String residence5YearsAgo>;
+        return temp$0;
+    }
+
+    public int getResidentialStatus()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int residentialStatus>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.ResidentialStatus getResidentialStatusEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.ResidentialStatus temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int residentialStatus>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.ResidentialStatus: durbodax.customers.Enums.ResidentialStatus getStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getSchoolStatus()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int schoolStatus>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.SchoolStatus getSchoolStatusEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.SchoolStatus temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int schoolStatus>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.SchoolStatus: durbodax.customers.Enums.SchoolStatus getStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getSchoolType()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int schoolType>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.SchoolType getSchoolTypeEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.SchoolType temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int schoolType>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.SchoolType: durbodax.customers.Enums.SchoolType getSchoolType(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getVeteranStatus()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int veteranStatus>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.VeteranStatus getVeteranStatusEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.VeteranStatus temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int veteranStatus>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus getStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getWeeksWorkedPerYear()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int weeksWorkedPerYear>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.WeeksWorkedPerYear getWeeksWorkedPerYearEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.WeeksWorkedPerYear temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int weeksWorkedPerYear>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.WeeksWorkedPerYear: durbodax.customers.Enums.WeeksWorkedPerYear getWeeksWorked(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getWorkClass()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int workClass>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.WorkingClass getWorkClassEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.WorkingClass temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int workClass>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass getWorkStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getWorkHours()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int workHours>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.WorkHours getWorkHoursEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.WorkHours temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int workHours>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.WorkHours: durbodax.customers.Enums.WorkHours getWorkHours(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getAgeOfEldestChild()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int ageOfEldestChild>;
+        return temp$0;
+    }
+
+    public int getAgeOfYoungestChild()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int ageOfYoungestChild>;
+        return temp$0;
+    }
+
+    public int getFamilyMembership()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int familyMembership>;
+        return temp$0;
+    }
+
+    public int getFarmIncome()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int farmIncome>;
+        return temp$0;
+    }
+
+    public int getFathersLocationInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int fathersLocationInHouse>;
+        return temp$0;
+    }
+
+    public int getId()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int id>;
+        return temp$0;
+    }
+
+    public int getIndustry1950Basis()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int industry1950Basis>;
+        return temp$0;
+    }
+
+    public int getLinkToFather()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int linkToFather>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.LinkToFather getLinkToFatherEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.LinkToFather temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int linkToFather>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather getLink(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getLinkToMother()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int linkToMother>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.LinkToMother getLinkToMotherEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.LinkToMother temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int linkToMother>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.LinkToMother: durbodax.customers.Enums.LinkToMother getLink(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getLinkToSpouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int linkToSpouse>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.LinkToSpouse getLinkToSpouseEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.LinkToSpouse temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int linkToSpouse>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.LinkToSpouse: durbodax.customers.Enums.LinkToSpouse getLink(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getMothersLocationInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int mothersLocationInHouse>;
+        return temp$0;
+    }
+
+    public int getMovedInCode()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int movedInCode>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.MovedIn getMovedInCodeEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.MovedIn temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int movedInCode>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.MovedIn: durbodax.customers.Enums.MovedIn getStatus(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getNonFarmBusinessIncome()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int nonFarmBusinessIncome>;
+        return temp$0;
+    }
+
+    public int getNumChildenUnderFiveInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int numChildenUnderFiveInHouse>;
+        return temp$0;
+    }
+
+    public durbodax.customers.Enums.ChildrenUnderFive getNumChildrenUnderFiveInHouseEnum()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+        durbodax.customers.Enums.ChildrenUnderFive temp$1;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int numChildenUnderFiveInHouse>;
+        temp$1 = staticinvoke <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive getNumberChildren(int)>(temp$0);
+        return temp$1;
+    }
+
+    public int getNumChildrenInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int numChildrenInHouse>;
+        return temp$0;
+    }
+
+    public int getNumCouplesInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int numCouplesInHouse>;
+        return temp$0;
+    }
+
+    public int getNumFamiliesInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int numFamiliesInHouse>;
+        return temp$0;
+    }
+
+    public int getNumFamilyMembersInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int numFamilyMembersInHouse>;
+        return temp$0;
+    }
+
+    public int getNumFathersInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int numFathersInHouse>;
+        return temp$0;
+    }
+
+    public int getNumMothersInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int numMothersInHouse>;
+        return temp$0;
+    }
+
+    public int getNumSiblingsInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int numSiblingsInHouse>;
+        return temp$0;
+    }
+
+    public int getOccupation1950Basis()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int occupation1950Basis>;
+        return temp$0;
+    }
+
+    public int getOccupationIncomeScore()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int occupationIncomeScore>;
+        return temp$0;
+    }
+
+    public int getOtherIncome()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int otherIncome>;
+        return temp$0;
+    }
+
+    public int getPovertyStatus()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int povertyStatus>;
+        return temp$0;
+    }
+
+    public int getProbableStepFather()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int probableStepFather>;
+        return temp$0;
+    }
+
+    public int getProbableStepMother()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int probableStepMother>;
+        return temp$0;
+    }
+
+    public int getRent()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int rent>;
+        return temp$0;
+    }
+
+    public int getSocialSecurityIncome()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int socialSecurityIncome>;
+        return temp$0;
+    }
+
+    public int getSocioEconomicIndex()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int socioEconomicIndex>;
+        return temp$0;
+    }
+
+    public int getSpouseLocationInHouse()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int spouseLocationInHouse>;
+        return temp$0;
+    }
+
+    public int getTotalFamilyIncome()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int totalFamilyIncome>;
+        return temp$0;
+    }
+
+    public int getTotalPersonalIncome()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int totalPersonalIncome>;
+        return temp$0;
+    }
+
+    public int getValue()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int value>;
+        return temp$0;
+    }
+
+    public int getWageAndSalaryIncome()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int wageAndSalaryIncome>;
+        return temp$0;
+    }
+
+    public int getWelfareIncome()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int welfareIncome>;
+        return temp$0;
+    }
+
+    public int getAge()
+    {
+        durbodax.customers.Customer this;
+        int temp$0;
+
+        this := @this: durbodax.customers.Customer;
+        temp$0 = this.<durbodax.customers.Customer: int age>;
+        return temp$0;
+    }
+
+    public void setAge(int)
+    {
+        durbodax.customers.Customer this;
+        int age;
+
+        this := @this: durbodax.customers.Customer;
+        age := @parameter0: int;
+        this.<durbodax.customers.Customer: int age> = age;
+        return;
+    }
+}

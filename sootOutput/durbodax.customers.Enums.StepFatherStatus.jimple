@@ -1,0 +1,225 @@
+public final enum class durbodax.customers.Enums.StepFatherStatus extends java.lang.Enum
+{
+    public static final enum durbodax.customers.Enums.StepFatherStatus NO_STEP_FATHER;
+    public static final enum durbodax.customers.Enums.StepFatherStatus IMPROBABLE_AGE_DIFF;
+    public static final enum durbodax.customers.Enums.StepFatherStatus SPOUSE_OF_MOTHER;
+    public static final enum durbodax.customers.Enums.StepFatherStatus IDENTIFIED_STEP_FATHER;
+    public static final enum durbodax.customers.Enums.StepFatherStatus ADOPTED;
+    public static final enum durbodax.customers.Enums.StepFatherStatus MISMATCH;
+    public static final enum durbodax.customers.Enums.StepFatherStatus SURNAME_DIFF;
+    private static final java.util.Map lookup;
+    private int code;
+    private static final durbodax.customers.Enums.StepFatherStatus[] $VALUES;
+    public static java.lang.Class class$durbodax$customers$Enums$StepFatherStatus;
+
+    static void <clinit>()
+    {
+        durbodax.customers.Enums.StepFatherStatus temp$0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, father, temp$21, temp$23, temp$24, temp$25, temp$26, temp$27, temp$28, temp$29;
+        java.util.HashMap temp$7;
+        java.lang.Class temp$8, temp$9, temp$10;
+        java.util.EnumSet temp$11, temp$12;
+        java.util.Iterator temp$13;
+        boolean temp$14;
+        java.lang.Object temp$15, temp$20;
+        java.io.PrintStream temp$16;
+        java.util.Map temp$17;
+        int temp$18;
+        java.lang.Integer temp$19;
+        durbodax.customers.Enums.StepFatherStatus[] temp$22;
+
+        temp$0 = new durbodax.customers.Enums.StepFatherStatus;
+        specialinvoke temp$0.<durbodax.customers.Enums.StepFatherStatus: void <init>(java.lang.String,int,int)>("NO_STEP_FATHER", 0, 0);
+        <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus NO_STEP_FATHER> = temp$0;
+        temp$1 = new durbodax.customers.Enums.StepFatherStatus;
+        specialinvoke temp$1.<durbodax.customers.Enums.StepFatherStatus: void <init>(java.lang.String,int,int)>("IMPROBABLE_AGE_DIFF", 1, 1);
+        <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus IMPROBABLE_AGE_DIFF> = temp$1;
+        temp$2 = new durbodax.customers.Enums.StepFatherStatus;
+        specialinvoke temp$2.<durbodax.customers.Enums.StepFatherStatus: void <init>(java.lang.String,int,int)>("SPOUSE_OF_MOTHER", 2, 2);
+        <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus SPOUSE_OF_MOTHER> = temp$2;
+        temp$3 = new durbodax.customers.Enums.StepFatherStatus;
+        specialinvoke temp$3.<durbodax.customers.Enums.StepFatherStatus: void <init>(java.lang.String,int,int)>("IDENTIFIED_STEP_FATHER", 3, 3);
+        <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus IDENTIFIED_STEP_FATHER> = temp$3;
+        temp$4 = new durbodax.customers.Enums.StepFatherStatus;
+        specialinvoke temp$4.<durbodax.customers.Enums.StepFatherStatus: void <init>(java.lang.String,int,int)>("ADOPTED", 4, 5);
+        <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus ADOPTED> = temp$4;
+        temp$5 = new durbodax.customers.Enums.StepFatherStatus;
+        specialinvoke temp$5.<durbodax.customers.Enums.StepFatherStatus: void <init>(java.lang.String,int,int)>("MISMATCH", 5, 6);
+        <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus MISMATCH> = temp$5;
+        temp$6 = new durbodax.customers.Enums.StepFatherStatus;
+        specialinvoke temp$6.<durbodax.customers.Enums.StepFatherStatus: void <init>(java.lang.String,int,int)>("SURNAME_DIFF", 6, 7);
+        <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus SURNAME_DIFF> = temp$6;
+        temp$7 = new java.util.HashMap;
+        specialinvoke temp$7.<java.util.HashMap: void <init>()>();
+        <durbodax.customers.Enums.StepFatherStatus: java.util.Map lookup> = temp$7;
+        temp$9 = <durbodax.customers.Enums.StepFatherStatus: java.lang.Class class$durbodax$customers$Enums$StepFatherStatus>;
+        if temp$9 != null goto label0;
+
+        temp$10 = staticinvoke <durbodax.customers.Enums.StepFatherStatus: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.StepFatherStatus");
+        <durbodax.customers.Enums.StepFatherStatus: java.lang.Class class$durbodax$customers$Enums$StepFatherStatus> = temp$10;
+        temp$8 = temp$10;
+        goto label1;
+
+     label0:
+        nop;
+        temp$8 = <durbodax.customers.Enums.StepFatherStatus: java.lang.Class class$durbodax$customers$Enums$StepFatherStatus>;
+
+     label1:
+        nop;
+        temp$11 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(temp$8);
+        temp$12 = (java.util.EnumSet) temp$11;
+        temp$13 = interfaceinvoke temp$12.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label2:
+        nop;
+        temp$14 = interfaceinvoke temp$13.<java.util.Iterator: boolean hasNext()>();
+        if temp$14 == 0 goto label3;
+
+        temp$15 = interfaceinvoke temp$13.<java.util.Iterator: java.lang.Object next()>();
+        father = (durbodax.customers.Enums.StepFatherStatus) temp$15;
+        temp$16 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$16.<java.io.PrintStream: void println(java.lang.String)>("flow:381");
+        temp$17 = <durbodax.customers.Enums.StepFatherStatus: java.util.Map lookup>;
+        temp$18 = virtualinvoke father.<durbodax.customers.Enums.StepFatherStatus: int getCode()>();
+        temp$19 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$18);
+        temp$20 = interfaceinvoke temp$17.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$19, father);
+        temp$21 = (durbodax.customers.Enums.StepFatherStatus) temp$20;
+        nop;
+        goto label2;
+
+     label3:
+        nop;
+        temp$22 = newarray (durbodax.customers.Enums.StepFatherStatus)[7];
+        temp$23 = <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus NO_STEP_FATHER>;
+        temp$22[0] = temp$23;
+        temp$24 = <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus IMPROBABLE_AGE_DIFF>;
+        temp$22[1] = temp$24;
+        temp$25 = <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus SPOUSE_OF_MOTHER>;
+        temp$22[2] = temp$25;
+        temp$26 = <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus IDENTIFIED_STEP_FATHER>;
+        temp$22[3] = temp$26;
+        temp$27 = <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus ADOPTED>;
+        temp$22[4] = temp$27;
+        temp$28 = <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus MISMATCH>;
+        temp$22[5] = temp$28;
+        temp$29 = <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus SURNAME_DIFF>;
+        temp$22[6] = temp$29;
+        <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus[] $VALUES> = temp$22;
+        return;
+    }
+
+    private void <init>(java.lang.String, int, int)
+    {
+        durbodax.customers.Enums.StepFatherStatus this;
+        java.lang.String @p0;
+        int @p1, code;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.customers.Enums.StepFatherStatus;
+        @p0 := @parameter0: java.lang.String;
+        @p1 := @parameter1: int;
+        code := @parameter2: int;
+        specialinvoke this.<java.lang.Enum: void <init>(java.lang.String,int)>(@p0, @p1);
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:382");
+        this.<durbodax.customers.Enums.StepFatherStatus: int code> = code;
+        return;
+    }
+
+    public final int getCode()
+    {
+        durbodax.customers.Enums.StepFatherStatus this;
+        java.io.PrintStream temp$0;
+        int temp$1;
+
+        this := @this: durbodax.customers.Enums.StepFatherStatus;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:383");
+        temp$1 = this.<durbodax.customers.Enums.StepFatherStatus: int code>;
+        return temp$1;
+    }
+
+    public static final durbodax.customers.Enums.StepFatherStatus getStatus(int)
+    {
+        int code;
+        java.io.PrintStream temp$0;
+        java.util.Map temp$1;
+        java.lang.Integer temp$2;
+        java.lang.Object temp$3;
+        durbodax.customers.Enums.StepFatherStatus temp$4;
+
+        code := @parameter0: int;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:384");
+        temp$1 = <durbodax.customers.Enums.StepFatherStatus: java.util.Map lookup>;
+        temp$2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(code);
+        temp$3 = interfaceinvoke temp$1.<java.util.Map: java.lang.Object get(java.lang.Object)>(temp$2);
+        temp$4 = (durbodax.customers.Enums.StepFatherStatus) temp$3;
+        return temp$4;
+    }
+
+    public static final durbodax.customers.Enums.StepFatherStatus[] values()
+    {
+        durbodax.customers.Enums.StepFatherStatus[] temp$0, temp$2;
+        java.lang.Object temp$1;
+
+        temp$0 = <durbodax.customers.Enums.StepFatherStatus: durbodax.customers.Enums.StepFatherStatus[] $VALUES>;
+        temp$1 = virtualinvoke temp$0.<java.lang.Object: java.lang.Object clone()>();
+        temp$2 = (durbodax.customers.Enums.StepFatherStatus[]) temp$1;
+        return temp$2;
+    }
+
+    public static final durbodax.customers.Enums.StepFatherStatus valueOf(java.lang.String)
+    {
+        java.lang.String s;
+        java.lang.Class temp$0, temp$1, temp$2;
+        java.lang.Enum temp$3;
+        durbodax.customers.Enums.StepFatherStatus temp$4;
+
+        s := @parameter0: java.lang.String;
+        temp$1 = <durbodax.customers.Enums.StepFatherStatus: java.lang.Class class$durbodax$customers$Enums$StepFatherStatus>;
+        if temp$1 != null goto label0;
+
+        temp$2 = staticinvoke <durbodax.customers.Enums.StepFatherStatus: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.StepFatherStatus");
+        <durbodax.customers.Enums.StepFatherStatus: java.lang.Class class$durbodax$customers$Enums$StepFatherStatus> = temp$2;
+        temp$0 = temp$2;
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <durbodax.customers.Enums.StepFatherStatus: java.lang.Class class$durbodax$customers$Enums$StepFatherStatus>;
+
+     label1:
+        nop;
+        temp$3 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(temp$0, s);
+        temp$4 = (durbodax.customers.Enums.StepFatherStatus) temp$3;
+        return temp$4;
+    }
+
+    public static final java.lang.Class class$(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.lang.Class temp$0;
+        java.lang.ClassNotFoundException e;
+        java.lang.NoClassDefFoundError temp$1;
+
+        name := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(name);
+
+     label1:
+        nop;
+        return temp$0;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$1 = new java.lang.NoClassDefFoundError;
+        temp$2 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String getMessage()>();
+        specialinvoke temp$1.<java.lang.NoClassDefFoundError: void <init>(java.lang.String)>(temp$2);
+        throw temp$1;
+
+        catch java.lang.ClassNotFoundException from label0 to label1 with label2;
+    }
+}

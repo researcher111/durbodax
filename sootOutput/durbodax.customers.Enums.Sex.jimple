@@ -1,0 +1,195 @@
+public final enum class durbodax.customers.Enums.Sex extends java.lang.Enum
+{
+    public static final enum durbodax.customers.Enums.Sex Male;
+    public static final enum durbodax.customers.Enums.Sex Female;
+    private static final java.util.Map lookup;
+    private int code;
+    private static final durbodax.customers.Enums.Sex[] $VALUES;
+    public static java.lang.Class class$durbodax$customers$Enums$Sex;
+
+    static void <clinit>()
+    {
+        durbodax.customers.Enums.Sex temp$0, temp$1, sex, temp$16, temp$18, temp$19;
+        java.util.HashMap temp$2;
+        java.lang.Class temp$3, temp$4, temp$5;
+        java.util.EnumSet temp$6, temp$7;
+        java.util.Iterator temp$8;
+        boolean temp$9;
+        java.lang.Object temp$10, temp$15;
+        java.io.PrintStream temp$11;
+        java.util.Map temp$12;
+        int temp$13;
+        java.lang.Integer temp$14;
+        durbodax.customers.Enums.Sex[] temp$17;
+
+        temp$0 = new durbodax.customers.Enums.Sex;
+        specialinvoke temp$0.<durbodax.customers.Enums.Sex: void <init>(java.lang.String,int,int)>("Male", 0, 1);
+        <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Male> = temp$0;
+        temp$1 = new durbodax.customers.Enums.Sex;
+        specialinvoke temp$1.<durbodax.customers.Enums.Sex: void <init>(java.lang.String,int,int)>("Female", 1, 2);
+        <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Female> = temp$1;
+        temp$2 = new java.util.HashMap;
+        specialinvoke temp$2.<java.util.HashMap: void <init>()>();
+        <durbodax.customers.Enums.Sex: java.util.Map lookup> = temp$2;
+        temp$4 = <durbodax.customers.Enums.Sex: java.lang.Class class$durbodax$customers$Enums$Sex>;
+        if temp$4 != null goto label0;
+
+        temp$5 = staticinvoke <durbodax.customers.Enums.Sex: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.Sex");
+        <durbodax.customers.Enums.Sex: java.lang.Class class$durbodax$customers$Enums$Sex> = temp$5;
+        temp$3 = temp$5;
+        goto label1;
+
+     label0:
+        nop;
+        temp$3 = <durbodax.customers.Enums.Sex: java.lang.Class class$durbodax$customers$Enums$Sex>;
+
+     label1:
+        nop;
+        temp$6 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(temp$3);
+        temp$7 = (java.util.EnumSet) temp$6;
+        temp$8 = interfaceinvoke temp$7.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label2:
+        nop;
+        temp$9 = interfaceinvoke temp$8.<java.util.Iterator: boolean hasNext()>();
+        if temp$9 == 0 goto label3;
+
+        temp$10 = interfaceinvoke temp$8.<java.util.Iterator: java.lang.Object next()>();
+        sex = (durbodax.customers.Enums.Sex) temp$10;
+        temp$11 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$11.<java.io.PrintStream: void println(java.lang.String)>("flow:377");
+        temp$12 = <durbodax.customers.Enums.Sex: java.util.Map lookup>;
+        temp$13 = virtualinvoke sex.<durbodax.customers.Enums.Sex: int getCode()>();
+        temp$14 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$13);
+        temp$15 = interfaceinvoke temp$12.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$14, sex);
+        temp$16 = (durbodax.customers.Enums.Sex) temp$15;
+        nop;
+        goto label2;
+
+     label3:
+        nop;
+        temp$17 = newarray (durbodax.customers.Enums.Sex)[2];
+        temp$18 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Male>;
+        temp$17[0] = temp$18;
+        temp$19 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Female>;
+        temp$17[1] = temp$19;
+        <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex[] $VALUES> = temp$17;
+        return;
+    }
+
+    private void <init>(java.lang.String, int, int)
+    {
+        durbodax.customers.Enums.Sex this;
+        java.lang.String @p0;
+        int @p1, code;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.customers.Enums.Sex;
+        @p0 := @parameter0: java.lang.String;
+        @p1 := @parameter1: int;
+        code := @parameter2: int;
+        specialinvoke this.<java.lang.Enum: void <init>(java.lang.String,int)>(@p0, @p1);
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:378");
+        this.<durbodax.customers.Enums.Sex: int code> = code;
+        return;
+    }
+
+    public final int getCode()
+    {
+        durbodax.customers.Enums.Sex this;
+        java.io.PrintStream temp$0;
+        int temp$1;
+
+        this := @this: durbodax.customers.Enums.Sex;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:379");
+        temp$1 = this.<durbodax.customers.Enums.Sex: int code>;
+        return temp$1;
+    }
+
+    public static final durbodax.customers.Enums.Sex getGender(int)
+    {
+        int code;
+        java.io.PrintStream temp$0;
+        java.util.Map temp$1;
+        java.lang.Integer temp$2;
+        java.lang.Object temp$3;
+        durbodax.customers.Enums.Sex temp$4;
+
+        code := @parameter0: int;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:380");
+        temp$1 = <durbodax.customers.Enums.Sex: java.util.Map lookup>;
+        temp$2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(code);
+        temp$3 = interfaceinvoke temp$1.<java.util.Map: java.lang.Object get(java.lang.Object)>(temp$2);
+        temp$4 = (durbodax.customers.Enums.Sex) temp$3;
+        return temp$4;
+    }
+
+    public static final durbodax.customers.Enums.Sex[] values()
+    {
+        durbodax.customers.Enums.Sex[] temp$0, temp$2;
+        java.lang.Object temp$1;
+
+        temp$0 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex[] $VALUES>;
+        temp$1 = virtualinvoke temp$0.<java.lang.Object: java.lang.Object clone()>();
+        temp$2 = (durbodax.customers.Enums.Sex[]) temp$1;
+        return temp$2;
+    }
+
+    public static final durbodax.customers.Enums.Sex valueOf(java.lang.String)
+    {
+        java.lang.String s;
+        java.lang.Class temp$0, temp$1, temp$2;
+        java.lang.Enum temp$3;
+        durbodax.customers.Enums.Sex temp$4;
+
+        s := @parameter0: java.lang.String;
+        temp$1 = <durbodax.customers.Enums.Sex: java.lang.Class class$durbodax$customers$Enums$Sex>;
+        if temp$1 != null goto label0;
+
+        temp$2 = staticinvoke <durbodax.customers.Enums.Sex: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.Sex");
+        <durbodax.customers.Enums.Sex: java.lang.Class class$durbodax$customers$Enums$Sex> = temp$2;
+        temp$0 = temp$2;
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <durbodax.customers.Enums.Sex: java.lang.Class class$durbodax$customers$Enums$Sex>;
+
+     label1:
+        nop;
+        temp$3 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(temp$0, s);
+        temp$4 = (durbodax.customers.Enums.Sex) temp$3;
+        return temp$4;
+    }
+
+    public static final java.lang.Class class$(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.lang.Class temp$0;
+        java.lang.ClassNotFoundException e;
+        java.lang.NoClassDefFoundError temp$1;
+
+        name := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(name);
+
+     label1:
+        nop;
+        return temp$0;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$1 = new java.lang.NoClassDefFoundError;
+        temp$2 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String getMessage()>();
+        specialinvoke temp$1.<java.lang.NoClassDefFoundError: void <init>(java.lang.String)>(temp$2);
+        throw temp$1;
+
+        catch java.lang.ClassNotFoundException from label0 to label1 with label2;
+    }
+}

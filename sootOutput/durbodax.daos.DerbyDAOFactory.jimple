@@ -1,0 +1,163 @@
+public class durbodax.daos.DerbyDAOFactory extends durbodax.daos.DAOFactory
+{
+    private static java.sql.Connection _conn;
+
+    public static java.sql.Connection getConnection()
+    {
+        java.io.PrintStream temp$0, temp$2, temp$6, temp$8, temp$9, temp$13, temp$15, temp$16;
+        java.sql.Connection temp$1, temp$3, temp$14, temp$20;
+        java.lang.String driver, dbName, connectionURL, temp$5, temp$11, temp$12, temp$18, temp$19;
+        java.lang.StringBuffer temp$4, temp$10, temp$17;
+        java.lang.Class temp$7;
+        java.lang.ClassNotFoundException e;
+        java.sql.SQLException e;
+
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:452");
+        temp$1 = <durbodax.daos.DerbyDAOFactory: java.sql.Connection _conn>;
+        if temp$1 != null goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>("flow:453");
+        temp$3 = <durbodax.daos.DerbyDAOFactory: java.sql.Connection _conn>;
+        return temp$3;
+
+     label1:
+        nop;
+        driver = "com.mysql.jdbc.Driver";
+        dbName = "priest_durbodax";
+        temp$4 = new java.lang.StringBuffer;
+        specialinvoke temp$4.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("jdbc:mysql://honeypot:33061/");
+        virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(dbName);
+        temp$5 = virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.String toString()>();
+        connectionURL = temp$5;
+
+     label2:
+        nop;
+        temp$6 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$6.<java.io.PrintStream: void println(java.lang.String)>("flow:454");
+        temp$7 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(driver);
+        goto label4;
+
+     label3:
+        nop;
+        e := @caughtexception;
+        temp$8 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$8.<java.io.PrintStream: void println(java.lang.String)>("flow:455");
+        temp$9 = <java.lang.System: java.io.PrintStream err>;
+        temp$10 = new java.lang.StringBuffer;
+        specialinvoke temp$10.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$10.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Load Driver Failed: ");
+        temp$11 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String toString()>();
+        virtualinvoke temp$10.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$11);
+        temp$12 = virtualinvoke temp$10.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$9.<java.io.PrintStream: void println(java.lang.String)>(temp$12);
+        nop;
+        goto label4;
+
+     label4:
+        nop;
+
+     label5:
+        nop;
+        temp$13 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$13.<java.io.PrintStream: void println(java.lang.String)>("flow:456");
+        temp$14 = staticinvoke <java.sql.DriverManager: java.sql.Connection getConnection(java.lang.String,java.lang.String,java.lang.String)>(connectionURL, "root", "--password--");
+        <durbodax.daos.DerbyDAOFactory: java.sql.Connection _conn> = temp$14;
+        goto label7;
+
+     label6:
+        nop;
+        e := @caughtexception;
+        temp$15 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$15.<java.io.PrintStream: void println(java.lang.String)>("flow:457");
+        temp$16 = <java.lang.System: java.io.PrintStream err>;
+        temp$17 = new java.lang.StringBuffer;
+        specialinvoke temp$17.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$17.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Get Connection Failed: ");
+        temp$18 = virtualinvoke e.<java.sql.SQLException: java.lang.String toString()>();
+        virtualinvoke temp$17.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$18);
+        temp$19 = virtualinvoke temp$17.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$16.<java.io.PrintStream: void println(java.lang.String)>(temp$19);
+        nop;
+        goto label7;
+
+     label7:
+        nop;
+        temp$20 = <durbodax.daos.DerbyDAOFactory: java.sql.Connection _conn>;
+        return temp$20;
+
+        catch java.lang.ClassNotFoundException from label2 to label3 with label3;
+        catch java.sql.SQLException from label5 to label6 with label6;
+    }
+
+    public durbodax.daos.DerbyCustomerDAO getCustomerDAO()
+    {
+        durbodax.daos.DerbyDAOFactory this;
+        java.io.PrintStream temp$0;
+        durbodax.daos.DerbyCustomerDAO temp$1;
+
+        this := @this: durbodax.daos.DerbyDAOFactory;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:458");
+        temp$1 = new durbodax.daos.DerbyCustomerDAO;
+        specialinvoke temp$1.<durbodax.daos.DerbyCustomerDAO: void <init>()>();
+        return temp$1;
+    }
+
+    public durbodax.daos.DerbyMarketingDAO getMarketingDAO()
+    {
+        durbodax.daos.DerbyDAOFactory this;
+        java.io.PrintStream temp$0;
+        durbodax.daos.DerbyMarketingDAO temp$1;
+
+        this := @this: durbodax.daos.DerbyDAOFactory;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:459");
+        temp$1 = new durbodax.daos.DerbyMarketingDAO;
+        specialinvoke temp$1.<durbodax.daos.DerbyMarketingDAO: void <init>()>();
+        return temp$1;
+    }
+
+    public durbodax.daos.DerbyCustomerIncomeDAO getIncomeDAO()
+    {
+        durbodax.daos.DerbyDAOFactory this;
+        java.io.PrintStream temp$0;
+        durbodax.daos.DerbyCustomerIncomeDAO temp$1;
+
+        this := @this: durbodax.daos.DerbyDAOFactory;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:460");
+        temp$1 = new durbodax.daos.DerbyCustomerIncomeDAO;
+        specialinvoke temp$1.<durbodax.daos.DerbyCustomerIncomeDAO: void <init>()>();
+        return temp$1;
+    }
+
+    public durbodax.daos.DerbyCustomerCompareDAO getCompareDAO()
+    {
+        durbodax.daos.DerbyDAOFactory this;
+        java.io.PrintStream temp$0;
+        durbodax.daos.DerbyCustomerCompareDAO temp$1;
+
+        this := @this: durbodax.daos.DerbyDAOFactory;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:461");
+        temp$1 = new durbodax.daos.DerbyCustomerCompareDAO;
+        specialinvoke temp$1.<durbodax.daos.DerbyCustomerCompareDAO: void <init>()>();
+        return temp$1;
+    }
+
+    public void <init>()
+    {
+        durbodax.daos.DerbyDAOFactory this;
+
+        this := @this: durbodax.daos.DerbyDAOFactory;
+        specialinvoke this.<durbodax.daos.DAOFactory: void <init>()>();
+        return;
+    }
+}

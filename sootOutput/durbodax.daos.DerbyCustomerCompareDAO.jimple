@@ -1,0 +1,315 @@
+public class durbodax.daos.DerbyCustomerCompareDAO extends java.lang.Object implements durbodax.daos.CustomerCompareDAO
+{
+    private java.lang.StringBuilder mquery;
+    private java.lang.StringBuilder fquery;
+
+    public void addCondition(java.lang.String)
+    {
+        durbodax.daos.DerbyCustomerCompareDAO this;
+        java.lang.String condition;
+        java.io.PrintStream temp$0;
+        java.lang.StringBuilder temp$1, temp$2, temp$3, temp$4, temp$5, temp$6;
+
+        this := @this: durbodax.daos.DerbyCustomerCompareDAO;
+        condition := @parameter0: java.lang.String;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:401");
+        temp$1 = this.<durbodax.daos.DerbyCustomerCompareDAO: java.lang.StringBuilder mquery>;
+        temp$2 = virtualinvoke temp$1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" AND ");
+        temp$3 = virtualinvoke temp$2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(condition);
+        temp$4 = this.<durbodax.daos.DerbyCustomerCompareDAO: java.lang.StringBuilder fquery>;
+        temp$5 = virtualinvoke temp$4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" AND ");
+        temp$6 = virtualinvoke temp$5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(condition);
+        return;
+    }
+
+    public java.util.Map runQuery()
+    {
+        durbodax.daos.DerbyCustomerCompareDAO this;
+        java.io.PrintStream temp$0;
+        java.util.Map map;
+        java.util.HashMap temp$1;
+        durbodax.customers.Enums.Sex temp$2, temp$5, temp$9, temp$12;
+        java.lang.StringBuilder temp$3, temp$10;
+        java.lang.String temp$4, temp$11;
+        java.lang.Integer temp$6, temp$8, temp$13, temp$15;
+        java.lang.Object temp$7, temp$14;
+
+        this := @this: durbodax.daos.DerbyCustomerCompareDAO;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:402");
+        temp$1 = new java.util.HashMap;
+        specialinvoke temp$1.<java.util.HashMap: void <init>()>();
+        map = temp$1;
+        temp$2 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Male>;
+        temp$3 = this.<durbodax.daos.DerbyCustomerCompareDAO: java.lang.StringBuilder mquery>;
+        temp$4 = virtualinvoke temp$3.<java.lang.StringBuilder: java.lang.String toString()>();
+        temp$5 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Male>;
+        temp$6 = virtualinvoke this.<durbodax.daos.DerbyCustomerCompareDAO: java.lang.Integer runQuery(java.lang.String,durbodax.customers.Enums.Sex)>(temp$4, temp$5);
+        temp$7 = interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$2, temp$6);
+        temp$8 = (java.lang.Integer) temp$7;
+        temp$9 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Female>;
+        temp$10 = this.<durbodax.daos.DerbyCustomerCompareDAO: java.lang.StringBuilder fquery>;
+        temp$11 = virtualinvoke temp$10.<java.lang.StringBuilder: java.lang.String toString()>();
+        temp$12 = <durbodax.customers.Enums.Sex: durbodax.customers.Enums.Sex Female>;
+        temp$13 = virtualinvoke this.<durbodax.daos.DerbyCustomerCompareDAO: java.lang.Integer runQuery(java.lang.String,durbodax.customers.Enums.Sex)>(temp$11, temp$12);
+        temp$14 = interfaceinvoke map.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$9, temp$13);
+        temp$15 = (java.lang.Integer) temp$14;
+        return map;
+    }
+
+    private final java.lang.Integer runQuery(java.lang.String, durbodax.customers.Enums.Sex)
+    {
+        durbodax.daos.DerbyCustomerCompareDAO this;
+        java.lang.String query, temp$6, temp$26, temp$27;
+        durbodax.customers.Enums.Sex gender;
+        java.io.PrintStream temp$0, temp$2, temp$9, temp$15, temp$21, temp$22, temp$23, temp$24, temp$28, temp$29, temp$31, temp$32;
+        java.sql.ResultSet rs, temp$7, temp$12;
+        java.sql.Statement s, temp$3;
+        java.sql.Connection conn, temp$1;
+        float total, temp$11, temp$17, temp$18, temp$19;
+        int percentage, temp$5, temp$10, temp$14, temp$16, temp$20;
+        java.lang.StringBuffer temp$4, temp$25;
+        boolean temp$8, temp$13;
+        java.sql.SQLException ex, e, ex, ex;
+        java.lang.Throwable temp$30;
+        java.lang.Integer temp$33;
+
+        this := @this: durbodax.daos.DerbyCustomerCompareDAO;
+        query := @parameter0: java.lang.String;
+        gender := @parameter1: durbodax.customers.Enums.Sex;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:403");
+        rs = null;
+        s = null;
+        temp$1 = staticinvoke <durbodax.daos.DerbyDAOFactory: java.sql.Connection getConnection()>();
+        conn = temp$1;
+        total = 0.0F;
+        percentage = 0;
+
+     label0:
+        nop;
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>("flow:404");
+        temp$3 = interfaceinvoke conn.<java.sql.Connection: java.sql.Statement createStatement()>();
+        s = temp$3;
+        temp$4 = new java.lang.StringBuffer;
+        specialinvoke temp$4.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("SELECT COUNT(*) FROM MAIN WHERE SEX = ");
+        temp$5 = virtualinvoke gender.<durbodax.customers.Enums.Sex: int getCode()>();
+        virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(temp$5);
+        temp$6 = virtualinvoke temp$4.<java.lang.StringBuffer: java.lang.String toString()>();
+        temp$7 = interfaceinvoke s.<java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>(temp$6);
+        rs = temp$7;
+        temp$8 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>();
+        if temp$8 == 0 goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+        temp$9 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$9.<java.io.PrintStream: void println(java.lang.String)>("flow:405");
+        temp$10 = interfaceinvoke rs.<java.sql.ResultSet: int getInt(int)>(1);
+        temp$11 = (float) temp$10;
+        total = temp$11;
+
+     label2:
+        nop;
+        temp$12 = interfaceinvoke s.<java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>(query);
+        rs = temp$12;
+        temp$13 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>();
+        if temp$13 == 0 goto label5;
+
+        goto label3;
+
+     label3:
+        nop;
+        temp$14 = total cmpl 0.0F;
+        if temp$14 <= 0 goto label5;
+
+        goto label4;
+
+        goto label4;
+
+     label4:
+        nop;
+        temp$15 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$15.<java.io.PrintStream: void println(java.lang.String)>("flow:406");
+        temp$16 = interfaceinvoke rs.<java.sql.ResultSet: int getInt(int)>(1);
+        temp$17 = (float) temp$16;
+        temp$18 = temp$17 / total;
+        temp$19 = temp$18 * 100.0F;
+        temp$20 = staticinvoke <java.lang.Math: int round(float)>(temp$19);
+        percentage = temp$20;
+
+     label5:
+        nop;
+
+     label6:
+        nop;
+
+     label7:
+        nop;
+        if rs != null goto label8;
+
+        goto label9;
+
+     label8:
+        nop;
+        temp$21 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$21.<java.io.PrintStream: void println(java.lang.String)>("flow:408");
+        interfaceinvoke rs.<java.sql.ResultSet: void close()>();
+
+     label9:
+        nop;
+        if s != null goto label10;
+
+        goto label11;
+
+     label10:
+        nop;
+        temp$22 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$22.<java.io.PrintStream: void println(java.lang.String)>("flow:409");
+        interfaceinvoke s.<java.sql.Statement: void close()>();
+
+     label11:
+        nop;
+        goto label13;
+
+     label12:
+        nop;
+        ex := @caughtexception;
+        nop;
+        goto label13;
+
+     label13:
+        nop;
+        goto label31;
+
+     label14:
+        nop;
+        e := @caughtexception;
+        temp$23 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$23.<java.io.PrintStream: void println(java.lang.String)>("flow:407");
+        temp$24 = <java.lang.System: java.io.PrintStream err>;
+        temp$25 = new java.lang.StringBuffer;
+        specialinvoke temp$25.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$25.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Select Failed: ");
+        temp$26 = virtualinvoke e.<java.sql.SQLException: java.lang.String toString()>();
+        virtualinvoke temp$25.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$26);
+        temp$27 = virtualinvoke temp$25.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$24.<java.io.PrintStream: void println(java.lang.String)>(temp$27);
+
+     label15:
+        nop;
+
+     label16:
+        nop;
+        if rs != null goto label17;
+
+        goto label18;
+
+     label17:
+        nop;
+        temp$28 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$28.<java.io.PrintStream: void println(java.lang.String)>("flow:408");
+        interfaceinvoke rs.<java.sql.ResultSet: void close()>();
+
+     label18:
+        nop;
+        if s != null goto label19;
+
+        goto label20;
+
+     label19:
+        nop;
+        temp$29 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$29.<java.io.PrintStream: void println(java.lang.String)>("flow:409");
+        interfaceinvoke s.<java.sql.Statement: void close()>();
+
+     label20:
+        nop;
+        goto label22;
+
+     label21:
+        nop;
+        ex := @caughtexception;
+        nop;
+        goto label22;
+
+     label22:
+        nop;
+        goto label31;
+
+     label23:
+        nop;
+        temp$30 := @caughtexception;
+
+     label24:
+        nop;
+        if rs != null goto label25;
+
+        goto label26;
+
+     label25:
+        nop;
+        temp$31 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$31.<java.io.PrintStream: void println(java.lang.String)>("flow:408");
+        interfaceinvoke rs.<java.sql.ResultSet: void close()>();
+
+     label26:
+        nop;
+        if s != null goto label27;
+
+        goto label28;
+
+     label27:
+        nop;
+        temp$32 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$32.<java.io.PrintStream: void println(java.lang.String)>("flow:409");
+        interfaceinvoke s.<java.sql.Statement: void close()>();
+
+     label28:
+        nop;
+        goto label30;
+
+     label29:
+        nop;
+        ex := @caughtexception;
+        nop;
+        goto label30;
+
+     label30:
+        nop;
+        throw temp$30;
+
+     label31:
+        nop;
+        temp$33 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(percentage);
+        return temp$33;
+
+        catch java.sql.SQLException from label7 to label12 with label12;
+        catch java.sql.SQLException from label16 to label21 with label21;
+        catch java.sql.SQLException from label24 to label29 with label29;
+        catch java.sql.SQLException from label0 to label6 with label14;
+        catch java.lang.Throwable from label0 to label6 with label23;
+        catch java.lang.Throwable from label6 to label15 with label23;
+    }
+
+    public void <init>()
+    {
+        durbodax.daos.DerbyCustomerCompareDAO this;
+        java.lang.StringBuilder temp$0, temp$1;
+
+        this := @this: durbodax.daos.DerbyCustomerCompareDAO;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = new java.lang.StringBuilder;
+        specialinvoke temp$0.<java.lang.StringBuilder: void <init>(java.lang.String)>("SELECT COUNT(*) FROM MAIN WHERE SEX=1");
+        this.<durbodax.daos.DerbyCustomerCompareDAO: java.lang.StringBuilder mquery> = temp$0;
+        temp$1 = new java.lang.StringBuilder;
+        specialinvoke temp$1.<java.lang.StringBuilder: void <init>(java.lang.String)>("SELECT COUNT(*) FROM MAIN WHERE SEX=2");
+        this.<durbodax.daos.DerbyCustomerCompareDAO: java.lang.StringBuilder fquery> = temp$1;
+        return;
+    }
+}

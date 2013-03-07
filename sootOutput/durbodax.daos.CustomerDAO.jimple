@@ -1,0 +1,7 @@
+public interface  durbodax.daos.CustomerDAO extends java.lang.Object
+{
+
+    public abstract durbodax.customers.Customer selectCustomer(int);
+
+    public abstract int saveCustomer(durbodax.customers.Customer);
+}

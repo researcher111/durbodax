@@ -1,0 +1,616 @@
+public class durbodax.commands.ComputeIncomeTaxSingle extends java.lang.Object implements durbodax.commands.Command
+{
+    private durbodax.daos.DerbyDAOFactory derbyDAO;
+    private durbodax.daos.CustomerDAO customerDAO;
+    private durbodax.customers.Customer customer;
+    private durbodax.customers.Enums.MaritalStatus status;
+    private double percent;
+    private double total;
+    private java.lang.Double d;
+
+    public void <init>()
+    {
+        durbodax.commands.ComputeIncomeTaxSingle this;
+        java.io.PrintStream temp$0;
+        durbodax.daos.DerbyDAOFactory temp$1, temp$2;
+        durbodax.daos.DerbyCustomerDAO temp$3;
+
+        this := @this: durbodax.commands.ComputeIncomeTaxSingle;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:158");
+        temp$1 = new durbodax.daos.DerbyDAOFactory;
+        specialinvoke temp$1.<durbodax.daos.DerbyDAOFactory: void <init>()>();
+        this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.daos.DerbyDAOFactory derbyDAO> = temp$1;
+        temp$2 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.daos.DerbyDAOFactory derbyDAO>;
+        temp$3 = virtualinvoke temp$2.<durbodax.daos.DerbyDAOFactory: durbodax.daos.DerbyCustomerDAO getCustomerDAO()>();
+        this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.daos.CustomerDAO customerDAO> = temp$3;
+        return;
+    }
+
+    public java.lang.Object execute(java.lang.String[])
+    {
+        durbodax.commands.ComputeIncomeTaxSingle this;
+        java.lang.String[] params, temp$1;
+        java.io.PrintStream temp$0, temp$5, temp$7, temp$8, temp$25, temp$26, temp$37, temp$50, temp$63, temp$76, temp$89, temp$106, temp$109, temp$120, temp$133, temp$146, temp$159, temp$174;
+        int id, temp$2, temp$4, income, temp$24, income, temp$108;
+        java.lang.String temp$3, temp$34, temp$47, temp$60, temp$73, temp$86, temp$99, temp$117, temp$130, temp$143, temp$156, temp$171, temp$184;
+        java.lang.IllegalArgumentException temp$6;
+        durbodax.daos.CustomerDAO temp$9;
+        durbodax.customers.Customer temp$10, temp$11, temp$15, temp$19, temp$23, temp$102, temp$107;
+        durbodax.customers.Enums.MaritalStatus temp$12, temp$13, temp$14, temp$16, temp$17, temp$18, temp$20, temp$21, temp$22, temp$103, temp$104, temp$105;
+        double temp$27, temp$28, temp$29, temp$30, temp$33, temp$38, temp$39, temp$40, temp$41, temp$42, temp$43, temp$46, temp$51, temp$52, temp$53, temp$54, temp$55, temp$56, temp$59, temp$64, temp$65, temp$66, temp$67, temp$68, temp$69, temp$72, temp$77, temp$78, temp$79, temp$80, temp$81, temp$82, temp$85, temp$90, temp$91, temp$92, temp$93, temp$94, temp$95, temp$98, temp$110, temp$111, temp$112, temp$113, temp$116, temp$121, temp$122, temp$123, temp$124, temp$125, temp$126, temp$129, temp$134, temp$135, temp$136, temp$137, temp$138, temp$139, temp$142, temp$147, temp$148, temp$149, temp$150, temp$151, temp$152, temp$155, temp$160, temp$161, temp$162, temp$163, temp$164, temp$165, temp$166, temp$167, temp$170, temp$175, temp$176, temp$177, temp$178, temp$179, temp$180, temp$183;
+        java.text.DecimalFormat df, temp$31, df, temp$44, df, temp$57, df, temp$70, df, temp$83, df, temp$96, df, temp$114, df, temp$127, df, temp$140, df, temp$153, df, temp$168, df, temp$181;
+        java.lang.Double temp$32, temp$35, temp$45, temp$48, temp$58, temp$61, temp$71, temp$74, temp$84, temp$87, temp$97, temp$100, temp$115, temp$118, temp$128, temp$131, temp$141, temp$144, temp$154, temp$157, temp$169, temp$172, temp$182, temp$185, temp$187, temp$188;
+        java.lang.Object temp$36, temp$49, temp$62, temp$75, temp$88, temp$101, temp$119, temp$132, temp$145, temp$158, temp$173, temp$186, temp$189;
+
+        this := @this: durbodax.commands.ComputeIncomeTaxSingle;
+        params := @parameter0: java.lang.String[];
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:159");
+        temp$1 = params;
+        temp$2 = 1;
+        temp$3 = temp$1[temp$2];
+        temp$4 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$3);
+        id = temp$4;
+        if id <= 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        if id > 88443 goto label1;
+
+        goto label2;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$5 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$5.<java.io.PrintStream: void println(java.lang.String)>("flow:160");
+        temp$6 = new java.lang.IllegalArgumentException;
+        specialinvoke temp$6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Invalid customer ID");
+        throw temp$6;
+
+     label2:
+        nop;
+        temp$7 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$7.<java.io.PrintStream: void println(java.lang.String)>("Validate input parameters");
+        temp$8 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$8.<java.io.PrintStream: void println(java.lang.String)>("Execute function implementation call");
+        temp$9 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.daos.CustomerDAO customerDAO>;
+        temp$10 = interfaceinvoke temp$9.<durbodax.daos.CustomerDAO: durbodax.customers.Customer selectCustomer(int)>(id);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Customer customer> = temp$10;
+        temp$11 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Customer customer>;
+        temp$12 = virtualinvoke temp$11.<durbodax.customers.Customer: durbodax.customers.Enums.MaritalStatus getMaritalStatusEnum()>();
+        temp$13 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Enums.MaritalStatus status>;
+        temp$14 = <durbodax.customers.Enums.MaritalStatus: durbodax.customers.Enums.MaritalStatus NEVER_MARRIED_OR_SINGLE>;
+        if temp$12 == temp$14 goto label5;
+
+        goto label3;
+
+     label3:
+        nop;
+        temp$15 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Customer customer>;
+        temp$16 = virtualinvoke temp$15.<durbodax.customers.Customer: durbodax.customers.Enums.MaritalStatus getMaritalStatusEnum()>();
+        temp$17 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Enums.MaritalStatus status>;
+        temp$18 = <durbodax.customers.Enums.MaritalStatus: durbodax.customers.Enums.MaritalStatus DIVORCED>;
+        if temp$16 == temp$18 goto label5;
+
+        goto label4;
+
+        goto label4;
+
+     label4:
+        nop;
+        temp$19 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Customer customer>;
+        temp$20 = virtualinvoke temp$19.<durbodax.customers.Customer: durbodax.customers.Enums.MaritalStatus getMaritalStatusEnum()>();
+        temp$21 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Enums.MaritalStatus status>;
+        temp$22 = <durbodax.customers.Enums.MaritalStatus: durbodax.customers.Enums.MaritalStatus SEPERATED>;
+        if temp$20 == temp$22 goto label5;
+
+        goto label22;
+
+        goto label22;
+
+     label5:
+        nop;
+        temp$23 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Customer customer>;
+        temp$24 = virtualinvoke temp$23.<durbodax.customers.Customer: int getTotalPersonalIncome()>();
+        income = temp$24;
+        temp$25 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$25.<java.io.PrintStream: void println(java.lang.String)>("flow:161");
+        if income < 8025 goto label6;
+
+        goto label7;
+
+     label6:
+        nop;
+        temp$26 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$26.<java.io.PrintStream: void println(java.lang.String)>("flow:162");
+        temp$27 = 0.1;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$27;
+        temp$28 = (double) income;
+        temp$29 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$30 = temp$28 * temp$29;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$30;
+        temp$31 = new java.text.DecimalFormat;
+        specialinvoke temp$31.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$31;
+        temp$32 = new java.lang.Double;
+        temp$33 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$34 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$33);
+        specialinvoke temp$32.<java.lang.Double: void <init>(java.lang.String)>(temp$34);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$32;
+        temp$35 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$35);
+        temp$36 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$36;
+
+     label7:
+        nop;
+        if income > 8025 goto label8;
+
+        goto label10;
+
+     label8:
+        nop;
+        if income < 32550 goto label9;
+
+        goto label10;
+
+        goto label9;
+
+     label9:
+        nop;
+        temp$37 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$37.<java.io.PrintStream: void println(java.lang.String)>("flow:163");
+        temp$38 = 0.15;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$38;
+        temp$39 = (double) income;
+        temp$40 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$41 = temp$39 * temp$40;
+        temp$42 = temp$41;
+        temp$43 = temp$42 + 802.5;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$43;
+        temp$44 = new java.text.DecimalFormat;
+        specialinvoke temp$44.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$44;
+        temp$45 = new java.lang.Double;
+        temp$46 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$47 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$46);
+        specialinvoke temp$45.<java.lang.Double: void <init>(java.lang.String)>(temp$47);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$45;
+        temp$48 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$48);
+        temp$49 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$49;
+
+     label10:
+        nop;
+        if income > 32550 goto label11;
+
+        goto label13;
+
+     label11:
+        nop;
+        if income < 78850 goto label12;
+
+        goto label13;
+
+        goto label12;
+
+     label12:
+        nop;
+        temp$50 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$50.<java.io.PrintStream: void println(java.lang.String)>("flow:164");
+        temp$51 = 0.25;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$51;
+        temp$52 = (double) income;
+        temp$53 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$54 = temp$52 * temp$53;
+        temp$55 = temp$54;
+        temp$56 = temp$55 + 4481.25;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$56;
+        temp$57 = new java.text.DecimalFormat;
+        specialinvoke temp$57.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$57;
+        temp$58 = new java.lang.Double;
+        temp$59 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$60 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$59);
+        specialinvoke temp$58.<java.lang.Double: void <init>(java.lang.String)>(temp$60);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$58;
+        temp$61 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$61);
+        temp$62 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$62;
+
+     label13:
+        nop;
+        if income > 78850 goto label14;
+
+        goto label16;
+
+     label14:
+        nop;
+        if income < 164550 goto label15;
+
+        goto label16;
+
+        goto label15;
+
+     label15:
+        nop;
+        temp$63 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$63.<java.io.PrintStream: void println(java.lang.String)>("flow:165");
+        temp$64 = 0.28;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$64;
+        temp$65 = (double) income;
+        temp$66 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$67 = temp$65 * temp$66;
+        temp$68 = temp$67;
+        temp$69 = temp$68 + 16056.25;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$69;
+        temp$70 = new java.text.DecimalFormat;
+        specialinvoke temp$70.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$70;
+        temp$71 = new java.lang.Double;
+        temp$72 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$73 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$72);
+        specialinvoke temp$71.<java.lang.Double: void <init>(java.lang.String)>(temp$73);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$71;
+        temp$74 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$74);
+        temp$75 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$75;
+
+     label16:
+        nop;
+        if income > 164550 goto label17;
+
+        goto label19;
+
+     label17:
+        nop;
+        if income < 357700 goto label18;
+
+        goto label19;
+
+        goto label18;
+
+     label18:
+        nop;
+        temp$76 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$76.<java.io.PrintStream: void println(java.lang.String)>("flow:166");
+        temp$77 = 0.33;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$77;
+        temp$78 = (double) income;
+        temp$79 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$80 = temp$78 * temp$79;
+        temp$81 = temp$80;
+        temp$82 = temp$81 + 40052.25;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$82;
+        temp$83 = new java.text.DecimalFormat;
+        specialinvoke temp$83.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$83;
+        temp$84 = new java.lang.Double;
+        temp$85 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$86 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$85);
+        specialinvoke temp$84.<java.lang.Double: void <init>(java.lang.String)>(temp$86);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$84;
+        temp$87 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$87);
+        temp$88 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$88;
+
+     label19:
+        nop;
+        if income > 357700 goto label20;
+
+        goto label21;
+
+     label20:
+        nop;
+        temp$89 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$89.<java.io.PrintStream: void println(java.lang.String)>("flow:167");
+        temp$90 = 0.35;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$90;
+        temp$91 = (double) income;
+        temp$92 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$93 = temp$91 * temp$92;
+        temp$94 = temp$93;
+        temp$95 = temp$94 + 103791.75;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$95;
+        temp$96 = new java.text.DecimalFormat;
+        specialinvoke temp$96.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$96;
+        temp$97 = new java.lang.Double;
+        temp$98 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$99 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$98);
+        specialinvoke temp$97.<java.lang.Double: void <init>(java.lang.String)>(temp$99);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$97;
+        temp$100 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$100);
+        temp$101 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$101;
+
+     label21:
+        nop;
+        goto label41;
+
+     label22:
+        nop;
+        temp$102 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Customer customer>;
+        temp$103 = virtualinvoke temp$102.<durbodax.customers.Customer: durbodax.customers.Enums.MaritalStatus getMaritalStatusEnum()>();
+        temp$104 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Enums.MaritalStatus status>;
+        temp$105 = <durbodax.customers.Enums.MaritalStatus: durbodax.customers.Enums.MaritalStatus MARRIED_SPOUSE_PRESENT>;
+        if temp$103 == temp$105 goto label23;
+
+        goto label40;
+
+     label23:
+        nop;
+        temp$106 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$106.<java.io.PrintStream: void println(java.lang.String)>("flow:168");
+        temp$107 = this.<durbodax.commands.ComputeIncomeTaxSingle: durbodax.customers.Customer customer>;
+        temp$108 = virtualinvoke temp$107.<durbodax.customers.Customer: int getTotalPersonalIncome()>();
+        income = temp$108;
+        if income < 16050 goto label24;
+
+        goto label25;
+
+     label24:
+        nop;
+        temp$109 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$109.<java.io.PrintStream: void println(java.lang.String)>("flow:169");
+        temp$110 = 0.1;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$110;
+        temp$111 = (double) income;
+        temp$112 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$113 = temp$111 * temp$112;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$113;
+        temp$114 = new java.text.DecimalFormat;
+        specialinvoke temp$114.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$114;
+        temp$115 = new java.lang.Double;
+        temp$116 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$117 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$116);
+        specialinvoke temp$115.<java.lang.Double: void <init>(java.lang.String)>(temp$117);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$115;
+        temp$118 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$118);
+        temp$119 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$119;
+
+     label25:
+        nop;
+        if income > 16050 goto label26;
+
+        goto label28;
+
+     label26:
+        nop;
+        if income < 65100 goto label27;
+
+        goto label28;
+
+        goto label27;
+
+     label27:
+        nop;
+        temp$120 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$120.<java.io.PrintStream: void println(java.lang.String)>("flow:170");
+        temp$121 = 0.15;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$121;
+        temp$122 = (double) income;
+        temp$123 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$124 = temp$122 * temp$123;
+        temp$125 = temp$124;
+        temp$126 = temp$125 + 1605.0;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$126;
+        temp$127 = new java.text.DecimalFormat;
+        specialinvoke temp$127.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$127;
+        temp$128 = new java.lang.Double;
+        temp$129 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$130 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$129);
+        specialinvoke temp$128.<java.lang.Double: void <init>(java.lang.String)>(temp$130);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$128;
+        temp$131 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$131);
+        temp$132 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$132;
+
+     label28:
+        nop;
+        if income > 65100 goto label29;
+
+        goto label31;
+
+     label29:
+        nop;
+        if income < 131450 goto label30;
+
+        goto label31;
+
+        goto label30;
+
+     label30:
+        nop;
+        temp$133 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$133.<java.io.PrintStream: void println(java.lang.String)>("flow:171");
+        temp$134 = 0.25;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$134;
+        temp$135 = (double) income;
+        temp$136 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$137 = temp$135 * temp$136;
+        temp$138 = temp$137;
+        temp$139 = temp$138 + 8962.5;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$139;
+        temp$140 = new java.text.DecimalFormat;
+        specialinvoke temp$140.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$140;
+        temp$141 = new java.lang.Double;
+        temp$142 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$143 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$142);
+        specialinvoke temp$141.<java.lang.Double: void <init>(java.lang.String)>(temp$143);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$141;
+        temp$144 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$144);
+        temp$145 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$145;
+
+     label31:
+        nop;
+        if income > 131450 goto label32;
+
+        goto label34;
+
+     label32:
+        nop;
+        if income < 200300 goto label33;
+
+        goto label34;
+
+        goto label33;
+
+     label33:
+        nop;
+        temp$146 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$146.<java.io.PrintStream: void println(java.lang.String)>("flow:172");
+        temp$147 = 0.28;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$147;
+        temp$148 = (double) income;
+        temp$149 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$150 = temp$148 * temp$149;
+        temp$151 = temp$150;
+        temp$152 = temp$151 + 25550.0;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$152;
+        temp$153 = new java.text.DecimalFormat;
+        specialinvoke temp$153.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$153;
+        temp$154 = new java.lang.Double;
+        temp$155 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$156 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$155);
+        specialinvoke temp$154.<java.lang.Double: void <init>(java.lang.String)>(temp$156);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$154;
+        temp$157 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$157);
+        temp$158 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$158;
+
+     label34:
+        nop;
+        if income > 200300 goto label35;
+
+        goto label37;
+
+     label35:
+        nop;
+        if income < 357700 goto label36;
+
+        goto label37;
+
+        goto label36;
+
+     label36:
+        nop;
+        temp$159 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$159.<java.io.PrintStream: void println(java.lang.String)>("flow:173");
+        temp$160 = 0.33;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$160;
+        temp$161 = (double) income;
+        temp$162 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$163 = temp$161 * temp$162;
+        temp$164 = temp$163;
+        temp$165 = temp$164 + 44828.0;
+        temp$166 = temp$165 * 10.0;
+        temp$167 = temp$166 / 10.0;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$167;
+        temp$168 = new java.text.DecimalFormat;
+        specialinvoke temp$168.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$168;
+        temp$169 = new java.lang.Double;
+        temp$170 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$171 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$170);
+        specialinvoke temp$169.<java.lang.Double: void <init>(java.lang.String)>(temp$171);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$169;
+        temp$172 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$172);
+        temp$173 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$173;
+
+     label37:
+        nop;
+        if income > 357700 goto label38;
+
+        goto label39;
+
+     label38:
+        nop;
+        temp$174 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$174.<java.io.PrintStream: void println(java.lang.String)>("flow:174");
+        temp$175 = 0.35;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double percent> = temp$175;
+        temp$176 = (double) income;
+        temp$177 = this.<durbodax.commands.ComputeIncomeTaxSingle: double percent>;
+        temp$178 = temp$176 * temp$177;
+        temp$179 = temp$178;
+        temp$180 = temp$179 + 96770.0;
+        this.<durbodax.commands.ComputeIncomeTaxSingle: double total> = temp$180;
+        temp$181 = new java.text.DecimalFormat;
+        specialinvoke temp$181.<java.text.DecimalFormat: void <init>(java.lang.String)>("#.##");
+        df = temp$181;
+        temp$182 = new java.lang.Double;
+        temp$183 = this.<durbodax.commands.ComputeIncomeTaxSingle: double total>;
+        temp$184 = virtualinvoke df.<java.text.DecimalFormat: java.lang.String format(double)>(temp$183);
+        specialinvoke temp$182.<java.lang.Double: void <init>(java.lang.String)>(temp$184);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$182;
+        temp$185 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$185);
+        temp$186 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$186;
+
+     label39:
+        nop;
+
+     label40:
+        nop;
+
+     label41:
+        nop;
+        temp$187 = new java.lang.Double;
+        specialinvoke temp$187.<java.lang.Double: void <init>(double)>(0.0);
+        this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d> = temp$187;
+        temp$188 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        virtualinvoke this.<durbodax.commands.ComputeIncomeTaxSingle: void displayOutput(java.lang.Double)>(temp$188);
+        temp$189 = this.<durbodax.commands.ComputeIncomeTaxSingle: java.lang.Double d>;
+        return temp$189;
+    }
+
+    private final void displayOutput(java.lang.Double)
+    {
+        durbodax.commands.ComputeIncomeTaxSingle this;
+        java.lang.Double d;
+        java.io.PrintStream temp$0, temp$1;
+        java.lang.StringBuffer temp$2;
+        double temp$3;
+        java.lang.String temp$4, temp$5;
+
+        this := @this: durbodax.commands.ComputeIncomeTaxSingle;
+        d := @parameter0: java.lang.Double;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:175");
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        temp$2 = new java.lang.StringBuffer;
+        specialinvoke temp$2.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Income Tax: ");
+        temp$3 = virtualinvoke d.<java.lang.Double: double doubleValue()>();
+        temp$4 = staticinvoke <java.lang.Double: java.lang.String toString(double)>(temp$3);
+        virtualinvoke temp$2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$4);
+        temp$5 = virtualinvoke temp$2.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>(temp$5);
+        return;
+    }
+}

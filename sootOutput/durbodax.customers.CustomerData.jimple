@@ -1,0 +1,967 @@
+public class durbodax.customers.CustomerData extends java.lang.Object
+{
+    durbodax.customers.Customer customer;
+    public static final durbodax.customers.CustomerData CUSTOMER;
+
+    static void <clinit>()
+    {
+        durbodax.customers.CustomerData temp$0;
+
+        temp$0 = new durbodax.customers.CustomerData;
+        specialinvoke temp$0.<durbodax.customers.CustomerData: void <init>()>();
+        <durbodax.customers.CustomerData: durbodax.customers.CustomerData CUSTOMER> = temp$0;
+        return;
+    }
+
+    protected void <init>()
+    {
+        durbodax.customers.CustomerData this;
+        durbodax.customers.Customer temp$0;
+
+        this := @this: durbodax.customers.CustomerData;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        temp$0 = new durbodax.customers.Customer;
+        specialinvoke temp$0.<durbodax.customers.Customer: void <init>()>();
+        this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer> = temp$0;
+        return;
+    }
+
+    public void initCustomerData()
+    {
+        durbodax.customers.CustomerData this;
+        java.io.PrintStream temp$0;
+        durbodax.customers.Customer temp$1;
+
+        this := @this: durbodax.customers.CustomerData;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:275");
+        temp$1 = new durbodax.customers.Customer;
+        specialinvoke temp$1.<durbodax.customers.Customer: void <init>()>();
+        this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer> = temp$1;
+        return;
+    }
+
+    public void loadCustomerData(int)
+    {
+        durbodax.customers.CustomerData this;
+        int customerID;
+        java.io.PrintStream temp$0;
+        durbodax.daos.CustomerDAO customerDAO;
+        durbodax.daos.DAOFactory temp$1;
+        durbodax.daos.DerbyCustomerDAO temp$2;
+        durbodax.customers.Customer temp$3;
+
+        this := @this: durbodax.customers.CustomerData;
+        customerID := @parameter0: int;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:276");
+        temp$1 = staticinvoke <durbodax.daos.DAOFactory: durbodax.daos.DAOFactory getDAOFactory()>();
+        temp$2 = virtualinvoke temp$1.<durbodax.daos.DAOFactory: durbodax.daos.DerbyCustomerDAO getCustomerDAO()>();
+        customerDAO = temp$2;
+        temp$3 = interfaceinvoke customerDAO.<durbodax.daos.CustomerDAO: durbodax.customers.Customer selectCustomer(int)>(customerID);
+        this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer> = temp$3;
+        return;
+    }
+
+    public int saveCustomerData()
+    {
+        durbodax.customers.CustomerData this;
+        java.io.PrintStream temp$0;
+        durbodax.daos.CustomerDAO customerDAO;
+        durbodax.daos.DAOFactory temp$1;
+        durbodax.daos.DerbyCustomerDAO temp$2;
+        durbodax.customers.Customer temp$3;
+        int temp$4;
+
+        this := @this: durbodax.customers.CustomerData;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:277");
+        temp$1 = staticinvoke <durbodax.daos.DAOFactory: durbodax.daos.DAOFactory getDAOFactory()>();
+        temp$2 = virtualinvoke temp$1.<durbodax.daos.DAOFactory: durbodax.daos.DerbyCustomerDAO getCustomerDAO()>();
+        customerDAO = temp$2;
+        temp$3 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$4 = interfaceinvoke customerDAO.<durbodax.daos.CustomerDAO: int saveCustomer(durbodax.customers.Customer)>(temp$3);
+        return temp$4;
+    }
+
+    public void setCustomer(durbodax.customers.Customer)
+    {
+        durbodax.customers.CustomerData this;
+        durbodax.customers.Customer customer;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.customers.CustomerData;
+        customer := @parameter0: durbodax.customers.Customer;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:278");
+        this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer> = customer;
+        return;
+    }
+
+    public durbodax.customers.Customer getCustomer()
+    {
+        durbodax.customers.CustomerData this;
+        java.io.PrintStream temp$0;
+        durbodax.customers.Customer temp$1;
+
+        this := @this: durbodax.customers.CustomerData;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:279");
+        temp$1 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        return temp$1;
+    }
+
+    public void displayCustomerData()
+    {
+        durbodax.customers.CustomerData this;
+        java.io.PrintStream temp$0, temp$1, temp$2, temp$10, temp$11, temp$12, temp$13, temp$21, temp$22, temp$23, temp$24, temp$30, temp$36, temp$42, temp$50, temp$51, temp$52, temp$53, temp$59, temp$65, temp$71, temp$77, temp$83, temp$89, temp$95, temp$101, temp$107, temp$113, temp$119, temp$127, temp$128, temp$129, temp$130, temp$136, temp$142, temp$148, temp$155, temp$156, temp$157, temp$158, temp$164, temp$170, temp$176, temp$182, temp$190, temp$191, temp$192, temp$193, temp$201, temp$202, temp$203, temp$204, temp$210, temp$216, temp$226, temp$232, temp$240, temp$241, temp$242, temp$243, temp$249, temp$254, temp$260, temp$266, temp$274, temp$275, temp$276, temp$277, temp$285, temp$286, temp$287, temp$288, temp$294, temp$302, temp$303, temp$304, temp$305, temp$313, temp$314, temp$315, temp$316, temp$322, temp$328, temp$336, temp$337, temp$338, temp$339, temp$347, temp$348, temp$349, temp$350, temp$356, temp$362, temp$368, temp$374, temp$379;
+        java.lang.StringBuffer temp$3, temp$14, temp$25, temp$31, temp$37, temp$43, temp$54, temp$60, temp$66, temp$72, temp$78, temp$84, temp$90, temp$96, temp$102, temp$108, temp$114, temp$120, temp$131, temp$137, temp$143, temp$149, temp$159, temp$165, temp$171, temp$177, temp$183, temp$194, temp$205, temp$211, temp$217, temp$227, temp$233, temp$244, temp$250, temp$255, temp$261, temp$267, temp$278, temp$289, temp$295, temp$306, temp$317, temp$323, temp$329, temp$340, temp$351, temp$357, temp$363, temp$369, temp$375, temp$380;
+        durbodax.customers.Customer temp$4, temp$8, temp$15, temp$19, temp$26, temp$32, temp$38, temp$44, temp$48, temp$55, temp$61, temp$67, temp$73, temp$79, temp$85, temp$91, temp$97, temp$103, temp$109, temp$115, temp$121, temp$125, temp$132, temp$138, temp$144, temp$150, temp$153, temp$160, temp$166, temp$172, temp$178, temp$184, temp$188, temp$195, temp$199, temp$206, temp$212, temp$218, temp$222, temp$224, temp$228, temp$234, temp$238, temp$245, temp$251, temp$256, temp$262, temp$268, temp$272, temp$279, temp$283, temp$290, temp$296, temp$300, temp$307, temp$311, temp$318, temp$324, temp$330, temp$334, temp$341, temp$345, temp$352, temp$358, temp$364, temp$370, temp$376, temp$381;
+        int temp$5, temp$9, temp$16, temp$20, temp$27, temp$45, temp$49, temp$56, temp$68, temp$116, temp$126, temp$133, temp$139, temp$151, temp$154, temp$161, temp$167, temp$173, temp$179, temp$185, temp$189, temp$196, temp$200, temp$207, temp$219, temp$223, temp$225, temp$239, temp$246, temp$273, temp$280, temp$284, temp$291, temp$297, temp$301, temp$308, temp$312, temp$319, temp$325, temp$335, temp$342, temp$346, temp$353, temp$382;
+        java.lang.String temp$6, temp$7, temp$17, temp$18, temp$28, temp$29, temp$34, temp$35, temp$40, temp$41, temp$46, temp$47, temp$57, temp$58, temp$63, temp$64, temp$69, temp$70, temp$75, temp$76, temp$81, temp$82, temp$87, temp$88, temp$93, temp$94, temp$99, temp$100, temp$105, temp$106, temp$111, temp$112, temp$117, temp$118, temp$123, temp$124, temp$134, temp$135, temp$140, temp$141, temp$146, temp$147, temp$152, temp$162, temp$163, temp$168, temp$169, temp$174, temp$175, temp$180, temp$181, temp$186, temp$187, temp$197, temp$198, temp$208, temp$209, temp$214, temp$215, temp$220, temp$221, temp$230, temp$231, temp$236, temp$237, temp$247, temp$248, temp$252, temp$253, temp$258, temp$259, temp$264, temp$265, temp$270, temp$271, temp$281, temp$282, temp$292, temp$293, temp$298, temp$299, temp$309, temp$310, temp$320, temp$321, temp$326, temp$327, temp$332, temp$333, temp$343, temp$344, temp$354, temp$355, temp$360, temp$361, temp$366, temp$367, temp$372, temp$373, temp$377, temp$378, temp$383, temp$384;
+        durbodax.customers.Enums.EducationLevel temp$33;
+        durbodax.customers.Enums.EmploymentStatus temp$39;
+        durbodax.customers.Enums.Farm temp$62;
+        durbodax.customers.Enums.Sex temp$74;
+        durbodax.customers.Enums.LaborForce temp$80;
+        durbodax.customers.Enums.LastYearWorked temp$86;
+        durbodax.customers.Enums.LinkToFather temp$92;
+        durbodax.customers.Enums.LinkToMother temp$98;
+        durbodax.customers.Enums.LinkToSpouse temp$104;
+        durbodax.customers.Enums.MaritalStatus temp$110;
+        durbodax.customers.Enums.MovedIn temp$122;
+        durbodax.customers.Enums.ChildrenUnderFive temp$145;
+        durbodax.customers.Enums.Ownership temp$213;
+        durbodax.customers.Enums.Race temp$229;
+        durbodax.customers.Enums.RelationWHeadHouse temp$235;
+        durbodax.customers.Enums.ResidentialStatus temp$257;
+        durbodax.customers.Enums.SchoolStatus temp$263;
+        durbodax.customers.Enums.SchoolType temp$269;
+        durbodax.customers.Enums.VeteranStatus temp$331;
+        durbodax.customers.Enums.WorkingClass temp$359;
+        durbodax.customers.Enums.WorkHours temp$365;
+        durbodax.customers.Enums.WeeksWorkedPerYear temp$371;
+
+        this := @this: durbodax.customers.CustomerData;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:280");
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("");
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        temp$3 = new java.lang.StringBuffer;
+        specialinvoke temp$3.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Age: ");
+        temp$4 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$5 = virtualinvoke temp$4.<durbodax.customers.Customer: int getAge()>();
+        temp$6 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$5);
+        virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$6);
+        temp$7 = virtualinvoke temp$3.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>(temp$7);
+        temp$8 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$9 = virtualinvoke temp$8.<durbodax.customers.Customer: int getAgeOfEldestChild()>();
+        if temp$9 == 99 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$10 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$10.<java.io.PrintStream: void println(java.lang.String)>("flow:281");
+        temp$11 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$11.<java.io.PrintStream: void println(java.lang.String)>("Age of Eldest Child: N/A");
+        goto label2;
+
+     label1:
+        nop;
+        temp$12 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$12.<java.io.PrintStream: void println(java.lang.String)>("flow:282");
+        temp$13 = <java.lang.System: java.io.PrintStream out>;
+        temp$14 = new java.lang.StringBuffer;
+        specialinvoke temp$14.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Age of Eldest Child: ");
+        temp$15 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$16 = virtualinvoke temp$15.<durbodax.customers.Customer: int getAgeOfEldestChild()>();
+        temp$17 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$16);
+        virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$17);
+        temp$18 = virtualinvoke temp$14.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$13.<java.io.PrintStream: void println(java.lang.String)>(temp$18);
+
+     label2:
+        nop;
+        temp$19 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$20 = virtualinvoke temp$19.<durbodax.customers.Customer: int getAgeOfYoungestChild()>();
+        if temp$20 == 99 goto label3;
+
+        goto label4;
+
+     label3:
+        nop;
+        temp$21 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$21.<java.io.PrintStream: void println(java.lang.String)>("flow:283");
+        temp$22 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$22.<java.io.PrintStream: void println(java.lang.String)>("Age of Youngest Child: N/A");
+        goto label5;
+
+     label4:
+        nop;
+        temp$23 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$23.<java.io.PrintStream: void println(java.lang.String)>("flow:284");
+        temp$24 = <java.lang.System: java.io.PrintStream out>;
+        temp$25 = new java.lang.StringBuffer;
+        specialinvoke temp$25.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$25.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Age of Youngest Child: ");
+        temp$26 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$27 = virtualinvoke temp$26.<durbodax.customers.Customer: int getAgeOfYoungestChild()>();
+        temp$28 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$27);
+        virtualinvoke temp$25.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$28);
+        temp$29 = virtualinvoke temp$25.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$24.<java.io.PrintStream: void println(java.lang.String)>(temp$29);
+
+     label5:
+        nop;
+        temp$30 = <java.lang.System: java.io.PrintStream out>;
+        temp$31 = new java.lang.StringBuffer;
+        specialinvoke temp$31.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$31.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Education Level: ");
+        temp$32 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$33 = virtualinvoke temp$32.<durbodax.customers.Customer: durbodax.customers.Enums.EducationLevel getEducationLevelEnum()>();
+        temp$34 = virtualinvoke temp$33.<durbodax.customers.Enums.EducationLevel: java.lang.String toString()>();
+        virtualinvoke temp$31.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$34);
+        temp$35 = virtualinvoke temp$31.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$30.<java.io.PrintStream: void println(java.lang.String)>(temp$35);
+        temp$36 = <java.lang.System: java.io.PrintStream out>;
+        temp$37 = new java.lang.StringBuffer;
+        specialinvoke temp$37.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$37.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Employment Status: ");
+        temp$38 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$39 = virtualinvoke temp$38.<durbodax.customers.Customer: durbodax.customers.Enums.EmploymentStatus getEmploymentStatusEnum()>();
+        temp$40 = virtualinvoke temp$39.<durbodax.customers.Enums.EmploymentStatus: java.lang.String toString()>();
+        virtualinvoke temp$37.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$40);
+        temp$41 = virtualinvoke temp$37.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$36.<java.io.PrintStream: void println(java.lang.String)>(temp$41);
+        temp$42 = <java.lang.System: java.io.PrintStream out>;
+        temp$43 = new java.lang.StringBuffer;
+        specialinvoke temp$43.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$43.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Family Unit: ");
+        temp$44 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$45 = virtualinvoke temp$44.<durbodax.customers.Customer: int getFamilyMembership()>();
+        temp$46 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$45);
+        virtualinvoke temp$43.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$46);
+        temp$47 = virtualinvoke temp$43.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$42.<java.io.PrintStream: void println(java.lang.String)>(temp$47);
+        temp$48 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$49 = virtualinvoke temp$48.<durbodax.customers.Customer: int getFarmIncome()>();
+        if temp$49 == 999999 goto label6;
+
+        goto label7;
+
+     label6:
+        nop;
+        temp$50 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$50.<java.io.PrintStream: void println(java.lang.String)>("flow:285");
+        temp$51 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$51.<java.io.PrintStream: void println(java.lang.String)>("Farm Income: N/A");
+        goto label8;
+
+     label7:
+        nop;
+        temp$52 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$52.<java.io.PrintStream: void println(java.lang.String)>("flow:286");
+        temp$53 = <java.lang.System: java.io.PrintStream out>;
+        temp$54 = new java.lang.StringBuffer;
+        specialinvoke temp$54.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$54.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Farm Income: ");
+        temp$55 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$56 = virtualinvoke temp$55.<durbodax.customers.Customer: int getFarmIncome()>();
+        temp$57 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$56);
+        virtualinvoke temp$54.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$57);
+        temp$58 = virtualinvoke temp$54.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$53.<java.io.PrintStream: void println(java.lang.String)>(temp$58);
+
+     label8:
+        nop;
+        temp$59 = <java.lang.System: java.io.PrintStream out>;
+        temp$60 = new java.lang.StringBuffer;
+        specialinvoke temp$60.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$60.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Farm Status: ");
+        temp$61 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$62 = virtualinvoke temp$61.<durbodax.customers.Customer: durbodax.customers.Enums.Farm getFarmStatusEnum()>();
+        temp$63 = virtualinvoke temp$62.<durbodax.customers.Enums.Farm: java.lang.String toString()>();
+        virtualinvoke temp$60.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$63);
+        temp$64 = virtualinvoke temp$60.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$59.<java.io.PrintStream: void println(java.lang.String)>(temp$64);
+        temp$65 = <java.lang.System: java.io.PrintStream out>;
+        temp$66 = new java.lang.StringBuffer;
+        specialinvoke temp$66.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$66.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Father\'s Location in Household: ");
+        temp$67 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$68 = virtualinvoke temp$67.<durbodax.customers.Customer: int getFathersLocationInHouse()>();
+        temp$69 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$68);
+        virtualinvoke temp$66.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$69);
+        temp$70 = virtualinvoke temp$66.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$65.<java.io.PrintStream: void println(java.lang.String)>(temp$70);
+        temp$71 = <java.lang.System: java.io.PrintStream out>;
+        temp$72 = new java.lang.StringBuffer;
+        specialinvoke temp$72.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$72.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Gender: ");
+        temp$73 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$74 = virtualinvoke temp$73.<durbodax.customers.Customer: durbodax.customers.Enums.Sex getGenderEnum()>();
+        temp$75 = virtualinvoke temp$74.<durbodax.customers.Enums.Sex: java.lang.String toString()>();
+        virtualinvoke temp$72.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$75);
+        temp$76 = virtualinvoke temp$72.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$71.<java.io.PrintStream: void println(java.lang.String)>(temp$76);
+        temp$77 = <java.lang.System: java.io.PrintStream out>;
+        temp$78 = new java.lang.StringBuffer;
+        specialinvoke temp$78.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$78.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Labor Force Participation: ");
+        temp$79 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$80 = virtualinvoke temp$79.<durbodax.customers.Customer: durbodax.customers.Enums.LaborForce getLaborForceEnum()>();
+        temp$81 = virtualinvoke temp$80.<durbodax.customers.Enums.LaborForce: java.lang.String toString()>();
+        virtualinvoke temp$78.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$81);
+        temp$82 = virtualinvoke temp$78.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$77.<java.io.PrintStream: void println(java.lang.String)>(temp$82);
+        temp$83 = <java.lang.System: java.io.PrintStream out>;
+        temp$84 = new java.lang.StringBuffer;
+        specialinvoke temp$84.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$84.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Last Year Worked: ");
+        temp$85 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$86 = virtualinvoke temp$85.<durbodax.customers.Customer: durbodax.customers.Enums.LastYearWorked getLastYearWorkedEnum()>();
+        temp$87 = virtualinvoke temp$86.<durbodax.customers.Enums.LastYearWorked: java.lang.String toString()>();
+        virtualinvoke temp$84.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$87);
+        temp$88 = virtualinvoke temp$84.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$83.<java.io.PrintStream: void println(java.lang.String)>(temp$88);
+        temp$89 = <java.lang.System: java.io.PrintStream out>;
+        temp$90 = new java.lang.StringBuffer;
+        specialinvoke temp$90.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$90.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Link to Father: ");
+        temp$91 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$92 = virtualinvoke temp$91.<durbodax.customers.Customer: durbodax.customers.Enums.LinkToFather getLinkToFatherEnum()>();
+        temp$93 = virtualinvoke temp$92.<durbodax.customers.Enums.LinkToFather: java.lang.String toString()>();
+        virtualinvoke temp$90.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$93);
+        temp$94 = virtualinvoke temp$90.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$89.<java.io.PrintStream: void println(java.lang.String)>(temp$94);
+        temp$95 = <java.lang.System: java.io.PrintStream out>;
+        temp$96 = new java.lang.StringBuffer;
+        specialinvoke temp$96.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$96.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Link to Mother: ");
+        temp$97 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$98 = virtualinvoke temp$97.<durbodax.customers.Customer: durbodax.customers.Enums.LinkToMother getLinkToMotherEnum()>();
+        temp$99 = virtualinvoke temp$98.<durbodax.customers.Enums.LinkToMother: java.lang.String toString()>();
+        virtualinvoke temp$96.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$99);
+        temp$100 = virtualinvoke temp$96.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$95.<java.io.PrintStream: void println(java.lang.String)>(temp$100);
+        temp$101 = <java.lang.System: java.io.PrintStream out>;
+        temp$102 = new java.lang.StringBuffer;
+        specialinvoke temp$102.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$102.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Link to Spouse: ");
+        temp$103 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$104 = virtualinvoke temp$103.<durbodax.customers.Customer: durbodax.customers.Enums.LinkToSpouse getLinkToSpouseEnum()>();
+        temp$105 = virtualinvoke temp$104.<durbodax.customers.Enums.LinkToSpouse: java.lang.String toString()>();
+        virtualinvoke temp$102.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$105);
+        temp$106 = virtualinvoke temp$102.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$101.<java.io.PrintStream: void println(java.lang.String)>(temp$106);
+        temp$107 = <java.lang.System: java.io.PrintStream out>;
+        temp$108 = new java.lang.StringBuffer;
+        specialinvoke temp$108.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$108.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Marital Status: ");
+        temp$109 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$110 = virtualinvoke temp$109.<durbodax.customers.Customer: durbodax.customers.Enums.MaritalStatus getMaritalStatusEnum()>();
+        temp$111 = virtualinvoke temp$110.<durbodax.customers.Enums.MaritalStatus: java.lang.String toString()>();
+        virtualinvoke temp$108.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$111);
+        temp$112 = virtualinvoke temp$108.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$107.<java.io.PrintStream: void println(java.lang.String)>(temp$112);
+        temp$113 = <java.lang.System: java.io.PrintStream out>;
+        temp$114 = new java.lang.StringBuffer;
+        specialinvoke temp$114.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$114.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Mother\'s Location in Household: ");
+        temp$115 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$116 = virtualinvoke temp$115.<durbodax.customers.Customer: int getMothersLocationInHouse()>();
+        temp$117 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$116);
+        virtualinvoke temp$114.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$117);
+        temp$118 = virtualinvoke temp$114.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$113.<java.io.PrintStream: void println(java.lang.String)>(temp$118);
+        temp$119 = <java.lang.System: java.io.PrintStream out>;
+        temp$120 = new java.lang.StringBuffer;
+        specialinvoke temp$120.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$120.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Moved In Status: ");
+        temp$121 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$122 = virtualinvoke temp$121.<durbodax.customers.Customer: durbodax.customers.Enums.MovedIn getMovedInCodeEnum()>();
+        temp$123 = virtualinvoke temp$122.<durbodax.customers.Enums.MovedIn: java.lang.String toString()>();
+        virtualinvoke temp$120.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$123);
+        temp$124 = virtualinvoke temp$120.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$119.<java.io.PrintStream: void println(java.lang.String)>(temp$124);
+        temp$125 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$126 = virtualinvoke temp$125.<durbodax.customers.Customer: int getNonFarmBusinessIncome()>();
+        if temp$126 == 999999 goto label9;
+
+        goto label10;
+
+     label9:
+        nop;
+        temp$127 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$127.<java.io.PrintStream: void println(java.lang.String)>("flow:287");
+        temp$128 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$128.<java.io.PrintStream: void println(java.lang.String)>("Non-Farm Business Income: N/A");
+        goto label11;
+
+     label10:
+        nop;
+        temp$129 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$129.<java.io.PrintStream: void println(java.lang.String)>("flow:288");
+        temp$130 = <java.lang.System: java.io.PrintStream out>;
+        temp$131 = new java.lang.StringBuffer;
+        specialinvoke temp$131.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$131.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Non-Farm Business Income: ");
+        temp$132 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$133 = virtualinvoke temp$132.<durbodax.customers.Customer: int getNonFarmBusinessIncome()>();
+        temp$134 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$133);
+        virtualinvoke temp$131.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$134);
+        temp$135 = virtualinvoke temp$131.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$130.<java.io.PrintStream: void println(java.lang.String)>(temp$135);
+
+     label11:
+        nop;
+        temp$136 = <java.lang.System: java.io.PrintStream out>;
+        temp$137 = new java.lang.StringBuffer;
+        specialinvoke temp$137.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$137.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Number of Children in the House: ");
+        temp$138 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$139 = virtualinvoke temp$138.<durbodax.customers.Customer: int getNumChildrenInHouse()>();
+        temp$140 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$139);
+        virtualinvoke temp$137.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$140);
+        temp$141 = virtualinvoke temp$137.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$136.<java.io.PrintStream: void println(java.lang.String)>(temp$141);
+        temp$142 = <java.lang.System: java.io.PrintStream out>;
+        temp$143 = new java.lang.StringBuffer;
+        specialinvoke temp$143.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$143.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Number of Children under Five: ");
+        temp$144 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$145 = virtualinvoke temp$144.<durbodax.customers.Customer: durbodax.customers.Enums.ChildrenUnderFive getNumChildrenUnderFiveInHouseEnum()>();
+        temp$146 = virtualinvoke temp$145.<durbodax.customers.Enums.ChildrenUnderFive: java.lang.String toString()>();
+        virtualinvoke temp$143.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$146);
+        temp$147 = virtualinvoke temp$143.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$142.<java.io.PrintStream: void println(java.lang.String)>(temp$147);
+        temp$148 = <java.lang.System: java.io.PrintStream out>;
+        temp$149 = new java.lang.StringBuffer;
+        specialinvoke temp$149.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$149.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Number of Couples in the House: ");
+        temp$150 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$151 = virtualinvoke temp$150.<durbodax.customers.Customer: int getNumCouplesInHouse()>();
+        virtualinvoke temp$149.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(temp$151);
+        temp$152 = virtualinvoke temp$149.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$148.<java.io.PrintStream: void println(java.lang.String)>(temp$152);
+        temp$153 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$154 = virtualinvoke temp$153.<durbodax.customers.Customer: int getNumFamiliesInHouse()>();
+        if temp$154 == 0 goto label12;
+
+        goto label13;
+
+     label12:
+        nop;
+        temp$155 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$155.<java.io.PrintStream: void println(java.lang.String)>("flow:289");
+        temp$156 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$156.<java.io.PrintStream: void println(java.lang.String)>("Number of Families in House: Vacant");
+        goto label14;
+
+     label13:
+        nop;
+        temp$157 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$157.<java.io.PrintStream: void println(java.lang.String)>("flow:290");
+        temp$158 = <java.lang.System: java.io.PrintStream out>;
+        temp$159 = new java.lang.StringBuffer;
+        specialinvoke temp$159.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$159.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Number of Families in House: ");
+        temp$160 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$161 = virtualinvoke temp$160.<durbodax.customers.Customer: int getNumFamiliesInHouse()>();
+        temp$162 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$161);
+        virtualinvoke temp$159.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$162);
+        temp$163 = virtualinvoke temp$159.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$158.<java.io.PrintStream: void println(java.lang.String)>(temp$163);
+
+     label14:
+        nop;
+        temp$164 = <java.lang.System: java.io.PrintStream out>;
+        temp$165 = new java.lang.StringBuffer;
+        specialinvoke temp$165.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$165.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Number of Family Members in the House: ");
+        temp$166 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$167 = virtualinvoke temp$166.<durbodax.customers.Customer: int getNumFamilyMembersInHouse()>();
+        temp$168 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$167);
+        virtualinvoke temp$165.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$168);
+        temp$169 = virtualinvoke temp$165.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$164.<java.io.PrintStream: void println(java.lang.String)>(temp$169);
+        temp$170 = <java.lang.System: java.io.PrintStream out>;
+        temp$171 = new java.lang.StringBuffer;
+        specialinvoke temp$171.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$171.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Number of Fathers in the House: ");
+        temp$172 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$173 = virtualinvoke temp$172.<durbodax.customers.Customer: int getNumFathersInHouse()>();
+        temp$174 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$173);
+        virtualinvoke temp$171.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$174);
+        temp$175 = virtualinvoke temp$171.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$170.<java.io.PrintStream: void println(java.lang.String)>(temp$175);
+        temp$176 = <java.lang.System: java.io.PrintStream out>;
+        temp$177 = new java.lang.StringBuffer;
+        specialinvoke temp$177.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$177.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Number of Mothers in the House: ");
+        temp$178 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$179 = virtualinvoke temp$178.<durbodax.customers.Customer: int getNumMothersInHouse()>();
+        temp$180 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$179);
+        virtualinvoke temp$177.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$180);
+        temp$181 = virtualinvoke temp$177.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$176.<java.io.PrintStream: void println(java.lang.String)>(temp$181);
+        temp$182 = <java.lang.System: java.io.PrintStream out>;
+        temp$183 = new java.lang.StringBuffer;
+        specialinvoke temp$183.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$183.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Number of Siblings in the House: ");
+        temp$184 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$185 = virtualinvoke temp$184.<durbodax.customers.Customer: int getNumSiblingsInHouse()>();
+        temp$186 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$185);
+        virtualinvoke temp$183.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$186);
+        temp$187 = virtualinvoke temp$183.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$182.<java.io.PrintStream: void println(java.lang.String)>(temp$187);
+        temp$188 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$189 = virtualinvoke temp$188.<durbodax.customers.Customer: int getOccupationIncomeScore()>();
+        if temp$189 == 0 goto label15;
+
+        goto label16;
+
+     label15:
+        nop;
+        temp$190 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$190.<java.io.PrintStream: void println(java.lang.String)>("flow:291");
+        temp$191 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$191.<java.io.PrintStream: void println(java.lang.String)>("Get Occupation Income Score: NA");
+        goto label17;
+
+     label16:
+        nop;
+        temp$192 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$192.<java.io.PrintStream: void println(java.lang.String)>("flow:292");
+        temp$193 = <java.lang.System: java.io.PrintStream out>;
+        temp$194 = new java.lang.StringBuffer;
+        specialinvoke temp$194.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$194.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Get Occupation Income Score: ");
+        temp$195 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$196 = virtualinvoke temp$195.<durbodax.customers.Customer: int getOccupationIncomeScore()>();
+        temp$197 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$196);
+        virtualinvoke temp$194.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$197);
+        temp$198 = virtualinvoke temp$194.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$193.<java.io.PrintStream: void println(java.lang.String)>(temp$198);
+
+     label17:
+        nop;
+        temp$199 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$200 = virtualinvoke temp$199.<durbodax.customers.Customer: int getOtherIncome()>();
+        if temp$200 == 99999 goto label18;
+
+        goto label19;
+
+     label18:
+        nop;
+        temp$201 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$201.<java.io.PrintStream: void println(java.lang.String)>("flow:293");
+        temp$202 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$202.<java.io.PrintStream: void println(java.lang.String)>("Other Income: NA");
+        goto label20;
+
+     label19:
+        nop;
+        temp$203 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$203.<java.io.PrintStream: void println(java.lang.String)>("flow:294");
+        temp$204 = <java.lang.System: java.io.PrintStream out>;
+        temp$205 = new java.lang.StringBuffer;
+        specialinvoke temp$205.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$205.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Other Income: ");
+        temp$206 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$207 = virtualinvoke temp$206.<durbodax.customers.Customer: int getOtherIncome()>();
+        temp$208 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$207);
+        virtualinvoke temp$205.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$208);
+        temp$209 = virtualinvoke temp$205.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$204.<java.io.PrintStream: void println(java.lang.String)>(temp$209);
+
+     label20:
+        nop;
+        temp$210 = <java.lang.System: java.io.PrintStream out>;
+        temp$211 = new java.lang.StringBuffer;
+        specialinvoke temp$211.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$211.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Ownership: ");
+        temp$212 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$213 = virtualinvoke temp$212.<durbodax.customers.Customer: durbodax.customers.Enums.Ownership getOwnershipEnum()>();
+        temp$214 = virtualinvoke temp$213.<durbodax.customers.Enums.Ownership: java.lang.String toString()>();
+        virtualinvoke temp$211.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$214);
+        temp$215 = virtualinvoke temp$211.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$210.<java.io.PrintStream: void println(java.lang.String)>(temp$215);
+        temp$216 = <java.lang.System: java.io.PrintStream out>;
+        temp$217 = new java.lang.StringBuffer;
+        specialinvoke temp$217.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$217.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Poverty Threshold: ");
+        temp$218 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$219 = virtualinvoke temp$218.<durbodax.customers.Customer: int getPovertyStatus()>();
+        temp$220 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$219);
+        virtualinvoke temp$217.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$220);
+        temp$221 = virtualinvoke temp$217.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$216.<java.io.PrintStream: void println(java.lang.String)>(temp$221);
+        temp$222 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$223 = virtualinvoke temp$222.<durbodax.customers.Customer: int getProbableStepFather()>();
+        temp$224 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$225 = virtualinvoke temp$224.<durbodax.customers.Customer: int getProbableStepMother()>();
+        temp$226 = <java.lang.System: java.io.PrintStream out>;
+        temp$227 = new java.lang.StringBuffer;
+        specialinvoke temp$227.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$227.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Race: ");
+        temp$228 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$229 = virtualinvoke temp$228.<durbodax.customers.Customer: durbodax.customers.Enums.Race getRaceEnum()>();
+        temp$230 = virtualinvoke temp$229.<durbodax.customers.Enums.Race: java.lang.String toString()>();
+        virtualinvoke temp$227.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$230);
+        temp$231 = virtualinvoke temp$227.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$226.<java.io.PrintStream: void println(java.lang.String)>(temp$231);
+        temp$232 = <java.lang.System: java.io.PrintStream out>;
+        temp$233 = new java.lang.StringBuffer;
+        specialinvoke temp$233.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$233.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Get Relationship w House Holder: ");
+        temp$234 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$235 = virtualinvoke temp$234.<durbodax.customers.Customer: durbodax.customers.Enums.RelationWHeadHouse getRelationshipWHouseholderEnum()>();
+        temp$236 = virtualinvoke temp$235.<durbodax.customers.Enums.RelationWHeadHouse: java.lang.String toString()>();
+        virtualinvoke temp$233.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$236);
+        temp$237 = virtualinvoke temp$233.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$232.<java.io.PrintStream: void println(java.lang.String)>(temp$237);
+        temp$238 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$239 = virtualinvoke temp$238.<durbodax.customers.Customer: int getRent()>();
+        if temp$239 == 0 goto label21;
+
+        goto label22;
+
+     label21:
+        nop;
+        temp$240 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$240.<java.io.PrintStream: void println(java.lang.String)>("flow:295");
+        temp$241 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$241.<java.io.PrintStream: void println(java.lang.String)>("Rent: NA");
+        goto label23;
+
+     label22:
+        nop;
+        temp$242 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$242.<java.io.PrintStream: void println(java.lang.String)>("flow:296");
+        temp$243 = <java.lang.System: java.io.PrintStream out>;
+        temp$244 = new java.lang.StringBuffer;
+        specialinvoke temp$244.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$244.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Rent: ");
+        temp$245 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$246 = virtualinvoke temp$245.<durbodax.customers.Customer: int getRent()>();
+        temp$247 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$246);
+        virtualinvoke temp$244.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$247);
+        temp$248 = virtualinvoke temp$244.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$243.<java.io.PrintStream: void println(java.lang.String)>(temp$248);
+
+     label23:
+        nop;
+        temp$249 = <java.lang.System: java.io.PrintStream out>;
+        temp$250 = new java.lang.StringBuffer;
+        specialinvoke temp$250.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$250.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Residence 5 yrs. ago: ");
+        temp$251 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$252 = virtualinvoke temp$251.<durbodax.customers.Customer: java.lang.String getResidence5YearsAgo()>();
+        virtualinvoke temp$250.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$252);
+        temp$253 = virtualinvoke temp$250.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$249.<java.io.PrintStream: void println(java.lang.String)>(temp$253);
+        temp$254 = <java.lang.System: java.io.PrintStream out>;
+        temp$255 = new java.lang.StringBuffer;
+        specialinvoke temp$255.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$255.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Residential Status: ");
+        temp$256 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$257 = virtualinvoke temp$256.<durbodax.customers.Customer: durbodax.customers.Enums.ResidentialStatus getResidentialStatusEnum()>();
+        temp$258 = virtualinvoke temp$257.<durbodax.customers.Enums.ResidentialStatus: java.lang.String toString()>();
+        virtualinvoke temp$255.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$258);
+        temp$259 = virtualinvoke temp$255.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$254.<java.io.PrintStream: void println(java.lang.String)>(temp$259);
+        temp$260 = <java.lang.System: java.io.PrintStream out>;
+        temp$261 = new java.lang.StringBuffer;
+        specialinvoke temp$261.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$261.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("School Status: ");
+        temp$262 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$263 = virtualinvoke temp$262.<durbodax.customers.Customer: durbodax.customers.Enums.SchoolStatus getSchoolStatusEnum()>();
+        temp$264 = virtualinvoke temp$263.<durbodax.customers.Enums.SchoolStatus: java.lang.String toString()>();
+        virtualinvoke temp$261.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$264);
+        temp$265 = virtualinvoke temp$261.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$260.<java.io.PrintStream: void println(java.lang.String)>(temp$265);
+        temp$266 = <java.lang.System: java.io.PrintStream out>;
+        temp$267 = new java.lang.StringBuffer;
+        specialinvoke temp$267.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$267.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("School Type: ");
+        temp$268 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$269 = virtualinvoke temp$268.<durbodax.customers.Customer: durbodax.customers.Enums.SchoolType getSchoolTypeEnum()>();
+        temp$270 = virtualinvoke temp$269.<durbodax.customers.Enums.SchoolType: java.lang.String toString()>();
+        virtualinvoke temp$267.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$270);
+        temp$271 = virtualinvoke temp$267.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$266.<java.io.PrintStream: void println(java.lang.String)>(temp$271);
+        temp$272 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$273 = virtualinvoke temp$272.<durbodax.customers.Customer: int getSocialSecurityIncome()>();
+        if temp$273 == 9999 goto label24;
+
+        goto label25;
+
+     label24:
+        nop;
+        temp$274 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$274.<java.io.PrintStream: void println(java.lang.String)>("flow:297");
+        temp$275 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$275.<java.io.PrintStream: void println(java.lang.String)>("Social Security Income: NA");
+        goto label26;
+
+     label25:
+        nop;
+        temp$276 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$276.<java.io.PrintStream: void println(java.lang.String)>("flow:298");
+        temp$277 = <java.lang.System: java.io.PrintStream out>;
+        temp$278 = new java.lang.StringBuffer;
+        specialinvoke temp$278.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$278.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Social Security Income: ");
+        temp$279 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$280 = virtualinvoke temp$279.<durbodax.customers.Customer: int getSocialSecurityIncome()>();
+        temp$281 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$280);
+        virtualinvoke temp$278.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$281);
+        temp$282 = virtualinvoke temp$278.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$277.<java.io.PrintStream: void println(java.lang.String)>(temp$282);
+
+     label26:
+        nop;
+        temp$283 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$284 = virtualinvoke temp$283.<durbodax.customers.Customer: int getSocioEconomicIndex()>();
+        if temp$284 == 0 goto label27;
+
+        goto label28;
+
+     label27:
+        nop;
+        temp$285 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$285.<java.io.PrintStream: void println(java.lang.String)>("flow:299");
+        temp$286 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$286.<java.io.PrintStream: void println(java.lang.String)>("Socio Economic Index: NA");
+        goto label29;
+
+     label28:
+        nop;
+        temp$287 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$287.<java.io.PrintStream: void println(java.lang.String)>("flow:300");
+        temp$288 = <java.lang.System: java.io.PrintStream out>;
+        temp$289 = new java.lang.StringBuffer;
+        specialinvoke temp$289.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$289.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Socio Economic Index: ");
+        temp$290 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$291 = virtualinvoke temp$290.<durbodax.customers.Customer: int getSocioEconomicIndex()>();
+        temp$292 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$291);
+        virtualinvoke temp$289.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$292);
+        temp$293 = virtualinvoke temp$289.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$288.<java.io.PrintStream: void println(java.lang.String)>(temp$293);
+
+     label29:
+        nop;
+        temp$294 = <java.lang.System: java.io.PrintStream out>;
+        temp$295 = new java.lang.StringBuffer;
+        specialinvoke temp$295.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$295.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Spouse Location in Household: ");
+        temp$296 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$297 = virtualinvoke temp$296.<durbodax.customers.Customer: int getSpouseLocationInHouse()>();
+        temp$298 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$297);
+        virtualinvoke temp$295.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$298);
+        temp$299 = virtualinvoke temp$295.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$294.<java.io.PrintStream: void println(java.lang.String)>(temp$299);
+        temp$300 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$301 = virtualinvoke temp$300.<durbodax.customers.Customer: int getTotalFamilyIncome()>();
+        if temp$301 == 9999999 goto label30;
+
+        goto label31;
+
+     label30:
+        nop;
+        temp$302 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$302.<java.io.PrintStream: void println(java.lang.String)>("flow:301");
+        temp$303 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$303.<java.io.PrintStream: void println(java.lang.String)>("Total Family Income: NA");
+        goto label32;
+
+     label31:
+        nop;
+        temp$304 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$304.<java.io.PrintStream: void println(java.lang.String)>("flow:302");
+        temp$305 = <java.lang.System: java.io.PrintStream out>;
+        temp$306 = new java.lang.StringBuffer;
+        specialinvoke temp$306.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$306.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Total Family Income: ");
+        temp$307 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$308 = virtualinvoke temp$307.<durbodax.customers.Customer: int getTotalFamilyIncome()>();
+        temp$309 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$308);
+        virtualinvoke temp$306.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$309);
+        temp$310 = virtualinvoke temp$306.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$305.<java.io.PrintStream: void println(java.lang.String)>(temp$310);
+
+     label32:
+        nop;
+        temp$311 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$312 = virtualinvoke temp$311.<durbodax.customers.Customer: int getTotalPersonalIncome()>();
+        if temp$312 == 9999999 goto label33;
+
+        goto label34;
+
+     label33:
+        nop;
+        temp$313 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$313.<java.io.PrintStream: void println(java.lang.String)>("flow:303");
+        temp$314 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$314.<java.io.PrintStream: void println(java.lang.String)>("Total Personal Income: NA");
+        goto label35;
+
+     label34:
+        nop;
+        temp$315 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$315.<java.io.PrintStream: void println(java.lang.String)>("flow:304");
+        temp$316 = <java.lang.System: java.io.PrintStream out>;
+        temp$317 = new java.lang.StringBuffer;
+        specialinvoke temp$317.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$317.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Total Personal Income: ");
+        temp$318 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$319 = virtualinvoke temp$318.<durbodax.customers.Customer: int getTotalFamilyIncome()>();
+        temp$320 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$319);
+        virtualinvoke temp$317.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$320);
+        temp$321 = virtualinvoke temp$317.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$316.<java.io.PrintStream: void println(java.lang.String)>(temp$321);
+
+     label35:
+        nop;
+        temp$322 = <java.lang.System: java.io.PrintStream out>;
+        temp$323 = new java.lang.StringBuffer;
+        specialinvoke temp$323.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$323.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("House Value: ");
+        temp$324 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$325 = virtualinvoke temp$324.<durbodax.customers.Customer: int getValue()>();
+        temp$326 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$325);
+        virtualinvoke temp$323.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$326);
+        temp$327 = virtualinvoke temp$323.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$322.<java.io.PrintStream: void println(java.lang.String)>(temp$327);
+        temp$328 = <java.lang.System: java.io.PrintStream out>;
+        temp$329 = new java.lang.StringBuffer;
+        specialinvoke temp$329.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$329.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Veteran Status: ");
+        temp$330 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$331 = virtualinvoke temp$330.<durbodax.customers.Customer: durbodax.customers.Enums.VeteranStatus getVeteranStatusEnum()>();
+        temp$332 = virtualinvoke temp$331.<durbodax.customers.Enums.VeteranStatus: java.lang.String toString()>();
+        virtualinvoke temp$329.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$332);
+        temp$333 = virtualinvoke temp$329.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$328.<java.io.PrintStream: void println(java.lang.String)>(temp$333);
+        temp$334 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$335 = virtualinvoke temp$334.<durbodax.customers.Customer: int getWageAndSalaryIncome()>();
+        if temp$335 == 9999999 goto label36;
+
+        goto label37;
+
+     label36:
+        nop;
+        temp$336 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$336.<java.io.PrintStream: void println(java.lang.String)>("flow:305");
+        temp$337 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$337.<java.io.PrintStream: void println(java.lang.String)>("Total Wage and Salary Income: NA");
+        goto label38;
+
+     label37:
+        nop;
+        temp$338 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$338.<java.io.PrintStream: void println(java.lang.String)>("flow:306");
+        temp$339 = <java.lang.System: java.io.PrintStream out>;
+        temp$340 = new java.lang.StringBuffer;
+        specialinvoke temp$340.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$340.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Total Wage and Salary Income: ");
+        temp$341 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$342 = virtualinvoke temp$341.<durbodax.customers.Customer: int getWageAndSalaryIncome()>();
+        temp$343 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$342);
+        virtualinvoke temp$340.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$343);
+        temp$344 = virtualinvoke temp$340.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$339.<java.io.PrintStream: void println(java.lang.String)>(temp$344);
+
+     label38:
+        nop;
+        temp$345 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$346 = virtualinvoke temp$345.<durbodax.customers.Customer: int getWelfareIncome()>();
+        if temp$346 == 9999999 goto label39;
+
+        goto label40;
+
+     label39:
+        nop;
+        temp$347 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$347.<java.io.PrintStream: void println(java.lang.String)>("flow:307");
+        temp$348 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$348.<java.io.PrintStream: void println(java.lang.String)>("Total Welfare Income: NA");
+        goto label41;
+
+     label40:
+        nop;
+        temp$349 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$349.<java.io.PrintStream: void println(java.lang.String)>("flow:308");
+        temp$350 = <java.lang.System: java.io.PrintStream out>;
+        temp$351 = new java.lang.StringBuffer;
+        specialinvoke temp$351.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$351.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Total Welfare Income: ");
+        temp$352 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$353 = virtualinvoke temp$352.<durbodax.customers.Customer: int getWelfareIncome()>();
+        temp$354 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$353);
+        virtualinvoke temp$351.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$354);
+        temp$355 = virtualinvoke temp$351.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$350.<java.io.PrintStream: void println(java.lang.String)>(temp$355);
+
+     label41:
+        nop;
+        temp$356 = <java.lang.System: java.io.PrintStream out>;
+        temp$357 = new java.lang.StringBuffer;
+        specialinvoke temp$357.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$357.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Working Class Status: ");
+        temp$358 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$359 = virtualinvoke temp$358.<durbodax.customers.Customer: durbodax.customers.Enums.WorkingClass getWorkClassEnum()>();
+        temp$360 = virtualinvoke temp$359.<durbodax.customers.Enums.WorkingClass: java.lang.String toString()>();
+        virtualinvoke temp$357.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$360);
+        temp$361 = virtualinvoke temp$357.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$356.<java.io.PrintStream: void println(java.lang.String)>(temp$361);
+        temp$362 = <java.lang.System: java.io.PrintStream out>;
+        temp$363 = new java.lang.StringBuffer;
+        specialinvoke temp$363.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$363.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Hours Worked per Week: ");
+        temp$364 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$365 = virtualinvoke temp$364.<durbodax.customers.Customer: durbodax.customers.Enums.WorkHours getWorkHoursEnum()>();
+        temp$366 = virtualinvoke temp$365.<durbodax.customers.Enums.WorkHours: java.lang.String toString()>();
+        virtualinvoke temp$363.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$366);
+        temp$367 = virtualinvoke temp$363.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$362.<java.io.PrintStream: void println(java.lang.String)>(temp$367);
+        temp$368 = <java.lang.System: java.io.PrintStream out>;
+        temp$369 = new java.lang.StringBuffer;
+        specialinvoke temp$369.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$369.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Weeks Worked Per Year: ");
+        temp$370 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$371 = virtualinvoke temp$370.<durbodax.customers.Customer: durbodax.customers.Enums.WeeksWorkedPerYear getWeeksWorkedPerYearEnum()>();
+        temp$372 = virtualinvoke temp$371.<durbodax.customers.Enums.WeeksWorkedPerYear: java.lang.String toString()>();
+        virtualinvoke temp$369.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$372);
+        temp$373 = virtualinvoke temp$369.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$368.<java.io.PrintStream: void println(java.lang.String)>(temp$373);
+        temp$374 = <java.lang.System: java.io.PrintStream out>;
+        temp$375 = new java.lang.StringBuffer;
+        specialinvoke temp$375.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$375.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Birthplace: ");
+        temp$376 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$377 = virtualinvoke temp$376.<durbodax.customers.Customer: java.lang.String getBirthplace()>();
+        virtualinvoke temp$375.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$377);
+        temp$378 = virtualinvoke temp$375.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$374.<java.io.PrintStream: void println(java.lang.String)>(temp$378);
+        temp$379 = <java.lang.System: java.io.PrintStream out>;
+        temp$380 = new java.lang.StringBuffer;
+        specialinvoke temp$380.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$380.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Customer ID: ");
+        temp$381 = this.<durbodax.customers.CustomerData: durbodax.customers.Customer customer>;
+        temp$382 = virtualinvoke temp$381.<durbodax.customers.Customer: int getId()>();
+        temp$383 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$382);
+        virtualinvoke temp$380.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$383);
+        temp$384 = virtualinvoke temp$380.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$379.<java.io.PrintStream: void println(java.lang.String)>(temp$384);
+        return;
+    }
+}

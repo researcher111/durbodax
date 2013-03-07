@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i00, i01, i02, i03, i04, i05, i06, i07, i08, i09, i10, i11, i12, i13, i14, i15, i16, i17, i18, i19]" aType="ParamNamesTag"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Ltada/TaDaMethod; num elems: 2 elems: 
+Annotation Element: kind: [ name: variablesToTrack values: [Annotation Element: kind: s name: default value: i00, Annotation Element: kind: s name: default value: i01, Annotation Element: kind: s name: default value: i02, Annotation Element: kind: s name: default value: i03, Annotation Element: kind: s name: default value: i04, Annotation Element: kind: s name: default value: i05, Annotation Element: kind: s name: default value: i06, Annotation Element: kind: s name: default value: i07, Annotation Element: kind: s name: default value: i08, Annotation Element: kind: s name: default value: i09, Annotation Element: kind: s name: default value: i10, Annotation Element: kind: s name: default value: i11, Annotation Element: kind: s name: default value: i12, Annotation Element: kind: s name: default value: i13, Annotation Element: kind: s name: default value: i14, Annotation Element: kind: s name: default value: i15, Annotation Element: kind: s name: default value: i16, Annotation Element: kind: s name: default value: i17, Annotation Element: kind: s name: default value: i18, Annotation Element: kind: s name: default value: i19]
+Annotation Element: kind: [ name: correspondingDatabaseAttribute values: [Annotation Element: kind: s name: default value: i00, Annotation Element: kind: s name: default value: i01, Annotation Element: kind: s name: default value: i02, Annotation Element: kind: s name: default value: i03, Annotation Element: kind: s name: default value: i04, Annotation Element: kind: s name: default value: i05, Annotation Element: kind: s name: default value: i06, Annotation Element: kind: s name: default value: i07, Annotation Element: kind: s name: default value: i08, Annotation Element: kind: s name: default value: i09, Annotation Element: kind: s name: default value: i10, Annotation Element: kind: s name: default value: i11, Annotation Element: kind: s name: default value: i12, Annotation Element: kind: s name: default value: i13, Annotation Element: kind: s name: default value: i14, Annotation Element: kind: s name: default value: i15, Annotation Element: kind: s name: default value: i16, Annotation Element: kind: s name: default value: i17, Annotation Element: kind: s name: default value: i18, Annotation Element: kind: s name: default value: i19]
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[i0, i1, i2, i3, i4, i5, i6, i7, i8, i9]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="0" eline="0" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+</attributes>

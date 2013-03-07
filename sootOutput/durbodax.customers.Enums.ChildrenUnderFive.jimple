@@ -1,0 +1,243 @@
+public final enum class durbodax.customers.Enums.ChildrenUnderFive extends java.lang.Enum
+{
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive NO_CHILDREN;
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive ONE_CHILD;
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive TWO_CHILDREN;
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive THREE_CHILDREN;
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive FOUR_CHILDREN;
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive FIVE_CHILDREN;
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive SIX_CHILDREN;
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive SEVEN_CHILDREN;
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive EIGHT_CHILDREN;
+    public static final enum durbodax.customers.Enums.ChildrenUnderFive NINE_PLUS_CHILDREN;
+    private static final java.util.Map lookup;
+    private int code;
+    private static final durbodax.customers.Enums.ChildrenUnderFive[] $VALUES;
+    public static java.lang.Class class$durbodax$customers$Enums$ChildrenUnderFive;
+
+    static void <clinit>()
+    {
+        durbodax.customers.Enums.ChildrenUnderFive temp$0, temp$1, temp$2, temp$3, temp$4, temp$5, temp$6, temp$7, temp$8, temp$9, children, temp$24, temp$26, temp$27, temp$28, temp$29, temp$30, temp$31, temp$32, temp$33, temp$34, temp$35;
+        java.util.HashMap temp$10;
+        java.lang.Class temp$11, temp$12, temp$13;
+        java.util.EnumSet temp$14, temp$15;
+        java.util.Iterator temp$16;
+        boolean temp$17;
+        java.lang.Object temp$18, temp$23;
+        java.io.PrintStream temp$19;
+        java.util.Map temp$20;
+        int temp$21;
+        java.lang.Integer temp$22;
+        durbodax.customers.Enums.ChildrenUnderFive[] temp$25;
+
+        temp$0 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$0.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("NO_CHILDREN", 0, 0);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive NO_CHILDREN> = temp$0;
+        temp$1 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$1.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("ONE_CHILD", 1, 1);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive ONE_CHILD> = temp$1;
+        temp$2 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$2.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("TWO_CHILDREN", 2, 2);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive TWO_CHILDREN> = temp$2;
+        temp$3 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$3.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("THREE_CHILDREN", 3, 3);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive THREE_CHILDREN> = temp$3;
+        temp$4 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$4.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("FOUR_CHILDREN", 4, 4);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive FOUR_CHILDREN> = temp$4;
+        temp$5 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$5.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("FIVE_CHILDREN", 5, 5);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive FIVE_CHILDREN> = temp$5;
+        temp$6 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$6.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("SIX_CHILDREN", 6, 6);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive SIX_CHILDREN> = temp$6;
+        temp$7 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$7.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("SEVEN_CHILDREN", 7, 7);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive SEVEN_CHILDREN> = temp$7;
+        temp$8 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$8.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("EIGHT_CHILDREN", 8, 8);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive EIGHT_CHILDREN> = temp$8;
+        temp$9 = new durbodax.customers.Enums.ChildrenUnderFive;
+        specialinvoke temp$9.<durbodax.customers.Enums.ChildrenUnderFive: void <init>(java.lang.String,int,int)>("NINE_PLUS_CHILDREN", 9, 9);
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive NINE_PLUS_CHILDREN> = temp$9;
+        temp$10 = new java.util.HashMap;
+        specialinvoke temp$10.<java.util.HashMap: void <init>()>();
+        <durbodax.customers.Enums.ChildrenUnderFive: java.util.Map lookup> = temp$10;
+        temp$12 = <durbodax.customers.Enums.ChildrenUnderFive: java.lang.Class class$durbodax$customers$Enums$ChildrenUnderFive>;
+        if temp$12 != null goto label0;
+
+        temp$13 = staticinvoke <durbodax.customers.Enums.ChildrenUnderFive: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.ChildrenUnderFive");
+        <durbodax.customers.Enums.ChildrenUnderFive: java.lang.Class class$durbodax$customers$Enums$ChildrenUnderFive> = temp$13;
+        temp$11 = temp$13;
+        goto label1;
+
+     label0:
+        nop;
+        temp$11 = <durbodax.customers.Enums.ChildrenUnderFive: java.lang.Class class$durbodax$customers$Enums$ChildrenUnderFive>;
+
+     label1:
+        nop;
+        temp$14 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(temp$11);
+        temp$15 = (java.util.EnumSet) temp$14;
+        temp$16 = interfaceinvoke temp$15.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label2:
+        nop;
+        temp$17 = interfaceinvoke temp$16.<java.util.Iterator: boolean hasNext()>();
+        if temp$17 == 0 goto label3;
+
+        temp$18 = interfaceinvoke temp$16.<java.util.Iterator: java.lang.Object next()>();
+        children = (durbodax.customers.Enums.ChildrenUnderFive) temp$18;
+        temp$19 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$19.<java.io.PrintStream: void println(java.lang.String)>("flow:309");
+        temp$20 = <durbodax.customers.Enums.ChildrenUnderFive: java.util.Map lookup>;
+        temp$21 = virtualinvoke children.<durbodax.customers.Enums.ChildrenUnderFive: int getCode()>();
+        temp$22 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$21);
+        temp$23 = interfaceinvoke temp$20.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$22, children);
+        temp$24 = (durbodax.customers.Enums.ChildrenUnderFive) temp$23;
+        nop;
+        goto label2;
+
+     label3:
+        nop;
+        temp$25 = newarray (durbodax.customers.Enums.ChildrenUnderFive)[10];
+        temp$26 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive NO_CHILDREN>;
+        temp$25[0] = temp$26;
+        temp$27 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive ONE_CHILD>;
+        temp$25[1] = temp$27;
+        temp$28 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive TWO_CHILDREN>;
+        temp$25[2] = temp$28;
+        temp$29 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive THREE_CHILDREN>;
+        temp$25[3] = temp$29;
+        temp$30 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive FOUR_CHILDREN>;
+        temp$25[4] = temp$30;
+        temp$31 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive FIVE_CHILDREN>;
+        temp$25[5] = temp$31;
+        temp$32 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive SIX_CHILDREN>;
+        temp$25[6] = temp$32;
+        temp$33 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive SEVEN_CHILDREN>;
+        temp$25[7] = temp$33;
+        temp$34 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive EIGHT_CHILDREN>;
+        temp$25[8] = temp$34;
+        temp$35 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive NINE_PLUS_CHILDREN>;
+        temp$25[9] = temp$35;
+        <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive[] $VALUES> = temp$25;
+        return;
+    }
+
+    private void <init>(java.lang.String, int, int)
+    {
+        durbodax.customers.Enums.ChildrenUnderFive this;
+        java.lang.String @p0;
+        int @p1, code;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.customers.Enums.ChildrenUnderFive;
+        @p0 := @parameter0: java.lang.String;
+        @p1 := @parameter1: int;
+        code := @parameter2: int;
+        specialinvoke this.<java.lang.Enum: void <init>(java.lang.String,int)>(@p0, @p1);
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:310");
+        this.<durbodax.customers.Enums.ChildrenUnderFive: int code> = code;
+        return;
+    }
+
+    public final int getCode()
+    {
+        durbodax.customers.Enums.ChildrenUnderFive this;
+        java.io.PrintStream temp$0;
+        int temp$1;
+
+        this := @this: durbodax.customers.Enums.ChildrenUnderFive;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:311");
+        temp$1 = this.<durbodax.customers.Enums.ChildrenUnderFive: int code>;
+        return temp$1;
+    }
+
+    public static final durbodax.customers.Enums.ChildrenUnderFive getNumberChildren(int)
+    {
+        int code;
+        java.io.PrintStream temp$0;
+        java.util.Map temp$1;
+        java.lang.Integer temp$2;
+        java.lang.Object temp$3;
+        durbodax.customers.Enums.ChildrenUnderFive temp$4;
+
+        code := @parameter0: int;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:312");
+        temp$1 = <durbodax.customers.Enums.ChildrenUnderFive: java.util.Map lookup>;
+        temp$2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(code);
+        temp$3 = interfaceinvoke temp$1.<java.util.Map: java.lang.Object get(java.lang.Object)>(temp$2);
+        temp$4 = (durbodax.customers.Enums.ChildrenUnderFive) temp$3;
+        return temp$4;
+    }
+
+    public static final durbodax.customers.Enums.ChildrenUnderFive[] values()
+    {
+        durbodax.customers.Enums.ChildrenUnderFive[] temp$0, temp$2;
+        java.lang.Object temp$1;
+
+        temp$0 = <durbodax.customers.Enums.ChildrenUnderFive: durbodax.customers.Enums.ChildrenUnderFive[] $VALUES>;
+        temp$1 = virtualinvoke temp$0.<java.lang.Object: java.lang.Object clone()>();
+        temp$2 = (durbodax.customers.Enums.ChildrenUnderFive[]) temp$1;
+        return temp$2;
+    }
+
+    public static final durbodax.customers.Enums.ChildrenUnderFive valueOf(java.lang.String)
+    {
+        java.lang.String s;
+        java.lang.Class temp$0, temp$1, temp$2;
+        java.lang.Enum temp$3;
+        durbodax.customers.Enums.ChildrenUnderFive temp$4;
+
+        s := @parameter0: java.lang.String;
+        temp$1 = <durbodax.customers.Enums.ChildrenUnderFive: java.lang.Class class$durbodax$customers$Enums$ChildrenUnderFive>;
+        if temp$1 != null goto label0;
+
+        temp$2 = staticinvoke <durbodax.customers.Enums.ChildrenUnderFive: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.ChildrenUnderFive");
+        <durbodax.customers.Enums.ChildrenUnderFive: java.lang.Class class$durbodax$customers$Enums$ChildrenUnderFive> = temp$2;
+        temp$0 = temp$2;
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <durbodax.customers.Enums.ChildrenUnderFive: java.lang.Class class$durbodax$customers$Enums$ChildrenUnderFive>;
+
+     label1:
+        nop;
+        temp$3 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(temp$0, s);
+        temp$4 = (durbodax.customers.Enums.ChildrenUnderFive) temp$3;
+        return temp$4;
+    }
+
+    public static final java.lang.Class class$(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.lang.Class temp$0;
+        java.lang.ClassNotFoundException e;
+        java.lang.NoClassDefFoundError temp$1;
+
+        name := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(name);
+
+     label1:
+        nop;
+        return temp$0;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$1 = new java.lang.NoClassDefFoundError;
+        temp$2 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String getMessage()>();
+        specialinvoke temp$1.<java.lang.NoClassDefFoundError: void <init>(java.lang.String)>(temp$2);
+        throw temp$1;
+
+        catch java.lang.ClassNotFoundException from label0 to label1 with label2;
+    }
+}

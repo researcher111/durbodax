@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="4" eline="4" spos="0" epos="0"/>
+<text info="ConstantValue: SELECT MAIN.ID,YEARR,GQ,GQTYPE,FARM,OWNERSHP,VALUE,RENT,FTOTINC,NFAMS,NCOUPLES,NMOTHERS,NFATHERS,MOMLOC,STEPMOM,MOMRULE,POPLOC,STEPPOP,POPRULE,SPLOC,SPRULE,FAMSIZE,NCHILD,NCHLT5,FAMUNIT,ELDCH,YNGCH,NSIBS,RELATE,AGE,SEX,RACE,MARST,CHBORN,BPL,SCHOOL,EDUCREC,SCHLTYPE,EMPSTAT,LABFORCE,OCC1950,OCCSCORE,SEI,IND1950,CLASSWKR,WKSWORK2,HRSWORK2,YRLASTWK,WORKEDYR,INCTOT,INCWAGE,INCBUS,INCFARM,INCSS,INCWELFR,INCOTHER,POVERTY,MIGRATE5,MIGPLAC5,MOVEDIN,VETSTAT,TRANWORK,BPL.DESCRIPTION,CHBORN.DESCRIPTION,OCC1950.DESCRIPTION,MIGPLAC5.DESCRIPTION FROM MAIN INNER JOIN BPL ON MAIN.BPL=BPL.ID INNER JOIN CHBORN ON MAIN.CHBORN=CHBORN.ID INNER JOIN OCC1950 ON MAIN.OCC1950=OCC1950.ID INNER JOIN MIGPLAC5 ON MAIN.MIGPLAC5=MIGPLAC5.ID " aType="StringConstantValueTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="15" eline="15" spos="0" epos="0"/>
+<text info="[rsIn]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="175" eline="175" spos="0" epos="0"/>
+<text info="[idIn]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="268" eline="268" spos="0" epos="0"/>
+<text info="[customer]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="297" eline="297" spos="0" epos="0"/>
+<text info="[customer]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="577" eline="577" spos="0" epos="0"/>
+<text info="[customer]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="906" eline="906" spos="0" epos="0"/>
+<text info="[conn, table]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="981" eline="981" spos="0" epos="0"/>
+<text info="[conn, customer]" aType="ParamNamesTag"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Ltada/TaDaMethod; num elems: 2 elems: 
+Annotation Element: kind: [ name: variablesToTrack values: [Annotation Element: kind: s name: default value: birthplaceId]
+Annotation Element: kind: [ name: correspondingDatabaseAttribute values: [Annotation Element: kind: s name: default value: BPL.ID]
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1084" eline="1084" spos="0" epos="0"/>
+<text info="[conn, customer]" aType="ParamNamesTag"/>
+<text info="Visibility Annotation: level: RUNTIME (runtime-visible)
+ Annotations:
+Annotation: type: Ltada/TaDaMethod; num elems: 2 elems: 
+Annotation Element: kind: [ name: variablesToTrack values: [Annotation Element: kind: s name: default value: residenceId]
+Annotation Element: kind: [ name: correspondingDatabaseAttribute values: [Annotation Element: kind: s name: default value: MIGPLAC5.ID]
+
+" aType="VisibilityAnnotationTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1189" eline="1189" spos="0" epos="0"/>
+<text info="[conn, customer]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1255" eline="1255" spos="0" epos="0"/>
+<text info="[conn, customer]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="1321" eline="1321" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+</attributes>

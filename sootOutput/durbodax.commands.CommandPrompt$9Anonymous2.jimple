@@ -1,0 +1,127 @@
+public final class durbodax.commands.CommandPrompt$9Anonymous2 extends java.lang.Object implements durbodax.commands.PromptTest
+{
+    durbodax.commands.CommandPrompt this$0;
+
+    public final boolean validate(java.lang.String)
+    {
+        durbodax.commands.CommandPrompt$9Anonymous2 this;
+        java.lang.String input;
+        java.io.PrintStream temp$0, temp$2, temp$4, temp$6;
+        int value, temp$1;
+        boolean temp$3, temp$5, temp$7;
+        java.lang.NumberFormatException e;
+
+        this := @this: durbodax.commands.CommandPrompt$9Anonymous2;
+        input := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:52");
+        temp$1 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(input);
+        value = temp$1;
+        if value == 0 goto label8;
+
+        goto label1;
+
+     label1:
+        nop;
+        if value == 2 goto label8;
+
+        goto label2;
+
+        goto label2;
+
+     label2:
+        nop;
+        if value == 3 goto label8;
+
+        goto label3;
+
+        goto label3;
+
+     label3:
+        nop;
+        if value == 4 goto label8;
+
+        goto label4;
+
+        goto label4;
+
+     label4:
+        nop;
+        if value == 5 goto label8;
+
+        goto label5;
+
+        goto label5;
+
+     label5:
+        nop;
+        if value == 6 goto label8;
+
+        goto label6;
+
+        goto label6;
+
+     label6:
+        nop;
+        if value == 7 goto label8;
+
+        goto label7;
+
+        goto label7;
+
+     label7:
+        nop;
+        if value == 8 goto label8;
+
+        goto label10;
+
+        goto label10;
+
+     label8:
+        nop;
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>("flow:53");
+        temp$3 = 1;
+
+     label9:
+        nop;
+        return temp$3;
+
+     label10:
+        nop;
+        temp$4 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$4.<java.io.PrintStream: void println(java.lang.String)>("flow:54");
+        temp$5 = 0;
+
+     label11:
+        nop;
+        return temp$5;
+
+     label12:
+        nop;
+        e := @caughtexception;
+        temp$6 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$6.<java.io.PrintStream: void println(java.lang.String)>("flow:55");
+        temp$7 = 0;
+        nop;
+        return temp$7;
+
+        catch java.lang.NumberFormatException from label0 to label9 with label12;
+        catch java.lang.NumberFormatException from label10 to label11 with label12;
+    }
+
+    public void <init>(durbodax.commands.CommandPrompt)
+    {
+        durbodax.commands.CommandPrompt$9Anonymous2 this;
+        durbodax.commands.CommandPrompt temp$0;
+
+        this := @this: durbodax.commands.CommandPrompt$9Anonymous2;
+        temp$0 := @parameter0: durbodax.commands.CommandPrompt;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        this.<durbodax.commands.CommandPrompt$9Anonymous2: durbodax.commands.CommandPrompt this$0> = temp$0;
+        return;
+    }
+}

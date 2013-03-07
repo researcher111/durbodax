@@ -1,0 +1,93 @@
+public class Sample.Main extends java.lang.Object
+{
+
+    public int A()
+    {
+        Sample.Main this;
+        int a, b, c, d, e, temp$0, temp$1, temp$2, temp$3;
+
+        this := @this: Sample.Main;
+        a = 0;
+        b = 0;
+        c = 0;
+        d = 0;
+        e = 0;
+        temp$0 = virtualinvoke this.<Sample.Main: int Increment(int)>(a);
+        b = temp$0;
+        temp$1 = virtualinvoke this.<Sample.Main: int Increment(int)>(b);
+        c = temp$1;
+        virtualinvoke this.<Sample.Main: void v()>();
+        if c >= 5 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$2 = virtualinvoke this.<Sample.Main: int Multiply(int,int)>(b, c);
+        e = temp$2;
+        goto label2;
+
+     label1:
+        nop;
+        temp$3 = virtualinvoke this.<Sample.Main: int Divide(int,int)>(b, c);
+        e = temp$3;
+
+     label2:
+        nop;
+        return e;
+    }
+
+    private final int Divide(int, int)
+    {
+        Sample.Main this;
+        int b, c, temp$0;
+
+        this := @this: Sample.Main;
+        b := @parameter0: int;
+        c := @parameter1: int;
+        temp$0 = c / b;
+        return temp$0;
+    }
+
+    private final int Multiply(int, int)
+    {
+        Sample.Main this;
+        int b, c, temp$0;
+
+        this := @this: Sample.Main;
+        b := @parameter0: int;
+        c := @parameter1: int;
+        temp$0 = b * c;
+        return temp$0;
+    }
+
+    public int Increment(int)
+    {
+        Sample.Main this;
+        int var, temp$0, temp$1;
+
+        this := @this: Sample.Main;
+        var := @parameter0: int;
+        temp$0 = var;
+        temp$1 = temp$0 + 1;
+        var = temp$1;
+        return temp$0;
+    }
+
+    public void v()
+    {
+        Sample.Main this;
+
+        this := @this: Sample.Main;
+        return;
+    }
+
+    public void <init>()
+    {
+        Sample.Main this;
+
+        this := @this: Sample.Main;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

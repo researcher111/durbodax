@@ -1,0 +1,48 @@
+public class durbodax.commands.customer.SaveCustomerData extends java.lang.Object implements durbodax.commands.Command
+{
+
+    public java.lang.Object execute(java.lang.String[])
+    {
+        durbodax.commands.customer.SaveCustomerData this;
+        java.lang.String[] input;
+        java.io.PrintStream temp$0, temp$3;
+        durbodax.customers.CustomerData temp$1, temp$4;
+        durbodax.customers.Customer temp$2;
+        int temp$5, temp$7;
+        java.lang.Object temp$6, temp$8;
+
+        this := @this: durbodax.commands.customer.SaveCustomerData;
+        input := @parameter0: java.lang.String[];
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:222");
+        temp$1 = <durbodax.customers.CustomerData: durbodax.customers.CustomerData CUSTOMER>;
+        temp$2 = virtualinvoke temp$1.<durbodax.customers.CustomerData: durbodax.customers.Customer getCustomer()>();
+        if temp$2 != null goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$3 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$3.<java.io.PrintStream: void println(java.lang.String)>("flow:223");
+        temp$4 = <durbodax.customers.CustomerData: durbodax.customers.CustomerData CUSTOMER>;
+        temp$5 = virtualinvoke temp$4.<durbodax.customers.CustomerData: int saveCustomerData()>();
+        temp$6 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$5);
+        return temp$6;
+
+     label1:
+        nop;
+        temp$7 = -1;
+        temp$8 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$7);
+        return temp$8;
+    }
+
+    public void <init>()
+    {
+        durbodax.commands.customer.SaveCustomerData this;
+
+        this := @this: durbodax.commands.customer.SaveCustomerData;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

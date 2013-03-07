@@ -1,0 +1,213 @@
+public final enum class durbodax.customers.Enums.WorkingClass extends java.lang.Enum
+{
+    public static final enum durbodax.customers.Enums.WorkingClass NA;
+    public static final enum durbodax.customers.Enums.WorkingClass SELF_EMPLOYED;
+    public static final enum durbodax.customers.Enums.WorkingClass WAGE_OR_SALARY;
+    public static final enum durbodax.customers.Enums.WorkingClass NEW_WORKER;
+    public static final enum durbodax.customers.Enums.WorkingClass UNEMPLOYED;
+    private static final java.util.Map lookup;
+    private int code;
+    private static final durbodax.customers.Enums.WorkingClass[] $VALUES;
+    public static java.lang.Class class$durbodax$customers$Enums$WorkingClass;
+
+    static void <clinit>()
+    {
+        durbodax.customers.Enums.WorkingClass temp$0, temp$1, temp$2, temp$3, temp$4, work, temp$19, temp$21, temp$22, temp$23, temp$24, temp$25;
+        java.util.HashMap temp$5;
+        java.lang.Class temp$6, temp$7, temp$8;
+        java.util.EnumSet temp$9, temp$10;
+        java.util.Iterator temp$11;
+        boolean temp$12;
+        java.lang.Object temp$13, temp$18;
+        java.io.PrintStream temp$14;
+        java.util.Map temp$15;
+        int temp$16;
+        java.lang.Integer temp$17;
+        durbodax.customers.Enums.WorkingClass[] temp$20;
+
+        temp$0 = new durbodax.customers.Enums.WorkingClass;
+        specialinvoke temp$0.<durbodax.customers.Enums.WorkingClass: void <init>(java.lang.String,int,int)>("NA", 0, 0);
+        <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass NA> = temp$0;
+        temp$1 = new durbodax.customers.Enums.WorkingClass;
+        specialinvoke temp$1.<durbodax.customers.Enums.WorkingClass: void <init>(java.lang.String,int,int)>("SELF_EMPLOYED", 1, 1);
+        <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass SELF_EMPLOYED> = temp$1;
+        temp$2 = new durbodax.customers.Enums.WorkingClass;
+        specialinvoke temp$2.<durbodax.customers.Enums.WorkingClass: void <init>(java.lang.String,int,int)>("WAGE_OR_SALARY", 2, 2);
+        <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass WAGE_OR_SALARY> = temp$2;
+        temp$3 = new durbodax.customers.Enums.WorkingClass;
+        specialinvoke temp$3.<durbodax.customers.Enums.WorkingClass: void <init>(java.lang.String,int,int)>("NEW_WORKER", 3, 3);
+        <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass NEW_WORKER> = temp$3;
+        temp$4 = new durbodax.customers.Enums.WorkingClass;
+        specialinvoke temp$4.<durbodax.customers.Enums.WorkingClass: void <init>(java.lang.String,int,int)>("UNEMPLOYED", 4, 4);
+        <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass UNEMPLOYED> = temp$4;
+        temp$5 = new java.util.HashMap;
+        specialinvoke temp$5.<java.util.HashMap: void <init>()>();
+        <durbodax.customers.Enums.WorkingClass: java.util.Map lookup> = temp$5;
+        temp$7 = <durbodax.customers.Enums.WorkingClass: java.lang.Class class$durbodax$customers$Enums$WorkingClass>;
+        if temp$7 != null goto label0;
+
+        temp$8 = staticinvoke <durbodax.customers.Enums.WorkingClass: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.WorkingClass");
+        <durbodax.customers.Enums.WorkingClass: java.lang.Class class$durbodax$customers$Enums$WorkingClass> = temp$8;
+        temp$6 = temp$8;
+        goto label1;
+
+     label0:
+        nop;
+        temp$6 = <durbodax.customers.Enums.WorkingClass: java.lang.Class class$durbodax$customers$Enums$WorkingClass>;
+
+     label1:
+        nop;
+        temp$9 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(temp$6);
+        temp$10 = (java.util.EnumSet) temp$9;
+        temp$11 = interfaceinvoke temp$10.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label2:
+        nop;
+        temp$12 = interfaceinvoke temp$11.<java.util.Iterator: boolean hasNext()>();
+        if temp$12 == 0 goto label3;
+
+        temp$13 = interfaceinvoke temp$11.<java.util.Iterator: java.lang.Object next()>();
+        work = (durbodax.customers.Enums.WorkingClass) temp$13;
+        temp$14 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$14.<java.io.PrintStream: void println(java.lang.String)>("flow:397");
+        temp$15 = <durbodax.customers.Enums.WorkingClass: java.util.Map lookup>;
+        temp$16 = virtualinvoke work.<durbodax.customers.Enums.WorkingClass: int getCode()>();
+        temp$17 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$16);
+        temp$18 = interfaceinvoke temp$15.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$17, work);
+        temp$19 = (durbodax.customers.Enums.WorkingClass) temp$18;
+        nop;
+        goto label2;
+
+     label3:
+        nop;
+        temp$20 = newarray (durbodax.customers.Enums.WorkingClass)[5];
+        temp$21 = <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass NA>;
+        temp$20[0] = temp$21;
+        temp$22 = <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass SELF_EMPLOYED>;
+        temp$20[1] = temp$22;
+        temp$23 = <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass WAGE_OR_SALARY>;
+        temp$20[2] = temp$23;
+        temp$24 = <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass NEW_WORKER>;
+        temp$20[3] = temp$24;
+        temp$25 = <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass UNEMPLOYED>;
+        temp$20[4] = temp$25;
+        <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass[] $VALUES> = temp$20;
+        return;
+    }
+
+    private void <init>(java.lang.String, int, int)
+    {
+        durbodax.customers.Enums.WorkingClass this;
+        java.lang.String @p0;
+        int @p1, code;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.customers.Enums.WorkingClass;
+        @p0 := @parameter0: java.lang.String;
+        @p1 := @parameter1: int;
+        code := @parameter2: int;
+        specialinvoke this.<java.lang.Enum: void <init>(java.lang.String,int)>(@p0, @p1);
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:398");
+        this.<durbodax.customers.Enums.WorkingClass: int code> = code;
+        return;
+    }
+
+    public final int getCode()
+    {
+        durbodax.customers.Enums.WorkingClass this;
+        java.io.PrintStream temp$0;
+        int temp$1;
+
+        this := @this: durbodax.customers.Enums.WorkingClass;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:399");
+        temp$1 = this.<durbodax.customers.Enums.WorkingClass: int code>;
+        return temp$1;
+    }
+
+    public static final durbodax.customers.Enums.WorkingClass getWorkStatus(int)
+    {
+        int code;
+        java.io.PrintStream temp$0;
+        java.util.Map temp$1;
+        java.lang.Integer temp$2;
+        java.lang.Object temp$3;
+        durbodax.customers.Enums.WorkingClass temp$4;
+
+        code := @parameter0: int;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:400");
+        temp$1 = <durbodax.customers.Enums.WorkingClass: java.util.Map lookup>;
+        temp$2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(code);
+        temp$3 = interfaceinvoke temp$1.<java.util.Map: java.lang.Object get(java.lang.Object)>(temp$2);
+        temp$4 = (durbodax.customers.Enums.WorkingClass) temp$3;
+        return temp$4;
+    }
+
+    public static final durbodax.customers.Enums.WorkingClass[] values()
+    {
+        durbodax.customers.Enums.WorkingClass[] temp$0, temp$2;
+        java.lang.Object temp$1;
+
+        temp$0 = <durbodax.customers.Enums.WorkingClass: durbodax.customers.Enums.WorkingClass[] $VALUES>;
+        temp$1 = virtualinvoke temp$0.<java.lang.Object: java.lang.Object clone()>();
+        temp$2 = (durbodax.customers.Enums.WorkingClass[]) temp$1;
+        return temp$2;
+    }
+
+    public static final durbodax.customers.Enums.WorkingClass valueOf(java.lang.String)
+    {
+        java.lang.String s;
+        java.lang.Class temp$0, temp$1, temp$2;
+        java.lang.Enum temp$3;
+        durbodax.customers.Enums.WorkingClass temp$4;
+
+        s := @parameter0: java.lang.String;
+        temp$1 = <durbodax.customers.Enums.WorkingClass: java.lang.Class class$durbodax$customers$Enums$WorkingClass>;
+        if temp$1 != null goto label0;
+
+        temp$2 = staticinvoke <durbodax.customers.Enums.WorkingClass: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.WorkingClass");
+        <durbodax.customers.Enums.WorkingClass: java.lang.Class class$durbodax$customers$Enums$WorkingClass> = temp$2;
+        temp$0 = temp$2;
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <durbodax.customers.Enums.WorkingClass: java.lang.Class class$durbodax$customers$Enums$WorkingClass>;
+
+     label1:
+        nop;
+        temp$3 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(temp$0, s);
+        temp$4 = (durbodax.customers.Enums.WorkingClass) temp$3;
+        return temp$4;
+    }
+
+    public static final java.lang.Class class$(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.lang.Class temp$0;
+        java.lang.ClassNotFoundException e;
+        java.lang.NoClassDefFoundError temp$1;
+
+        name := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(name);
+
+     label1:
+        nop;
+        return temp$0;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$1 = new java.lang.NoClassDefFoundError;
+        temp$2 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String getMessage()>();
+        specialinvoke temp$1.<java.lang.NoClassDefFoundError: void <init>(java.lang.String)>(temp$2);
+        throw temp$1;
+
+        catch java.lang.ClassNotFoundException from label0 to label1 with label2;
+    }
+}

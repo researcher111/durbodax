@@ -1,0 +1,207 @@
+public final enum class durbodax.customers.Enums.VeteranStatus extends java.lang.Enum
+{
+    public static final enum durbodax.customers.Enums.VeteranStatus NA;
+    public static final enum durbodax.customers.Enums.VeteranStatus NO_SERVICE;
+    public static final enum durbodax.customers.Enums.VeteranStatus YES;
+    public static final enum durbodax.customers.Enums.VeteranStatus NOT_ASCERTAINED;
+    private static final java.util.Map lookup;
+    private int code;
+    private static final durbodax.customers.Enums.VeteranStatus[] $VALUES;
+    public static java.lang.Class class$durbodax$customers$Enums$VeteranStatus;
+
+    static void <clinit>()
+    {
+        durbodax.customers.Enums.VeteranStatus temp$0, temp$1, temp$2, temp$3, status, temp$18, temp$20, temp$21, temp$22, temp$23;
+        java.util.HashMap temp$4;
+        java.lang.Class temp$5, temp$6, temp$7;
+        java.util.EnumSet temp$8, temp$9;
+        java.util.Iterator temp$10;
+        boolean temp$11;
+        java.lang.Object temp$12, temp$17;
+        java.io.PrintStream temp$13;
+        java.util.Map temp$14;
+        int temp$15;
+        java.lang.Integer temp$16;
+        durbodax.customers.Enums.VeteranStatus[] temp$19;
+
+        temp$0 = new durbodax.customers.Enums.VeteranStatus;
+        specialinvoke temp$0.<durbodax.customers.Enums.VeteranStatus: void <init>(java.lang.String,int,int)>("NA", 0, 0);
+        <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus NA> = temp$0;
+        temp$1 = new durbodax.customers.Enums.VeteranStatus;
+        specialinvoke temp$1.<durbodax.customers.Enums.VeteranStatus: void <init>(java.lang.String,int,int)>("NO_SERVICE", 1, 1);
+        <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus NO_SERVICE> = temp$1;
+        temp$2 = new durbodax.customers.Enums.VeteranStatus;
+        specialinvoke temp$2.<durbodax.customers.Enums.VeteranStatus: void <init>(java.lang.String,int,int)>("YES", 2, 2);
+        <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus YES> = temp$2;
+        temp$3 = new durbodax.customers.Enums.VeteranStatus;
+        specialinvoke temp$3.<durbodax.customers.Enums.VeteranStatus: void <init>(java.lang.String,int,int)>("NOT_ASCERTAINED", 3, 9);
+        <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus NOT_ASCERTAINED> = temp$3;
+        temp$4 = new java.util.HashMap;
+        specialinvoke temp$4.<java.util.HashMap: void <init>()>();
+        <durbodax.customers.Enums.VeteranStatus: java.util.Map lookup> = temp$4;
+        temp$6 = <durbodax.customers.Enums.VeteranStatus: java.lang.Class class$durbodax$customers$Enums$VeteranStatus>;
+        if temp$6 != null goto label0;
+
+        temp$7 = staticinvoke <durbodax.customers.Enums.VeteranStatus: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.VeteranStatus");
+        <durbodax.customers.Enums.VeteranStatus: java.lang.Class class$durbodax$customers$Enums$VeteranStatus> = temp$7;
+        temp$5 = temp$7;
+        goto label1;
+
+     label0:
+        nop;
+        temp$5 = <durbodax.customers.Enums.VeteranStatus: java.lang.Class class$durbodax$customers$Enums$VeteranStatus>;
+
+     label1:
+        nop;
+        temp$8 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(temp$5);
+        temp$9 = (java.util.EnumSet) temp$8;
+        temp$10 = interfaceinvoke temp$9.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label2:
+        nop;
+        temp$11 = interfaceinvoke temp$10.<java.util.Iterator: boolean hasNext()>();
+        if temp$11 == 0 goto label3;
+
+        temp$12 = interfaceinvoke temp$10.<java.util.Iterator: java.lang.Object next()>();
+        status = (durbodax.customers.Enums.VeteranStatus) temp$12;
+        temp$13 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$13.<java.io.PrintStream: void println(java.lang.String)>("flow:385");
+        temp$14 = <durbodax.customers.Enums.VeteranStatus: java.util.Map lookup>;
+        temp$15 = virtualinvoke status.<durbodax.customers.Enums.VeteranStatus: int getCode()>();
+        temp$16 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$15);
+        temp$17 = interfaceinvoke temp$14.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$16, status);
+        temp$18 = (durbodax.customers.Enums.VeteranStatus) temp$17;
+        nop;
+        goto label2;
+
+     label3:
+        nop;
+        temp$19 = newarray (durbodax.customers.Enums.VeteranStatus)[4];
+        temp$20 = <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus NA>;
+        temp$19[0] = temp$20;
+        temp$21 = <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus NO_SERVICE>;
+        temp$19[1] = temp$21;
+        temp$22 = <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus YES>;
+        temp$19[2] = temp$22;
+        temp$23 = <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus NOT_ASCERTAINED>;
+        temp$19[3] = temp$23;
+        <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus[] $VALUES> = temp$19;
+        return;
+    }
+
+    private void <init>(java.lang.String, int, int)
+    {
+        durbodax.customers.Enums.VeteranStatus this;
+        java.lang.String @p0;
+        int @p1, code;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.customers.Enums.VeteranStatus;
+        @p0 := @parameter0: java.lang.String;
+        @p1 := @parameter1: int;
+        code := @parameter2: int;
+        specialinvoke this.<java.lang.Enum: void <init>(java.lang.String,int)>(@p0, @p1);
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:386");
+        this.<durbodax.customers.Enums.VeteranStatus: int code> = code;
+        return;
+    }
+
+    public final int getCode()
+    {
+        durbodax.customers.Enums.VeteranStatus this;
+        java.io.PrintStream temp$0;
+        int temp$1;
+
+        this := @this: durbodax.customers.Enums.VeteranStatus;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:387");
+        temp$1 = this.<durbodax.customers.Enums.VeteranStatus: int code>;
+        return temp$1;
+    }
+
+    public static final durbodax.customers.Enums.VeteranStatus getStatus(int)
+    {
+        int code;
+        java.io.PrintStream temp$0;
+        java.util.Map temp$1;
+        java.lang.Integer temp$2;
+        java.lang.Object temp$3;
+        durbodax.customers.Enums.VeteranStatus temp$4;
+
+        code := @parameter0: int;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:388");
+        temp$1 = <durbodax.customers.Enums.VeteranStatus: java.util.Map lookup>;
+        temp$2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(code);
+        temp$3 = interfaceinvoke temp$1.<java.util.Map: java.lang.Object get(java.lang.Object)>(temp$2);
+        temp$4 = (durbodax.customers.Enums.VeteranStatus) temp$3;
+        return temp$4;
+    }
+
+    public static final durbodax.customers.Enums.VeteranStatus[] values()
+    {
+        durbodax.customers.Enums.VeteranStatus[] temp$0, temp$2;
+        java.lang.Object temp$1;
+
+        temp$0 = <durbodax.customers.Enums.VeteranStatus: durbodax.customers.Enums.VeteranStatus[] $VALUES>;
+        temp$1 = virtualinvoke temp$0.<java.lang.Object: java.lang.Object clone()>();
+        temp$2 = (durbodax.customers.Enums.VeteranStatus[]) temp$1;
+        return temp$2;
+    }
+
+    public static final durbodax.customers.Enums.VeteranStatus valueOf(java.lang.String)
+    {
+        java.lang.String s;
+        java.lang.Class temp$0, temp$1, temp$2;
+        java.lang.Enum temp$3;
+        durbodax.customers.Enums.VeteranStatus temp$4;
+
+        s := @parameter0: java.lang.String;
+        temp$1 = <durbodax.customers.Enums.VeteranStatus: java.lang.Class class$durbodax$customers$Enums$VeteranStatus>;
+        if temp$1 != null goto label0;
+
+        temp$2 = staticinvoke <durbodax.customers.Enums.VeteranStatus: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.VeteranStatus");
+        <durbodax.customers.Enums.VeteranStatus: java.lang.Class class$durbodax$customers$Enums$VeteranStatus> = temp$2;
+        temp$0 = temp$2;
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <durbodax.customers.Enums.VeteranStatus: java.lang.Class class$durbodax$customers$Enums$VeteranStatus>;
+
+     label1:
+        nop;
+        temp$3 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(temp$0, s);
+        temp$4 = (durbodax.customers.Enums.VeteranStatus) temp$3;
+        return temp$4;
+    }
+
+    public static final java.lang.Class class$(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.lang.Class temp$0;
+        java.lang.ClassNotFoundException e;
+        java.lang.NoClassDefFoundError temp$1;
+
+        name := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(name);
+
+     label1:
+        nop;
+        return temp$0;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$1 = new java.lang.NoClassDefFoundError;
+        temp$2 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String getMessage()>();
+        specialinvoke temp$1.<java.lang.NoClassDefFoundError: void <init>(java.lang.String)>(temp$2);
+        throw temp$1;
+
+        catch java.lang.ClassNotFoundException from label0 to label1 with label2;
+    }
+}

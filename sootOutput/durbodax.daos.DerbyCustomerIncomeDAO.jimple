@@ -1,0 +1,154 @@
+public class durbodax.daos.DerbyCustomerIncomeDAO extends java.lang.Object implements durbodax.daos.CustomerIncomeDAO
+{
+
+    public int getTotalDistinctIncomes()
+    {
+        durbodax.daos.DerbyCustomerIncomeDAO this;
+        java.sql.ResultSet rs, temp$4;
+        java.sql.Statement s, temp$3;
+        java.sql.Connection conn, temp$0;
+        int total, temp$7;
+        java.lang.String selectQuery, temp$11, temp$12;
+        java.io.PrintStream temp$1, temp$2, temp$6, temp$8, temp$9;
+        boolean temp$5;
+        java.sql.SQLException e;
+        java.lang.StringBuffer temp$10;
+
+        this := @this: durbodax.daos.DerbyCustomerIncomeDAO;
+        temp$0 = staticinvoke <durbodax.daos.DerbyDAOFactory: java.sql.Connection getConnection()>();
+        conn = temp$0;
+        total = 0;
+        selectQuery = "SELECT COUNT(DISTINCT INCTOT) FROM MAIN ";
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("flow:444");
+
+     label0:
+        nop;
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>("flow:445");
+        temp$3 = interfaceinvoke conn.<java.sql.Connection: java.sql.Statement createStatement()>();
+        s = temp$3;
+        temp$4 = interfaceinvoke s.<java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>(selectQuery);
+        rs = temp$4;
+        temp$5 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>();
+        if temp$5 == 0 goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+        temp$6 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$6.<java.io.PrintStream: void println(java.lang.String)>("flow:446");
+        temp$7 = interfaceinvoke rs.<java.sql.ResultSet: int getInt(int)>(1);
+        total = temp$7;
+
+     label2:
+        nop;
+        goto label4;
+
+     label3:
+        nop;
+        e := @caughtexception;
+        temp$8 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$8.<java.io.PrintStream: void println(java.lang.String)>("flow:447");
+        temp$9 = <java.lang.System: java.io.PrintStream err>;
+        temp$10 = new java.lang.StringBuffer;
+        specialinvoke temp$10.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$10.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Select Failed: ");
+        temp$11 = virtualinvoke e.<java.sql.SQLException: java.lang.String toString()>();
+        virtualinvoke temp$10.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$11);
+        temp$12 = virtualinvoke temp$10.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$9.<java.io.PrintStream: void println(java.lang.String)>(temp$12);
+        nop;
+        goto label4;
+
+     label4:
+        nop;
+        return total;
+
+        catch java.sql.SQLException from label0 to label3 with label3;
+    }
+
+    public int getTotalIncomesBelowGivenIncome(int)
+    {
+        durbodax.daos.DerbyCustomerIncomeDAO this;
+        int income, total, temp$9;
+        java.sql.ResultSet rs, temp$6;
+        java.sql.Statement s, temp$5;
+        java.sql.Connection conn, temp$0;
+        java.lang.String selectQuery, temp$2, temp$13, temp$14;
+        java.lang.StringBuffer temp$1, temp$12;
+        java.io.PrintStream temp$3, temp$4, temp$8, temp$10, temp$11;
+        boolean temp$7;
+        java.sql.SQLException e;
+
+        this := @this: durbodax.daos.DerbyCustomerIncomeDAO;
+        income := @parameter0: int;
+        temp$0 = staticinvoke <durbodax.daos.DerbyDAOFactory: java.sql.Connection getConnection()>();
+        conn = temp$0;
+        total = 0;
+        temp$1 = new java.lang.StringBuffer;
+        specialinvoke temp$1.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("SELECT COUNT(DISTINCT INCTOT) FROM MAIN WHERE INCTOT <");
+        virtualinvoke temp$1.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(income);
+        temp$2 = virtualinvoke temp$1.<java.lang.StringBuffer: java.lang.String toString()>();
+        selectQuery = temp$2;
+        temp$3 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$3.<java.io.PrintStream: void println(java.lang.String)>("flow:448");
+
+     label0:
+        nop;
+        temp$4 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$4.<java.io.PrintStream: void println(java.lang.String)>("flow:449");
+        temp$5 = interfaceinvoke conn.<java.sql.Connection: java.sql.Statement createStatement()>();
+        s = temp$5;
+        temp$6 = interfaceinvoke s.<java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>(selectQuery);
+        rs = temp$6;
+        temp$7 = interfaceinvoke rs.<java.sql.ResultSet: boolean next()>();
+        if temp$7 == 0 goto label2;
+
+        goto label1;
+
+     label1:
+        nop;
+        temp$8 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$8.<java.io.PrintStream: void println(java.lang.String)>("flow:450");
+        temp$9 = interfaceinvoke rs.<java.sql.ResultSet: int getInt(int)>(1);
+        total = temp$9;
+
+     label2:
+        nop;
+        goto label4;
+
+     label3:
+        nop;
+        e := @caughtexception;
+        temp$10 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$10.<java.io.PrintStream: void println(java.lang.String)>("flow:451");
+        temp$11 = <java.lang.System: java.io.PrintStream err>;
+        temp$12 = new java.lang.StringBuffer;
+        specialinvoke temp$12.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$12.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Select Failed: ");
+        temp$13 = virtualinvoke e.<java.sql.SQLException: java.lang.String toString()>();
+        virtualinvoke temp$12.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$13);
+        temp$14 = virtualinvoke temp$12.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$11.<java.io.PrintStream: void println(java.lang.String)>(temp$14);
+        nop;
+        goto label4;
+
+     label4:
+        nop;
+        return total;
+
+        catch java.sql.SQLException from label0 to label3 with label3;
+    }
+
+    public void <init>()
+    {
+        durbodax.daos.DerbyCustomerIncomeDAO this;
+
+        this := @this: durbodax.daos.DerbyCustomerIncomeDAO;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

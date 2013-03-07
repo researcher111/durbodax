@@ -1,0 +1,5 @@
+public interface  durbodax.commands.PromptTest extends java.lang.Object
+{
+
+    public abstract boolean validate(java.lang.String);
+}

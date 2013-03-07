@@ -1,0 +1,87 @@
+public class durbodax.commands.CommandUtil extends java.lang.Object
+{
+    private static java.util.HashMap commands;
+
+    static void <clinit>()
+    {
+        java.util.HashMap temp$0;
+
+        temp$0 = new java.util.HashMap;
+        specialinvoke temp$0.<java.util.HashMap: void <init>()>();
+        <durbodax.commands.CommandUtil: java.util.HashMap commands> = temp$0;
+        return;
+    }
+
+    private void <init>()
+    {
+        durbodax.commands.CommandUtil this;
+
+        this := @this: durbodax.commands.CommandUtil;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static final durbodax.commands.Command getCommand(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.io.PrintStream temp$0;
+        durbodax.commands.Command command;
+        java.util.HashMap temp$1;
+        java.lang.Object temp$3;
+
+        name := @parameter0: java.lang.String;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:119");
+        temp$1 = <durbodax.commands.CommandUtil: java.util.HashMap commands>;
+        temp$2 = virtualinvoke name.<java.lang.String: java.lang.String toLowerCase()>();
+        temp$3 = virtualinvoke temp$1.<java.util.HashMap: java.lang.Object get(java.lang.Object)>(temp$2);
+        command = (durbodax.commands.Command) temp$3;
+        return command;
+    }
+
+    public static final void registerCommand(java.lang.String, durbodax.commands.Command)
+    {
+        java.lang.String name, temp$2;
+        durbodax.commands.Command command;
+        java.io.PrintStream temp$0;
+        java.util.HashMap temp$1;
+        java.lang.Object temp$3;
+
+        name := @parameter0: java.lang.String;
+        command := @parameter1: durbodax.commands.Command;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:120");
+        temp$1 = <durbodax.commands.CommandUtil: java.util.HashMap commands>;
+        temp$2 = virtualinvoke name.<java.lang.String: java.lang.String toLowerCase()>();
+        temp$3 = virtualinvoke temp$1.<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$2, command);
+        return;
+    }
+
+    public static durbodax.commands.Command getComputeChildCreditCommand()
+    {
+        java.io.PrintStream temp$0;
+        durbodax.commands.ComputeChildCredit command, temp$1;
+
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:121");
+        temp$1 = new durbodax.commands.ComputeChildCredit;
+        specialinvoke temp$1.<durbodax.commands.ComputeChildCredit: void <init>()>();
+        command = temp$1;
+        virtualinvoke command.<durbodax.commands.ComputeChildCredit: void suppressOutput()>();
+        return command;
+    }
+
+    public static durbodax.commands.Command getComputeInLawTaxCommand()
+    {
+        java.io.PrintStream temp$0;
+        durbodax.commands.ComputeInLawTax command, temp$1;
+
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:122");
+        temp$1 = new durbodax.commands.ComputeInLawTax;
+        specialinvoke temp$1.<durbodax.commands.ComputeInLawTax: void <init>()>();
+        command = temp$1;
+        virtualinvoke command.<durbodax.commands.ComputeInLawTax: void suppressOutput()>();
+        return command;
+    }
+}

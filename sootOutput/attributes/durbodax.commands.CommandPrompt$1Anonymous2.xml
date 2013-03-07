@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attributes>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="5" eline="5" spos="0" epos="0"/>
+<text info="[input]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="167" eline="167" spos="17" epos="52"/>
+<jmpPos sline="18" eline="18" spos="0" epos="0"/>
+<link label="input has reaching def: input := @parameter0: java.lang.String" jmpLink="14" srcLink="165" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="167" eline="167" spos="17" epos="52"/>
+<jmpPos sline="19" eline="19" spos="0" epos="0"/>
+<link label="temp$0 has reaching def: temp$0 = staticinvoke &amp;lt;java.lang.Integer: int parseInt(java.lang.String)&amp;gt;(input)" jmpLink="18" srcLink="167" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="169" eline="169" spos="21" epos="30"/>
+<jmpPos sline="20" eline="20" spos="0" epos="0"/>
+<link label="value has reaching def: value = temp$0" jmpLink="19" srcLink="167" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="170" eline="170" spos="21" epos="30"/>
+<jmpPos sline="26" eline="26" spos="0" epos="0"/>
+<link label="value has reaching def: value = temp$0" jmpLink="19" srcLink="167" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="171" eline="171" spos="21" epos="30"/>
+<jmpPos sline="34" eline="34" spos="0" epos="0"/>
+<link label="value has reaching def: value = temp$0" jmpLink="19" srcLink="167" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="172" eline="172" spos="21" epos="30"/>
+<jmpPos sline="42" eline="42" spos="0" epos="0"/>
+<link label="value has reaching def: value = temp$0" jmpLink="19" srcLink="167" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="173" eline="173" spos="21" epos="30"/>
+<jmpPos sline="50" eline="50" spos="0" epos="0"/>
+<link label="value has reaching def: value = temp$0" jmpLink="19" srcLink="167" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="174" eline="174" spos="21" epos="30"/>
+<jmpPos sline="58" eline="58" spos="0" epos="0"/>
+<link label="value has reaching def: value = temp$0" jmpLink="19" srcLink="167" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="175" eline="175" spos="21" epos="30"/>
+<jmpPos sline="66" eline="66" spos="0" epos="0"/>
+<link label="value has reaching def: value = temp$0" jmpLink="19" srcLink="167" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="176" eline="176" spos="21" epos="30"/>
+<jmpPos sline="74" eline="74" spos="0" epos="0"/>
+<link label="value has reaching def: value = temp$0" jmpLink="19" srcLink="167" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="178" eline="178" spos="21" epos="32"/>
+<jmpPos sline="86" eline="86" spos="0" epos="0"/>
+<link label="temp$1 has reaching def: temp$1 = 1" jmpLink="82" srcLink="176" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="182" eline="182" spos="21" epos="33"/>
+<jmpPos sline="94" eline="94" spos="0" epos="0"/>
+<link label="temp$2 has reaching def: temp$2 = 0" jmpLink="90" srcLink="178" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="186" eline="186" spos="17" epos="29"/>
+<jmpPos sline="101" eline="101" spos="0" epos="0"/>
+<link label="temp$3 has reaching def: temp$3 = 0" jmpLink="99" srcLink="185" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="0" eline="0" spos="0" epos="0"/>
+<jmpPos sline="107" eline="107" spos="0" epos="0"/>
+<text info="[]" aType="ParamNamesTag"/>
+</attribute>
+<attribute>
+<srcPos sline="164" eline="164" spos="0" epos="0"/>
+<jmpPos sline="114" eline="114" spos="0" epos="0"/>
+<link label="this has reaching def: this := @this: durbodax.commands.CommandPrompt$1Anonymous2" jmpLink="112" srcLink="164" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+<attribute>
+<srcPos sline="164" eline="164" spos="0" epos="0"/>
+<jmpPos sline="115" eline="115" spos="0" epos="0"/>
+<link label="this has reaching def: this := @this: durbodax.commands.CommandPrompt$1Anonymous2" jmpLink="112" srcLink="164" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+<link label="temp$0 has reaching def: temp$0 := @parameter0: durbodax.commands.CommandPrompt" jmpLink="113" srcLink="164" clssNm="durbodax.commands.CommandPrompt$1Anonymous2" aType="Reaching Defs"/>
+</attribute>
+</attributes>

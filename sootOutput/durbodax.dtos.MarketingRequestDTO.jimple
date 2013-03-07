@@ -1,0 +1,188 @@
+public class durbodax.dtos.MarketingRequestDTO extends java.lang.Object
+{
+    private java.lang.String topOrBottom;
+    private int groupSize;
+    private int incomeFrom;
+    private int incomeTo;
+    private int ageFrom;
+    private int ageTo;
+    private int maritalStatus;
+    private int birthPlace;
+
+    public int getGroupSize()
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = this.<durbodax.dtos.MarketingRequestDTO: int groupSize>;
+        return temp$0;
+    }
+
+    public int getIncomeFrom()
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = this.<durbodax.dtos.MarketingRequestDTO: int incomeFrom>;
+        return temp$0;
+    }
+
+    public int getIncomeTo()
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = this.<durbodax.dtos.MarketingRequestDTO: int incomeTo>;
+        return temp$0;
+    }
+
+    public int getAgeFrom()
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = this.<durbodax.dtos.MarketingRequestDTO: int ageFrom>;
+        return temp$0;
+    }
+
+    public int getAgeTo()
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = this.<durbodax.dtos.MarketingRequestDTO: int ageTo>;
+        return temp$0;
+    }
+
+    public int getMaritalStatus()
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = this.<durbodax.dtos.MarketingRequestDTO: int maritalStatus>;
+        return temp$0;
+    }
+
+    public int getBirthPlace()
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int temp$0;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = this.<durbodax.dtos.MarketingRequestDTO: int birthPlace>;
+        return temp$0;
+    }
+
+    public void setGroupSize(int)
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int groupSize;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        groupSize := @parameter0: int;
+        this.<durbodax.dtos.MarketingRequestDTO: int groupSize> = groupSize;
+        return;
+    }
+
+    public void setIncomeFrom(int)
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int incomeFrom;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        incomeFrom := @parameter0: int;
+        this.<durbodax.dtos.MarketingRequestDTO: int incomeFrom> = incomeFrom;
+        return;
+    }
+
+    public void setIncomeTo(int)
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int incomeTo;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        incomeTo := @parameter0: int;
+        this.<durbodax.dtos.MarketingRequestDTO: int incomeTo> = incomeTo;
+        return;
+    }
+
+    public void setAgeFrom(int)
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int ageFrom;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        ageFrom := @parameter0: int;
+        this.<durbodax.dtos.MarketingRequestDTO: int ageFrom> = ageFrom;
+        return;
+    }
+
+    public void setAgeTo(int)
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int ageTo;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        ageTo := @parameter0: int;
+        this.<durbodax.dtos.MarketingRequestDTO: int ageTo> = ageTo;
+        return;
+    }
+
+    public void setMaritalStatus(int)
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int maritalStatus;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        maritalStatus := @parameter0: int;
+        this.<durbodax.dtos.MarketingRequestDTO: int maritalStatus> = maritalStatus;
+        return;
+    }
+
+    public void setBirthPlace(int)
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        int birthPlace;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        birthPlace := @parameter0: int;
+        this.<durbodax.dtos.MarketingRequestDTO: int birthPlace> = birthPlace;
+        return;
+    }
+
+    public java.lang.String getTopOrBottom()
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        java.lang.String temp$0;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        temp$0 = this.<durbodax.dtos.MarketingRequestDTO: java.lang.String topOrBottom>;
+        return temp$0;
+    }
+
+    public void setTopOrBottom(java.lang.String)
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+        java.lang.String topOrBottom;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        topOrBottom := @parameter0: java.lang.String;
+        this.<durbodax.dtos.MarketingRequestDTO: java.lang.String topOrBottom> = topOrBottom;
+        return;
+    }
+
+    public void <init>()
+    {
+        durbodax.dtos.MarketingRequestDTO this;
+
+        this := @this: durbodax.dtos.MarketingRequestDTO;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+}

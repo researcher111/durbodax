@@ -1,0 +1,219 @@
+public final enum class durbodax.customers.Enums.LinkToFather extends java.lang.Enum
+{
+    public static final enum durbodax.customers.Enums.LinkToFather NO_LINK;
+    public static final enum durbodax.customers.Enums.LinkToFather UNAMBIGUOUS_FATHER_LINK;
+    public static final enum durbodax.customers.Enums.LinkToFather SON_GRANDCHILD_LINK;
+    public static final enum durbodax.customers.Enums.LinkToFather PRECEDING_MALE;
+    public static final enum durbodax.customers.Enums.LinkToFather PRECEDING_MALE_SURNAME;
+    public static final enum durbodax.customers.Enums.LinkToFather STEP_FATHER;
+    private static final java.util.Map lookup;
+    private int code;
+    private static final durbodax.customers.Enums.LinkToFather[] $VALUES;
+    public static java.lang.Class class$durbodax$customers$Enums$LinkToFather;
+
+    static void <clinit>()
+    {
+        durbodax.customers.Enums.LinkToFather temp$0, temp$1, temp$2, temp$3, temp$4, temp$5, link, temp$20, temp$22, temp$23, temp$24, temp$25, temp$26, temp$27;
+        java.util.HashMap temp$6;
+        java.lang.Class temp$7, temp$8, temp$9;
+        java.util.EnumSet temp$10, temp$11;
+        java.util.Iterator temp$12;
+        boolean temp$13;
+        java.lang.Object temp$14, temp$19;
+        java.io.PrintStream temp$15;
+        java.util.Map temp$16;
+        int temp$17;
+        java.lang.Integer temp$18;
+        durbodax.customers.Enums.LinkToFather[] temp$21;
+
+        temp$0 = new durbodax.customers.Enums.LinkToFather;
+        specialinvoke temp$0.<durbodax.customers.Enums.LinkToFather: void <init>(java.lang.String,int,int)>("NO_LINK", 0, 0);
+        <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather NO_LINK> = temp$0;
+        temp$1 = new durbodax.customers.Enums.LinkToFather;
+        specialinvoke temp$1.<durbodax.customers.Enums.LinkToFather: void <init>(java.lang.String,int,int)>("UNAMBIGUOUS_FATHER_LINK", 1, 1);
+        <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather UNAMBIGUOUS_FATHER_LINK> = temp$1;
+        temp$2 = new durbodax.customers.Enums.LinkToFather;
+        specialinvoke temp$2.<durbodax.customers.Enums.LinkToFather: void <init>(java.lang.String,int,int)>("SON_GRANDCHILD_LINK", 2, 2);
+        <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather SON_GRANDCHILD_LINK> = temp$2;
+        temp$3 = new durbodax.customers.Enums.LinkToFather;
+        specialinvoke temp$3.<durbodax.customers.Enums.LinkToFather: void <init>(java.lang.String,int,int)>("PRECEDING_MALE", 3, 3);
+        <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather PRECEDING_MALE> = temp$3;
+        temp$4 = new durbodax.customers.Enums.LinkToFather;
+        specialinvoke temp$4.<durbodax.customers.Enums.LinkToFather: void <init>(java.lang.String,int,int)>("PRECEDING_MALE_SURNAME", 4, 4);
+        <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather PRECEDING_MALE_SURNAME> = temp$4;
+        temp$5 = new durbodax.customers.Enums.LinkToFather;
+        specialinvoke temp$5.<durbodax.customers.Enums.LinkToFather: void <init>(java.lang.String,int,int)>("STEP_FATHER", 5, 7);
+        <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather STEP_FATHER> = temp$5;
+        temp$6 = new java.util.HashMap;
+        specialinvoke temp$6.<java.util.HashMap: void <init>()>();
+        <durbodax.customers.Enums.LinkToFather: java.util.Map lookup> = temp$6;
+        temp$8 = <durbodax.customers.Enums.LinkToFather: java.lang.Class class$durbodax$customers$Enums$LinkToFather>;
+        if temp$8 != null goto label0;
+
+        temp$9 = staticinvoke <durbodax.customers.Enums.LinkToFather: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.LinkToFather");
+        <durbodax.customers.Enums.LinkToFather: java.lang.Class class$durbodax$customers$Enums$LinkToFather> = temp$9;
+        temp$7 = temp$9;
+        goto label1;
+
+     label0:
+        nop;
+        temp$7 = <durbodax.customers.Enums.LinkToFather: java.lang.Class class$durbodax$customers$Enums$LinkToFather>;
+
+     label1:
+        nop;
+        temp$10 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(temp$7);
+        temp$11 = (java.util.EnumSet) temp$10;
+        temp$12 = interfaceinvoke temp$11.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label2:
+        nop;
+        temp$13 = interfaceinvoke temp$12.<java.util.Iterator: boolean hasNext()>();
+        if temp$13 == 0 goto label3;
+
+        temp$14 = interfaceinvoke temp$12.<java.util.Iterator: java.lang.Object next()>();
+        link = (durbodax.customers.Enums.LinkToFather) temp$14;
+        temp$15 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$15.<java.io.PrintStream: void println(java.lang.String)>("flow:332");
+        temp$16 = <durbodax.customers.Enums.LinkToFather: java.util.Map lookup>;
+        temp$17 = virtualinvoke link.<durbodax.customers.Enums.LinkToFather: int getCode()>();
+        temp$18 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(temp$17);
+        temp$19 = interfaceinvoke temp$16.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(temp$18, link);
+        temp$20 = (durbodax.customers.Enums.LinkToFather) temp$19;
+        nop;
+        goto label2;
+
+     label3:
+        nop;
+        temp$21 = newarray (durbodax.customers.Enums.LinkToFather)[6];
+        temp$22 = <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather NO_LINK>;
+        temp$21[0] = temp$22;
+        temp$23 = <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather UNAMBIGUOUS_FATHER_LINK>;
+        temp$21[1] = temp$23;
+        temp$24 = <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather SON_GRANDCHILD_LINK>;
+        temp$21[2] = temp$24;
+        temp$25 = <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather PRECEDING_MALE>;
+        temp$21[3] = temp$25;
+        temp$26 = <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather PRECEDING_MALE_SURNAME>;
+        temp$21[4] = temp$26;
+        temp$27 = <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather STEP_FATHER>;
+        temp$21[5] = temp$27;
+        <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather[] $VALUES> = temp$21;
+        return;
+    }
+
+    private void <init>(java.lang.String, int, int)
+    {
+        durbodax.customers.Enums.LinkToFather this;
+        java.lang.String @p0;
+        int @p1, code;
+        java.io.PrintStream temp$0;
+
+        this := @this: durbodax.customers.Enums.LinkToFather;
+        @p0 := @parameter0: java.lang.String;
+        @p1 := @parameter1: int;
+        code := @parameter2: int;
+        specialinvoke this.<java.lang.Enum: void <init>(java.lang.String,int)>(@p0, @p1);
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:333");
+        this.<durbodax.customers.Enums.LinkToFather: int code> = code;
+        return;
+    }
+
+    public final int getCode()
+    {
+        durbodax.customers.Enums.LinkToFather this;
+        java.io.PrintStream temp$0;
+        int temp$1;
+
+        this := @this: durbodax.customers.Enums.LinkToFather;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:334");
+        temp$1 = this.<durbodax.customers.Enums.LinkToFather: int code>;
+        return temp$1;
+    }
+
+    public static final durbodax.customers.Enums.LinkToFather getLink(int)
+    {
+        int code;
+        java.io.PrintStream temp$0;
+        java.util.Map temp$1;
+        java.lang.Integer temp$2;
+        java.lang.Object temp$3;
+        durbodax.customers.Enums.LinkToFather temp$4;
+
+        code := @parameter0: int;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:335");
+        temp$1 = <durbodax.customers.Enums.LinkToFather: java.util.Map lookup>;
+        temp$2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(code);
+        temp$3 = interfaceinvoke temp$1.<java.util.Map: java.lang.Object get(java.lang.Object)>(temp$2);
+        temp$4 = (durbodax.customers.Enums.LinkToFather) temp$3;
+        return temp$4;
+    }
+
+    public static final durbodax.customers.Enums.LinkToFather[] values()
+    {
+        durbodax.customers.Enums.LinkToFather[] temp$0, temp$2;
+        java.lang.Object temp$1;
+
+        temp$0 = <durbodax.customers.Enums.LinkToFather: durbodax.customers.Enums.LinkToFather[] $VALUES>;
+        temp$1 = virtualinvoke temp$0.<java.lang.Object: java.lang.Object clone()>();
+        temp$2 = (durbodax.customers.Enums.LinkToFather[]) temp$1;
+        return temp$2;
+    }
+
+    public static final durbodax.customers.Enums.LinkToFather valueOf(java.lang.String)
+    {
+        java.lang.String s;
+        java.lang.Class temp$0, temp$1, temp$2;
+        java.lang.Enum temp$3;
+        durbodax.customers.Enums.LinkToFather temp$4;
+
+        s := @parameter0: java.lang.String;
+        temp$1 = <durbodax.customers.Enums.LinkToFather: java.lang.Class class$durbodax$customers$Enums$LinkToFather>;
+        if temp$1 != null goto label0;
+
+        temp$2 = staticinvoke <durbodax.customers.Enums.LinkToFather: java.lang.Class class$(java.lang.String)>("durbodax.customers.Enums.LinkToFather");
+        <durbodax.customers.Enums.LinkToFather: java.lang.Class class$durbodax$customers$Enums$LinkToFather> = temp$2;
+        temp$0 = temp$2;
+        goto label1;
+
+     label0:
+        nop;
+        temp$0 = <durbodax.customers.Enums.LinkToFather: java.lang.Class class$durbodax$customers$Enums$LinkToFather>;
+
+     label1:
+        nop;
+        temp$3 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(temp$0, s);
+        temp$4 = (durbodax.customers.Enums.LinkToFather) temp$3;
+        return temp$4;
+    }
+
+    public static final java.lang.Class class$(java.lang.String)
+    {
+        java.lang.String name, temp$2;
+        java.lang.Class temp$0;
+        java.lang.ClassNotFoundException e;
+        java.lang.NoClassDefFoundError temp$1;
+
+        name := @parameter0: java.lang.String;
+
+     label0:
+        nop;
+        temp$0 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(name);
+
+     label1:
+        nop;
+        return temp$0;
+
+     label2:
+        nop;
+        e := @caughtexception;
+        temp$1 = new java.lang.NoClassDefFoundError;
+        temp$2 = virtualinvoke e.<java.lang.ClassNotFoundException: java.lang.String getMessage()>();
+        specialinvoke temp$1.<java.lang.NoClassDefFoundError: void <init>(java.lang.String)>(temp$2);
+        throw temp$1;
+
+        catch java.lang.ClassNotFoundException from label0 to label1 with label2;
+    }
+}

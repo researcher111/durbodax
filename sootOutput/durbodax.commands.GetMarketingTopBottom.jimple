@@ -1,0 +1,353 @@
+public class durbodax.commands.GetMarketingTopBottom extends java.lang.Object implements durbodax.commands.Command
+{
+
+    public void <init>()
+    {
+        durbodax.commands.GetMarketingTopBottom this;
+
+        this := @this: durbodax.commands.GetMarketingTopBottom;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    private final durbodax.dtos.MarketingRequestDTO parseInput(java.lang.String[])
+    {
+        durbodax.commands.GetMarketingTopBottom this;
+        java.lang.String[] paramsIn, sAge, temp$1, temp$4, sIncome, temp$5, temp$8, temp$11, temp$14, temp$18, temp$24, temp$30, temp$36, temp$42, temp$48, temp$55, temp$62;
+        java.io.PrintStream temp$0, temp$10, temp$23, temp$28, temp$35, temp$40, temp$47, temp$53, temp$60, temp$61;
+        int temp$2, temp$6, temp$12, temp$15, temp$17, temp$19, temp$21, temp$22, temp$25, temp$27, temp$29, temp$31, temp$33, temp$34, temp$37, temp$39, temp$41, temp$43, temp$49, temp$51, temp$52, temp$56, temp$63, temp$65, temp$66;
+        java.lang.String temp$3, temp$7, temp$13, temp$16, temp$20, temp$26, temp$32, temp$38, temp$44, temp$45, temp$50, temp$57, temp$58, temp$64;
+        durbodax.dtos.MarketingRequestDTO m, temp$9, temp$68;
+        boolean temp$46, temp$59;
+        java.lang.Exception temp$54, temp$67, e;
+
+        this := @this: durbodax.commands.GetMarketingTopBottom;
+        paramsIn := @parameter0: java.lang.String[];
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:202");
+        sAge = null;
+        temp$1 = paramsIn;
+        temp$2 = 3;
+        temp$3 = temp$1[temp$2];
+        temp$4 = virtualinvoke temp$3.<java.lang.String: java.lang.String[] split(java.lang.String)>("-");
+        sAge = temp$4;
+        sIncome = null;
+        temp$5 = paramsIn;
+        temp$6 = 4;
+        temp$7 = temp$5[temp$6];
+        temp$8 = virtualinvoke temp$7.<java.lang.String: java.lang.String[] split(java.lang.String)>("-");
+        sIncome = temp$8;
+        temp$9 = new durbodax.dtos.MarketingRequestDTO;
+        specialinvoke temp$9.<durbodax.dtos.MarketingRequestDTO: void <init>()>();
+        m = temp$9;
+
+     label0:
+        nop;
+        temp$10 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$10.<java.io.PrintStream: void println(java.lang.String)>("flow:203");
+        temp$11 = paramsIn;
+        temp$12 = 1;
+        temp$13 = temp$11[temp$12];
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setTopOrBottom(java.lang.String)>(temp$13);
+        temp$14 = paramsIn;
+        temp$15 = 2;
+        temp$16 = temp$14[temp$15];
+        temp$17 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$16);
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setGroupSize(int)>(temp$17);
+        temp$18 = sAge;
+        temp$19 = 0;
+        temp$20 = temp$18[temp$19];
+        temp$21 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$20);
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setAgeFrom(int)>(temp$21);
+        temp$22 = lengthof sAge;
+        if temp$22 == 2 goto label1;
+
+        goto label2;
+
+     label1:
+        nop;
+        temp$23 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$23.<java.io.PrintStream: void println(java.lang.String)>("flow:204");
+        temp$24 = sAge;
+        temp$25 = 1;
+        temp$26 = temp$24[temp$25];
+        temp$27 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$26);
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setAgeTo(int)>(temp$27);
+        goto label3;
+
+     label2:
+        nop;
+        temp$28 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$28.<java.io.PrintStream: void println(java.lang.String)>("flow:205");
+        temp$29 = virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: int getAgeFrom()>();
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setAgeTo(int)>(temp$29);
+
+     label3:
+        nop;
+        temp$30 = sIncome;
+        temp$31 = 0;
+        temp$32 = temp$30[temp$31];
+        temp$33 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$32);
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setIncomeFrom(int)>(temp$33);
+        temp$34 = lengthof sIncome;
+        if temp$34 == 2 goto label4;
+
+        goto label5;
+
+     label4:
+        nop;
+        temp$35 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$35.<java.io.PrintStream: void println(java.lang.String)>("flow:206");
+        temp$36 = sIncome;
+        temp$37 = 1;
+        temp$38 = temp$36[temp$37];
+        temp$39 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$38);
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setIncomeTo(int)>(temp$39);
+        goto label6;
+
+     label5:
+        nop;
+        temp$40 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$40.<java.io.PrintStream: void println(java.lang.String)>("flow:207");
+        temp$41 = virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: int getIncomeFrom()>();
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setIncomeTo(int)>(temp$41);
+
+     label6:
+        nop;
+        temp$42 = paramsIn;
+        temp$43 = 5;
+        temp$44 = temp$42[temp$43];
+        temp$45 = virtualinvoke temp$44.<java.lang.String: java.lang.String toLowerCase()>();
+        temp$46 = virtualinvoke temp$45.<java.lang.String: boolean equals(java.lang.Object)>("all");
+        if temp$46 == 0 goto label8;
+
+        goto label7;
+
+     label7:
+        nop;
+        temp$47 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$47.<java.io.PrintStream: void println(java.lang.String)>("flow:208");
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setBirthPlace(int)>(0);
+        goto label11;
+
+     label8:
+        nop;
+        temp$48 = paramsIn;
+        temp$49 = 5;
+        temp$50 = temp$48[temp$49];
+        temp$51 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$50);
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setBirthPlace(int)>(temp$51);
+        temp$52 = virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: int getBirthPlace()>();
+        if temp$52 == 0 goto label9;
+
+        goto label10;
+
+     label9:
+        nop;
+        temp$53 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$53.<java.io.PrintStream: void println(java.lang.String)>("flow:209");
+        temp$54 = new java.lang.Exception;
+        specialinvoke temp$54.<java.lang.Exception: void <init>(java.lang.String)>("Invalid input parameters");
+        throw temp$54;
+
+     label10:
+        nop;
+
+     label11:
+        nop;
+        temp$55 = paramsIn;
+        temp$56 = 6;
+        temp$57 = temp$55[temp$56];
+        temp$58 = virtualinvoke temp$57.<java.lang.String: java.lang.String toLowerCase()>();
+        temp$59 = virtualinvoke temp$58.<java.lang.String: boolean equals(java.lang.Object)>("all");
+        if temp$59 == 0 goto label13;
+
+        goto label12;
+
+     label12:
+        nop;
+        temp$60 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$60.<java.io.PrintStream: void println(java.lang.String)>("flow:210");
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setMaritalStatus(int)>(0);
+        goto label16;
+
+     label13:
+        nop;
+        temp$61 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$61.<java.io.PrintStream: void println(java.lang.String)>("flow:211");
+        temp$62 = paramsIn;
+        temp$63 = 6;
+        temp$64 = temp$62[temp$63];
+        temp$65 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(temp$64);
+        virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: void setMaritalStatus(int)>(temp$65);
+        temp$66 = virtualinvoke m.<durbodax.dtos.MarketingRequestDTO: int getMaritalStatus()>();
+        if temp$66 == 0 goto label14;
+
+        goto label15;
+
+     label14:
+        nop;
+        temp$67 = new java.lang.Exception;
+        specialinvoke temp$67.<java.lang.Exception: void <init>(java.lang.String)>("Invalid input parameters");
+        throw temp$67;
+
+     label15:
+        nop;
+
+     label16:
+        nop;
+        goto label18;
+
+     label17:
+        nop;
+        e := @caughtexception;
+        temp$68 = null;
+        nop;
+        return temp$68;
+
+     label18:
+        nop;
+        return m;
+
+        catch java.lang.Exception from label0 to label17 with label17;
+    }
+
+    private final void printOutput(java.util.ArrayList)
+    {
+        durbodax.commands.GetMarketingTopBottom this;
+        java.util.ArrayList mresultIn;
+        java.io.PrintStream temp$0, temp$2, temp$3, temp$5, temp$12;
+        int temp$1, i, temp$4, temp$9, temp$15, temp$16, temp$21, temp$22;
+        durbodax.dtos.MarketingResponseDTO m, temp$7;
+        java.lang.Object temp$6;
+        java.lang.String sId, temp$10, temp$11, temp$14, temp$17, temp$18, temp$20;
+        java.lang.StringBuffer temp$8, temp$13;
+        durbodax.customers.Enums.MaritalStatus temp$19;
+
+        this := @this: durbodax.commands.GetMarketingTopBottom;
+        mresultIn := @parameter0: java.util.ArrayList;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:212");
+        temp$1 = virtualinvoke mresultIn.<java.util.ArrayList: int size()>();
+        if temp$1 == 0 goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$2 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$2.<java.io.PrintStream: void println(java.lang.String)>("flow:213");
+        temp$3 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$3.<java.io.PrintStream: void println(java.lang.String)>("No Records found:  Please change parameters and retry.");
+
+     label1:
+        nop;
+        i = 0;
+
+     label2:
+        nop;
+        temp$4 = virtualinvoke mresultIn.<java.util.ArrayList: int size()>();
+        if i < temp$4 goto label3;
+
+        goto label4;
+
+     label3:
+        nop;
+        temp$5 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$5.<java.io.PrintStream: void println(java.lang.String)>("flow:214");
+        temp$6 = virtualinvoke mresultIn.<java.util.ArrayList: java.lang.Object get(int)>(i);
+        temp$7 = (durbodax.dtos.MarketingResponseDTO) temp$6;
+        m = temp$7;
+        temp$8 = new java.lang.StringBuffer;
+        specialinvoke temp$8.<java.lang.StringBuffer: void <init>()>();
+        temp$9 = virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: int getId()>();
+        temp$10 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(temp$9);
+        virtualinvoke temp$8.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$10);
+        virtualinvoke temp$8.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("      ");
+        temp$11 = virtualinvoke temp$8.<java.lang.StringBuffer: java.lang.String toString()>();
+        sId = temp$11;
+        temp$12 = <java.lang.System: java.io.PrintStream out>;
+        temp$13 = new java.lang.StringBuffer;
+        specialinvoke temp$13.<java.lang.StringBuffer: void <init>()>();
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("ID: ");
+        temp$14 = virtualinvoke sId.<java.lang.String: java.lang.String substring(int,int)>(1, 8);
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$14);
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" Age: ");
+        temp$15 = virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: int getAge()>();
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(temp$15);
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" Income: ");
+        temp$16 = virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: int getIncome()>();
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(temp$16);
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" BPL: ");
+        temp$17 = virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: java.lang.String getBirthPlace()>();
+        temp$18 = virtualinvoke temp$17.<java.lang.String: java.lang.String substring(int,int)>(0, 15);
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$18);
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(" ");
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>("Marital Status: ");
+        temp$19 = virtualinvoke m.<durbodax.dtos.MarketingResponseDTO: durbodax.customers.Enums.MaritalStatus getMaritalStatusEnum()>();
+        virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(temp$19);
+        temp$20 = virtualinvoke temp$13.<java.lang.StringBuffer: java.lang.String toString()>();
+        virtualinvoke temp$12.<java.io.PrintStream: void println(java.lang.String)>(temp$20);
+        nop;
+        temp$21 = i;
+        temp$22 = temp$21 + 1;
+        i = temp$22;
+        goto label2;
+
+     label4:
+        nop;
+        return;
+    }
+
+    public java.lang.Object execute(java.lang.String[])
+    {
+        durbodax.commands.GetMarketingTopBottom this;
+        java.lang.String[] params;
+        java.io.PrintStream temp$0, temp$3, temp$7, temp$8, temp$9;
+        java.lang.Object retObj, temp$1;
+        durbodax.dtos.MarketingRequestDTO mReq, temp$2;
+        durbodax.daos.MarketingDAO instance;
+        durbodax.daos.DAOFactory temp$4;
+        durbodax.daos.DerbyMarketingDAO temp$5;
+        java.util.ArrayList mresult, temp$6;
+
+        this := @this: durbodax.commands.GetMarketingTopBottom;
+        params := @parameter0: java.lang.String[];
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:215");
+        temp$1 = new java.lang.Object;
+        specialinvoke temp$1.<java.lang.Object: void <init>()>();
+        retObj = temp$1;
+        temp$2 = virtualinvoke this.<durbodax.commands.GetMarketingTopBottom: durbodax.dtos.MarketingRequestDTO parseInput(java.lang.String[])>(params);
+        mReq = temp$2;
+        if mReq != null goto label0;
+
+        goto label1;
+
+     label0:
+        nop;
+        temp$3 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$3.<java.io.PrintStream: void println(java.lang.String)>("flow:216");
+        temp$4 = staticinvoke <durbodax.daos.DAOFactory: durbodax.daos.DAOFactory getDAOFactory()>();
+        temp$5 = virtualinvoke temp$4.<durbodax.daos.DAOFactory: durbodax.daos.DerbyMarketingDAO getMarketingDAO()>();
+        instance = temp$5;
+        temp$6 = interfaceinvoke instance.<durbodax.daos.MarketingDAO: java.util.ArrayList selectMarketingStatsTopBottom(durbodax.dtos.MarketingRequestDTO)>(mReq);
+        mresult = temp$6;
+        retObj = mresult;
+        virtualinvoke this.<durbodax.commands.GetMarketingTopBottom: void printOutput(java.util.ArrayList)>(mresult);
+        goto label2;
+
+     label1:
+        nop;
+        temp$7 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$7.<java.io.PrintStream: void println(java.lang.String)>("flow:217");
+        temp$8 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$8.<java.io.PrintStream: void println(java.lang.String)>("Usage:Top or Bottom GroupSize FromAge-ToAge FromIncome-toIncome Birthplace MaritalStatus");
+        temp$9 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$9.<java.io.PrintStream: void println(java.lang.String)>("EX:  GetMarketingTopBottom TOP 10 50-90 40000-75000 1 1");
+
+     label2:
+        nop;
+        return retObj;
+    }
+}

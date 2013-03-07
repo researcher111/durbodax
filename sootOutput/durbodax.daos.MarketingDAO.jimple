@@ -1,0 +1,7 @@
+public interface  durbodax.daos.MarketingDAO extends java.lang.Object
+{
+
+    public abstract java.util.ArrayList selectMarketingStatsTopBottom(durbodax.dtos.MarketingRequestDTO);
+
+    public abstract java.util.ArrayList selectMarketingStatsByGroup(durbodax.dtos.MarketingRequestDTO);
+}

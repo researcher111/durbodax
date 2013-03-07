@@ -1,0 +1,48 @@
+public final class durbodax.commands.CommandPrompt$3Anonymous16 extends java.lang.Object implements durbodax.commands.PromptTest
+{
+    durbodax.commands.CommandPrompt this$0;
+
+    public final boolean validate(java.lang.String)
+    {
+        durbodax.commands.CommandPrompt$3Anonymous16 this;
+        java.lang.String input, temp$1, temp$2;
+        java.io.PrintStream temp$0;
+        boolean temp$3, temp$4;
+
+        this := @this: durbodax.commands.CommandPrompt$3Anonymous16;
+        input := @parameter0: java.lang.String;
+        temp$0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke temp$0.<java.io.PrintStream: void println(java.lang.String)>("flow:113");
+        temp$1 = "";
+        temp$2 = virtualinvoke input.<java.lang.String: java.lang.String trim()>();
+        temp$3 = virtualinvoke temp$1.<java.lang.String: boolean equals(java.lang.Object)>(temp$2);
+        if temp$3 == 0 goto label1;
+
+        goto label0;
+
+     label0:
+        nop;
+        temp$4 = 0;
+        goto label2;
+
+     label1:
+        nop;
+        temp$4 = 1;
+
+     label2:
+        nop;
+        return temp$4;
+    }
+
+    public void <init>(durbodax.commands.CommandPrompt)
+    {
+        durbodax.commands.CommandPrompt$3Anonymous16 this;
+        durbodax.commands.CommandPrompt temp$0;
+
+        this := @this: durbodax.commands.CommandPrompt$3Anonymous16;
+        temp$0 := @parameter0: durbodax.commands.CommandPrompt;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        this.<durbodax.commands.CommandPrompt$3Anonymous16: durbodax.commands.CommandPrompt this$0> = temp$0;
+        return;
+    }
+}
